@@ -91,9 +91,28 @@ boolean activate = true;
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         pnlSimuladorDeLlamada = new javax.swing.JPanel();
+        lblDuracion = new javax.swing.JLabel();
+        sdrDuracion = new javax.swing.JSlider();
+        txtNumeroDeCuentaSDL = new javax.swing.JTextField();
+        txtNumeroALlamar = new javax.swing.JTextField();
+        lblMin = new javax.swing.JLabel();
+        lblMesSDL = new javax.swing.JLabel();
+        lblAñoSDL = new javax.swing.JLabel();
+        cmbMesSDL = new javax.swing.JComboBox<>();
+        cmbDia = new javax.swing.JComboBox<>();
+        cmdAñoSDL = new javax.swing.JComboBox<>();
+        lblBarraNumeroDeCuentaSDL = new javax.swing.JLabel();
+        lblBarraNumeroALlamar = new javax.swing.JLabel();
+        lblDia = new javax.swing.JLabel();
+        cmbHora = new javax.swing.JComboBox<>();
+        lblHora = new javax.swing.JLabel();
+        cmbMin = new javax.swing.JComboBox<>();
+        lblAceptarSDL = new javax.swing.JLabel();
+        lblFondoAceptarSDL = new javax.swing.JLabel();
+        lblAutoGenerarLlamada = new javax.swing.JLabel();
+        lblFondoAutoGenerarLlamada = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1017, 459));
         setMinimumSize(new java.awt.Dimension(1017, 459));
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -530,16 +549,119 @@ boolean activate = true;
 
         pnlParent.add(pnlConsultaDeConsumo, "card5");
 
-        javax.swing.GroupLayout pnlSimuladorDeLlamadaLayout = new javax.swing.GroupLayout(pnlSimuladorDeLlamada);
-        pnlSimuladorDeLlamada.setLayout(pnlSimuladorDeLlamadaLayout);
-        pnlSimuladorDeLlamadaLayout.setHorizontalGroup(
-            pnlSimuladorDeLlamadaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 730, Short.MAX_VALUE)
-        );
-        pnlSimuladorDeLlamadaLayout.setVerticalGroup(
-            pnlSimuladorDeLlamadaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 460, Short.MAX_VALUE)
-        );
+        pnlSimuladorDeLlamada.setBackground(new java.awt.Color(51, 51, 51));
+        pnlSimuladorDeLlamada.setLayout(null);
+
+        lblDuracion.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblDuracion.setForeground(new java.awt.Color(255, 255, 255));
+        lblDuracion.setText("Duración:");
+        pnlSimuladorDeLlamada.add(lblDuracion);
+        lblDuracion.setBounds(80, 150, 60, 18);
+
+        sdrDuracion.setBackground(new java.awt.Color(51, 51, 51));
+        sdrDuracion.setMaximum(1000);
+        sdrDuracion.setValue(500);
+        pnlSimuladorDeLlamada.add(sdrDuracion);
+        sdrDuracion.setBounds(150, 150, 190, 20);
+
+        txtNumeroDeCuentaSDL.setBackground(new java.awt.Color(51, 51, 51));
+        txtNumeroDeCuentaSDL.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        txtNumeroDeCuentaSDL.setForeground(new java.awt.Color(255, 255, 255));
+        txtNumeroDeCuentaSDL.setText("Numero de cuenta :");
+        txtNumeroDeCuentaSDL.setToolTipText("");
+        txtNumeroDeCuentaSDL.setBorder(null);
+        pnlSimuladorDeLlamada.add(txtNumeroDeCuentaSDL);
+        txtNumeroDeCuentaSDL.setBounds(80, 28, 250, 10);
+
+        txtNumeroALlamar.setBackground(new java.awt.Color(51, 51, 51));
+        txtNumeroALlamar.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        txtNumeroALlamar.setForeground(new java.awt.Color(255, 255, 255));
+        txtNumeroALlamar.setText("Numero a llamar:");
+        txtNumeroALlamar.setToolTipText("");
+        txtNumeroALlamar.setBorder(null);
+        pnlSimuladorDeLlamada.add(txtNumeroALlamar);
+        txtNumeroALlamar.setBounds(80, 80, 250, 20);
+
+        lblMin.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblMin.setForeground(new java.awt.Color(255, 255, 255));
+        lblMin.setText("Min : ");
+        pnlSimuladorDeLlamada.add(lblMin);
+        lblMin.setBounds(240, 268, 40, 30);
+
+        lblMesSDL.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblMesSDL.setForeground(new java.awt.Color(255, 255, 255));
+        lblMesSDL.setText("Mes:");
+        pnlSimuladorDeLlamada.add(lblMesSDL);
+        lblMesSDL.setBounds(180, 210, 40, 30);
+
+        lblAñoSDL.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblAñoSDL.setForeground(new java.awt.Color(255, 255, 255));
+        lblAñoSDL.setText("Año:");
+        pnlSimuladorDeLlamada.add(lblAñoSDL);
+        lblAñoSDL.setBounds(280, 210, 30, 30);
+
+        pnlSimuladorDeLlamada.add(cmbMesSDL);
+        cmbMesSDL.setBounds(220, 210, 50, 30);
+
+        pnlSimuladorDeLlamada.add(cmbDia);
+        cmbDia.setBounds(110, 210, 50, 30);
+
+        pnlSimuladorDeLlamada.add(cmdAñoSDL);
+        cmdAñoSDL.setBounds(320, 210, 50, 30);
+
+        lblBarraNumeroDeCuentaSDL.setBackground(new java.awt.Color(153, 153, 153));
+        lblBarraNumeroDeCuentaSDL.setOpaque(true);
+        pnlSimuladorDeLlamada.add(lblBarraNumeroDeCuentaSDL);
+        lblBarraNumeroDeCuentaSDL.setBounds(80, 40, 250, 1);
+
+        lblBarraNumeroALlamar.setBackground(new java.awt.Color(153, 153, 153));
+        lblBarraNumeroALlamar.setOpaque(true);
+        pnlSimuladorDeLlamada.add(lblBarraNumeroALlamar);
+        lblBarraNumeroALlamar.setBounds(80, 100, 250, 1);
+
+        lblDia.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblDia.setForeground(new java.awt.Color(255, 255, 255));
+        lblDia.setText("Dia:");
+        pnlSimuladorDeLlamada.add(lblDia);
+        lblDia.setBounds(80, 210, 30, 30);
+
+        pnlSimuladorDeLlamada.add(cmbHora);
+        cmbHora.setBounds(150, 270, 60, 30);
+
+        lblHora.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblHora.setForeground(new java.awt.Color(255, 255, 255));
+        lblHora.setText("Hora :");
+        pnlSimuladorDeLlamada.add(lblHora);
+        lblHora.setBounds(100, 270, 40, 30);
+
+        pnlSimuladorDeLlamada.add(cmbMin);
+        cmbMin.setBounds(280, 270, 60, 30);
+
+        lblAceptarSDL.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
+        lblAceptarSDL.setText("Aceptar");
+        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlSimuladorDeLlamada.add(lblAceptarSDL);
+        lblAceptarSDL.setBounds(200, 320, 60, 23);
+
+        lblFondoAceptarSDL.setBackground(new java.awt.Color(0, 188, 212));
+        lblFondoAceptarSDL.setAutoscrolls(true);
+        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoAceptarSDL.setOpaque(true);
+        pnlSimuladorDeLlamada.add(lblFondoAceptarSDL);
+        lblFondoAceptarSDL.setBounds(140, 320, 180, 20);
+
+        lblAutoGenerarLlamada.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
+        lblAutoGenerarLlamada.setText("Auto-generar llamada");
+        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlSimuladorDeLlamada.add(lblAutoGenerarLlamada);
+        lblAutoGenerarLlamada.setBounds(160, 380, 142, 20);
+
+        lblFondoAutoGenerarLlamada.setBackground(new java.awt.Color(0, 188, 212));
+        lblFondoAutoGenerarLlamada.setAutoscrolls(true);
+        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoAutoGenerarLlamada.setOpaque(true);
+        pnlSimuladorDeLlamada.add(lblFondoAutoGenerarLlamada);
+        lblFondoAutoGenerarLlamada.setBounds(110, 380, 240, 20);
 
         pnlParent.add(pnlSimuladorDeLlamada, "card2");
 
@@ -790,24 +912,38 @@ boolean activate = true;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> cmbAño;
     private javax.swing.JComboBox<String> cmbCiudad;
+    private javax.swing.JComboBox<String> cmbDia;
     private javax.swing.JComboBox<String> cmbEstado;
+    private javax.swing.JComboBox<String> cmbHora;
     private javax.swing.JComboBox<String> cmbMes;
+    private javax.swing.JComboBox<String> cmbMesSDL;
+    private javax.swing.JComboBox<String> cmbMin;
+    private javax.swing.JComboBox<String> cmdAñoSDL;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblAceptarSDL;
     private javax.swing.JLabel lblAgregarCliente;
+    private javax.swing.JLabel lblAutoGenerarLlamada;
     private javax.swing.JLabel lblAño;
+    private javax.swing.JLabel lblAñoSDL;
     private javax.swing.JLabel lblBarraApellidos;
     private javax.swing.JLabel lblBarraNombre;
+    private javax.swing.JLabel lblBarraNumeroALlamar;
     private javax.swing.JLabel lblBarraNumeroDeCuenta;
+    private javax.swing.JLabel lblBarraNumeroDeCuentaSDL;
     private javax.swing.JLabel lblCiudad;
     private javax.swing.JLabel lblConsultaDeConsumo;
+    private javax.swing.JLabel lblDia;
+    private javax.swing.JLabel lblDuracion;
     private javax.swing.JLabel lblEditar;
     private javax.swing.JLabel lblEliminar;
     private javax.swing.JLabel lblEstado;
+    private javax.swing.JLabel lblFondoAceptarSDL;
     private javax.swing.JLabel lblFondoAgregarCliente;
+    private javax.swing.JLabel lblFondoAutoGenerarLlamada;
     private javax.swing.JLabel lblFondoConsultaDeConsumo;
     private javax.swing.JLabel lblFondoEditar;
     private javax.swing.JLabel lblFondoEliminar;
@@ -815,6 +951,7 @@ boolean activate = true;
     private javax.swing.JLabel lblFondoListaDeClientes;
     private javax.swing.JLabel lblFondoSimuladorDeLlamada;
     private javax.swing.JLabel lblFondoVerCliente;
+    private javax.swing.JLabel lblHora;
     private javax.swing.JLabel lblIconoAgregarCliente;
     private javax.swing.JLabel lblIconoConsultaDeConsumo;
     private javax.swing.JLabel lblIconoListaDeClientes;
@@ -823,6 +960,8 @@ boolean activate = true;
     private javax.swing.JLabel lblLogo1;
     private javax.swing.JLabel lblLogo2;
     private javax.swing.JLabel lblMes;
+    private javax.swing.JLabel lblMesSDL;
+    private javax.swing.JLabel lblMin;
     private javax.swing.JLabel lblSimuladorDeLlamada;
     private javax.swing.JLabel lblTelefono;
     private javax.swing.JLabel lblVerCliente;
@@ -831,12 +970,15 @@ boolean activate = true;
     private javax.swing.JPanel pnlListaDeClientes;
     private javax.swing.JPanel pnlParent;
     private javax.swing.JPanel pnlSimuladorDeLlamada;
+    private javax.swing.JSlider sdrDuracion;
     private javax.swing.JTable tblClientes;
     private javax.swing.JTextField txtApellidos;
     private javax.swing.JLabel txtBarraDireccion;
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtNumeroALlamar;
     private javax.swing.JTextField txtNumeroDeCuenta;
+    private javax.swing.JTextField txtNumeroDeCuentaSDL;
     private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
