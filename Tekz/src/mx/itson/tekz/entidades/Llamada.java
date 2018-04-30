@@ -10,7 +10,6 @@ import java.util.Date;
 import java.util.List;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.swing.table.DefaultTableModel;
 import org.hibernate.Session;
 
 /**

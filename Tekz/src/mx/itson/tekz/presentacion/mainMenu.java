@@ -7,9 +7,8 @@ package mx.itson.tekz.presentacion;
 
 import java.awt.Color;
 import java.awt.Cursor;
-import javax.swing.Box;
-import javax.swing.JLabel;
-import javax.swing.JScrollPane;
+import java.awt.Font;
+import javax.swing.table.DefaultTableCellRenderer;
 
 
 
@@ -21,7 +20,7 @@ import javax.swing.JScrollPane;
  */
 public class mainMenu extends javax.swing.JFrame {
 boolean activate = true;
-
+      //  pnlAgregarClientesetFont(new Font("Serif", Font.BOLD, 20));
 
 //    setCursor(hourglassCursor);
 
@@ -30,6 +29,7 @@ boolean activate = true;
      */
     public mainMenu() {
         initComponents();
+        Agregar();
     }
 
     /**
@@ -73,14 +73,28 @@ boolean activate = true;
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         pnlListaDeClientes = new javax.swing.JPanel();
-        jLabel3ww = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblClientes = new javax.swing.JTable();
+        lblEliminar = new javax.swing.JLabel();
+        lblEditar = new javax.swing.JLabel();
+        lblVerCliente = new javax.swing.JLabel();
+        lblFondoVerCliente = new javax.swing.JLabel();
+        lblFondoEliminar = new javax.swing.JLabel();
+        lblFondoEditar = new javax.swing.JLabel();
         pnlConsultaDeConsumo = new javax.swing.JPanel();
+        txtNumeroDeCuenta = new javax.swing.JTextField();
+        lblBarraNumeroDeCuenta = new javax.swing.JLabel();
+        cmbMes = new javax.swing.JComboBox<>();
+        lblMes = new javax.swing.JLabel();
+        lblAño = new javax.swing.JLabel();
+        cmbAño = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         pnlSimuladorDeLlamada = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1017, 459));
         setMinimumSize(new java.awt.Dimension(1017, 459));
-        setUndecorated(true);
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 formMouseClicked(evt);
@@ -92,40 +106,80 @@ boolean activate = true;
         lblAgregarCliente.setFont(new java.awt.Font("Yu Gothic", 0, 18)); // NOI18N
         lblAgregarCliente.setForeground(new java.awt.Color(240, 240, 240));
         lblAgregarCliente.setText("Agregar cliente");
+        lblAgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblAgregarClienteMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblAgregarCliente);
         lblAgregarCliente.setBounds(80, 140, 130, 20);
 
         lblConsultaDeConsumo.setFont(new java.awt.Font("Yu Gothic", 0, 18)); // NOI18N
         lblConsultaDeConsumo.setForeground(new java.awt.Color(255, 255, 255));
         lblConsultaDeConsumo.setText("Consulta de consumo");
+        lblConsultaDeConsumo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblConsultaDeConsumoMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblConsultaDeConsumo);
         lblConsultaDeConsumo.setBounds(80, 310, 180, 20);
 
         lblListaDeClientes.setFont(new java.awt.Font("Yu Gothic", 0, 18)); // NOI18N
         lblListaDeClientes.setForeground(new java.awt.Color(255, 255, 255));
         lblListaDeClientes.setText("Lista de clientes");
+        lblListaDeClientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblListaDeClientesMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblListaDeClientes);
         lblListaDeClientes.setBounds(80, 220, 150, 20);
 
         lblSimuladorDeLlamada.setFont(new java.awt.Font("Yu Gothic", 0, 18)); // NOI18N
         lblSimuladorDeLlamada.setForeground(new java.awt.Color(255, 255, 255));
         lblSimuladorDeLlamada.setText("Simulador de llamada");
+        lblSimuladorDeLlamada.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblSimuladorDeLlamadaMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblSimuladorDeLlamada);
         lblSimuladorDeLlamada.setBounds(80, 400, 190, 20);
 
         lblIconoAgregarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/add-friend.png"))); // NOI18N
+        lblIconoAgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblIconoAgregarClienteMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblIconoAgregarCliente);
         lblIconoAgregarCliente.setBounds(40, 130, 32, 40);
 
         lblIconoConsultaDeConsumo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/document.png"))); // NOI18N
+        lblIconoConsultaDeConsumo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblIconoConsultaDeConsumoMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblIconoConsultaDeConsumo);
         lblIconoConsultaDeConsumo.setBounds(40, 300, 32, 40);
 
         lblIconoListaDeClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/checklist.png"))); // NOI18N
+        lblIconoListaDeClientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblIconoListaDeClientesMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblIconoListaDeClientes);
         lblIconoListaDeClientes.setBounds(40, 210, 40, 40);
 
         lblIconoSimuladorDeLlamada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/smartphone.png"))); // NOI18N
+        lblIconoSimuladorDeLlamada.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblIconoSimuladorDeLlamadaMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblIconoSimuladorDeLlamada);
         lblIconoSimuladorDeLlamada.setBounds(40, 390, 30, 40);
 
@@ -148,6 +202,11 @@ boolean activate = true;
                 lblFondoConsultaDeConsumoMouseMoved(evt);
             }
         });
+        lblFondoConsultaDeConsumo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblFondoConsultaDeConsumoMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblFondoConsultaDeConsumo);
         lblFondoConsultaDeConsumo.setBounds(0, 280, 290, 90);
 
@@ -156,6 +215,11 @@ boolean activate = true;
         lblFondoSimuladorDeLlamada.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblFondoSimuladorDeLlamadaMouseMoved(evt);
+            }
+        });
+        lblFondoSimuladorDeLlamada.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblFondoSimuladorDeLlamadaMouseClicked(evt);
             }
         });
         getContentPane().add(lblFondoSimuladorDeLlamada);
@@ -168,6 +232,11 @@ boolean activate = true;
                 lblFondoListaDeClientesMouseMoved(evt);
             }
         });
+        lblFondoListaDeClientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblFondoListaDeClientesMouseClicked(evt);
+            }
+        });
         getContentPane().add(lblFondoListaDeClientes);
         lblFondoListaDeClientes.setBounds(0, 190, 290, 90);
 
@@ -176,6 +245,11 @@ boolean activate = true;
         lblFondoAgregarCliente.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblFondoAgregarClienteMouseMoved(evt);
+            }
+        });
+        lblFondoAgregarCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblFondoAgregarClienteMouseClicked(evt);
             }
         });
         getContentPane().add(lblFondoAgregarCliente);
@@ -198,7 +272,7 @@ boolean activate = true;
         });
         pnlParent.setLayout(new java.awt.CardLayout());
 
-        pnlAgregarCliente.setBackground(new java.awt.Color(255, 255, 255));
+        pnlAgregarCliente.setBackground(new java.awt.Color(51, 51, 51));
         pnlAgregarCliente.setLayout(null);
 
         lblBarraNombre.setBackground(new java.awt.Color(153, 153, 153));
@@ -206,8 +280,9 @@ boolean activate = true;
         pnlAgregarCliente.add(lblBarraNombre);
         lblBarraNombre.setBounds(60, 80, 249, 1);
 
+        txtNombre.setBackground(new java.awt.Color(51, 51, 51));
         txtNombre.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
-        txtNombre.setForeground(new java.awt.Color(33, 33, 33));
+        txtNombre.setForeground(new java.awt.Color(255, 255, 255));
         txtNombre.setText("Nombre :");
         txtNombre.setBorder(null);
         txtNombre.setOpaque(false);
@@ -219,8 +294,9 @@ boolean activate = true;
         pnlAgregarCliente.add(txtNombre);
         txtNombre.setBounds(60, 60, 250, 20);
 
+        txtApellidos.setBackground(new java.awt.Color(51, 51, 51));
         txtApellidos.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
-        txtApellidos.setForeground(new java.awt.Color(33, 33, 33));
+        txtApellidos.setForeground(new java.awt.Color(255, 255, 255));
         txtApellidos.setText("Apellidos :");
         txtApellidos.setBorder(null);
         txtApellidos.setOpaque(false);
@@ -237,8 +313,9 @@ boolean activate = true;
         pnlAgregarCliente.add(lblBarraApellidos);
         lblBarraApellidos.setBounds(60, 160, 249, 1);
 
+        txtDireccion.setBackground(new java.awt.Color(51, 51, 51));
         txtDireccion.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
-        txtDireccion.setForeground(new java.awt.Color(33, 33, 33));
+        txtDireccion.setForeground(new java.awt.Color(255, 255, 255));
         txtDireccion.setText("Direccion :");
         txtDireccion.setBorder(null);
         txtDireccion.setOpaque(false);
@@ -256,7 +333,7 @@ boolean activate = true;
         txtBarraDireccion.setBounds(60, 240, 249, 1);
 
         lblCiudad.setFont(new java.awt.Font("Microsoft YaHei", 2, 12)); // NOI18N
-        lblCiudad.setForeground(new java.awt.Color(33, 33, 33));
+        lblCiudad.setForeground(new java.awt.Color(255, 255, 255));
         lblCiudad.setText("Ciudad :");
         pnlAgregarCliente.add(lblCiudad);
         lblCiudad.setBounds(390, 210, 50, 20);
@@ -270,13 +347,14 @@ boolean activate = true;
         cmbCiudad.setBounds(450, 200, 190, 30);
 
         lblEstado.setFont(new java.awt.Font("Microsoft YaHei", 2, 12)); // NOI18N
-        lblEstado.setForeground(new java.awt.Color(33, 33, 33));
+        lblEstado.setForeground(new java.awt.Color(255, 255, 255));
         lblEstado.setText("Estado :");
         pnlAgregarCliente.add(lblEstado);
         lblEstado.setBounds(390, 140, 50, 30);
 
+        txtTelefono.setBackground(new java.awt.Color(51, 51, 51));
         txtTelefono.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
-        txtTelefono.setForeground(new java.awt.Color(33, 33, 33));
+        txtTelefono.setForeground(new java.awt.Color(255, 255, 255));
         txtTelefono.setText("Telefono:");
         txtTelefono.setBorder(null);
         txtTelefono.setOpaque(false);
@@ -309,24 +387,146 @@ boolean activate = true;
 
         pnlParent.add(pnlAgregarCliente, "card3");
 
-        pnlListaDeClientes.setBackground(new java.awt.Color(255, 255, 255));
-        pnlListaDeClientes.setLayout(new javax.swing.BoxLayout(pnlListaDeClientes, javax.swing.BoxLayout.Y_AXIS));
+        pnlListaDeClientes.setBackground(new java.awt.Color(51, 51, 51));
+        pnlListaDeClientes.setLayout(null);
 
-        jLabel3ww.setText("jLabel3");
-        pnlListaDeClientes.add(jLabel3ww);
+        jScrollPane1.setBackground(new java.awt.Color(51, 51, 51));
+
+        tblClientes.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Nombre", "Apellidos", "Telefono", "Direccion", "Ciudad", "Estado", "Cuenta"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, true, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tblClientes.setToolTipText("");
+        tblClientes.setOpaque(false);
+        jScrollPane1.setViewportView(tblClientes);
+
+        pnlListaDeClientes.add(jScrollPane1);
+        jScrollPane1.setBounds(10, 11, 710, 370);
+
+        lblEliminar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
+        lblEliminar.setText("Eliminar");
+        lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlListaDeClientes.add(lblEliminar);
+        lblEliminar.setBounds(90, 410, 70, 30);
+
+        lblEditar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
+        lblEditar.setText("Editar");
+        lblEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlListaDeClientes.add(lblEditar);
+        lblEditar.setBounds(350, 410, 60, 30);
+
+        lblVerCliente.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
+        lblVerCliente.setText("Ver cliente");
+        lblVerCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlListaDeClientes.add(lblVerCliente);
+        lblVerCliente.setBounds(580, 410, 90, 30);
+
+        lblFondoVerCliente.setBackground(new java.awt.Color(0, 188, 212));
+        lblFondoVerCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoVerCliente.setMaximumSize(new java.awt.Dimension(10, 10));
+        lblFondoVerCliente.setMinimumSize(new java.awt.Dimension(10, 10));
+        lblFondoVerCliente.setOpaque(true);
+        lblFondoVerCliente.setPreferredSize(new java.awt.Dimension(10, 10));
+        pnlListaDeClientes.add(lblFondoVerCliente);
+        lblFondoVerCliente.setBounds(520, 410, 200, 32);
+
+        lblFondoEliminar.setBackground(new java.awt.Color(0, 188, 212));
+        lblFondoEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoEliminar.setMaximumSize(new java.awt.Dimension(10, 10));
+        lblFondoEliminar.setMinimumSize(new java.awt.Dimension(10, 10));
+        lblFondoEliminar.setOpaque(true);
+        lblFondoEliminar.setPreferredSize(new java.awt.Dimension(10, 10));
+        pnlListaDeClientes.add(lblFondoEliminar);
+        lblFondoEliminar.setBounds(20, 410, 200, 32);
+
+        lblFondoEditar.setBackground(new java.awt.Color(0, 188, 212));
+        lblFondoEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoEditar.setMaximumSize(new java.awt.Dimension(10, 10));
+        lblFondoEditar.setMinimumSize(new java.awt.Dimension(10, 10));
+        lblFondoEditar.setOpaque(true);
+        lblFondoEditar.setPreferredSize(new java.awt.Dimension(10, 10));
+        pnlListaDeClientes.add(lblFondoEditar);
+        lblFondoEditar.setBounds(270, 410, 200, 32);
 
         pnlParent.add(pnlListaDeClientes, "card4");
 
-        javax.swing.GroupLayout pnlConsultaDeConsumoLayout = new javax.swing.GroupLayout(pnlConsultaDeConsumo);
-        pnlConsultaDeConsumo.setLayout(pnlConsultaDeConsumoLayout);
-        pnlConsultaDeConsumoLayout.setHorizontalGroup(
-            pnlConsultaDeConsumoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 730, Short.MAX_VALUE)
-        );
-        pnlConsultaDeConsumoLayout.setVerticalGroup(
-            pnlConsultaDeConsumoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 460, Short.MAX_VALUE)
-        );
+        pnlConsultaDeConsumo.setBackground(new java.awt.Color(51, 51, 51));
+        pnlConsultaDeConsumo.setLayout(null);
+
+        txtNumeroDeCuenta.setBackground(new java.awt.Color(51, 51, 51));
+        txtNumeroDeCuenta.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
+        txtNumeroDeCuenta.setForeground(new java.awt.Color(255, 255, 255));
+        txtNumeroDeCuenta.setText("Numero de cuenta :");
+        txtNumeroDeCuenta.setToolTipText("");
+        txtNumeroDeCuenta.setBorder(null);
+        pnlConsultaDeConsumo.add(txtNumeroDeCuenta);
+        txtNumeroDeCuenta.setBounds(30, 30, 230, 20);
+
+        lblBarraNumeroDeCuenta.setBackground(new java.awt.Color(153, 153, 153));
+        lblBarraNumeroDeCuenta.setMaximumSize(new java.awt.Dimension(34, 1));
+        lblBarraNumeroDeCuenta.setMinimumSize(new java.awt.Dimension(34, 1));
+        lblBarraNumeroDeCuenta.setOpaque(true);
+        lblBarraNumeroDeCuenta.setPreferredSize(new java.awt.Dimension(34, 1));
+        lblBarraNumeroDeCuenta.setRequestFocusEnabled(false);
+        pnlConsultaDeConsumo.add(lblBarraNumeroDeCuenta);
+        lblBarraNumeroDeCuenta.setBounds(30, 50, 250, 1);
+
+        cmbMes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbMesActionPerformed(evt);
+            }
+        });
+        pnlConsultaDeConsumo.add(cmbMes);
+        cmbMes.setBounds(350, 30, 100, 30);
+
+        lblMes.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
+        lblMes.setForeground(new java.awt.Color(255, 255, 255));
+        lblMes.setText("Mes :");
+        pnlConsultaDeConsumo.add(lblMes);
+        lblMes.setBounds(310, 27, 30, 30);
+
+        lblAño.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
+        lblAño.setForeground(new java.awt.Color(255, 255, 255));
+        lblAño.setText("Año :");
+        pnlConsultaDeConsumo.add(lblAño);
+        lblAño.setBounds(470, 27, 40, 30);
+
+        cmbAño.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbAñoActionPerformed(evt);
+            }
+        });
+        pnlConsultaDeConsumo.add(cmbAño);
+        cmbAño.setBounds(510, 30, 70, 30);
+
+        jLabel3.setFont(new java.awt.Font("Yu Gothic Light", 0, 14)); // NOI18N
+        jLabel3.setText("Ver");
+        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlConsultaDeConsumo.add(jLabel3);
+        jLabel3.setBounds(650, 30, 21, 23);
+
+        jLabel4.setBackground(new java.awt.Color(0, 188, 212));
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel4.setOpaque(true);
+        pnlConsultaDeConsumo.add(jLabel4);
+        jLabel4.setBounds(620, 30, 80, 20);
 
         pnlParent.add(pnlConsultaDeConsumo, "card5");
 
@@ -440,6 +640,103 @@ boolean activate = true;
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTelefonoKeyPressed
 
+    private void lblFondoListaDeClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoListaDeClientesMouseClicked
+
+    pnlParent.removeAll();
+    pnlParent.add(pnlListaDeClientes);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+        
+    }//GEN-LAST:event_lblFondoListaDeClientesMouseClicked
+
+    private void lblFondoAgregarClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAgregarClienteMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlAgregarCliente);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+        
+    }//GEN-LAST:event_lblFondoAgregarClienteMouseClicked
+
+    private void lblFondoConsultaDeConsumoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoConsultaDeConsumoMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlConsultaDeConsumo);
+    pnlParent.repaint();    
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblFondoConsultaDeConsumoMouseClicked
+
+    private void lblFondoSimuladorDeLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoSimuladorDeLlamadaMouseClicked
+    
+    pnlParent.removeAll();
+    pnlParent.add(pnlSimuladorDeLlamada);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+
+    }//GEN-LAST:event_lblFondoSimuladorDeLlamadaMouseClicked
+
+    private void lblAgregarClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAgregarClienteMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlAgregarCliente);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblAgregarClienteMouseClicked
+
+    private void lblIconoAgregarClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoAgregarClienteMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlAgregarCliente);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblIconoAgregarClienteMouseClicked
+
+    private void lblListaDeClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblListaDeClientesMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlListaDeClientes);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblListaDeClientesMouseClicked
+
+    private void lblIconoListaDeClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoListaDeClientesMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlListaDeClientes);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblIconoListaDeClientesMouseClicked
+
+    private void lblConsultaDeConsumoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConsultaDeConsumoMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlConsultaDeConsumo);
+    pnlParent.repaint();    
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblConsultaDeConsumoMouseClicked
+
+    private void lblIconoConsultaDeConsumoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoConsultaDeConsumoMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlConsultaDeConsumo);
+    pnlParent.repaint();    
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblIconoConsultaDeConsumoMouseClicked
+
+    private void lblSimuladorDeLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSimuladorDeLlamadaMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlSimuladorDeLlamada);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblSimuladorDeLlamadaMouseClicked
+
+    private void lblIconoSimuladorDeLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoSimuladorDeLlamadaMouseClicked
+    pnlParent.removeAll();
+    pnlParent.add(pnlSimuladorDeLlamada);
+    pnlParent.repaint();
+    pnlParent.revalidate();
+    }//GEN-LAST:event_lblIconoSimuladorDeLlamadaMouseClicked
+
+    private void cmbMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbMesActionPerformed
+
+    private void cmbAñoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAñoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbAñoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -475,29 +772,49 @@ boolean activate = true;
         });
     }
     
-  //  public void Agregar(){
-             //  jPanel3.add(pane11, "1");
-           //  / / jPanel3.add(pane22,"2");
+   public void Agregar(){
+    tblClientes.getTableHeader().setFont(new Font("Microsoft Tai Le", Font.ITALIC, 14));
+    tblClientes.getTableHeader().setForeground(Color.WHITE);
+    tblClientes.getTableHeader().setBackground(Color.yellow);
+    tblClientes.getTableHeader().setOpaque(false);
+    tblClientes.setShowGrid(false);
+    tblClientes.setOpaque(false);
+   ((DefaultTableCellRenderer)tblClientes.getDefaultRenderer(Object.class)).setOpaque(false);
+    jScrollPane1.setOpaque(false);
+    jScrollPane1.getViewport().setOpaque(false);
+    
 
-   // }
+
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> cmbAño;
     private javax.swing.JComboBox<String> cmbCiudad;
     private javax.swing.JComboBox<String> cmbEstado;
+    private javax.swing.JComboBox<String> cmbMes;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3ww;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblAgregarCliente;
+    private javax.swing.JLabel lblAño;
     private javax.swing.JLabel lblBarraApellidos;
     private javax.swing.JLabel lblBarraNombre;
+    private javax.swing.JLabel lblBarraNumeroDeCuenta;
     private javax.swing.JLabel lblCiudad;
     private javax.swing.JLabel lblConsultaDeConsumo;
+    private javax.swing.JLabel lblEditar;
+    private javax.swing.JLabel lblEliminar;
     private javax.swing.JLabel lblEstado;
     private javax.swing.JLabel lblFondoAgregarCliente;
     private javax.swing.JLabel lblFondoConsultaDeConsumo;
+    private javax.swing.JLabel lblFondoEditar;
+    private javax.swing.JLabel lblFondoEliminar;
     private javax.swing.JLabel lblFondoIzquierdo;
     private javax.swing.JLabel lblFondoListaDeClientes;
     private javax.swing.JLabel lblFondoSimuladorDeLlamada;
+    private javax.swing.JLabel lblFondoVerCliente;
     private javax.swing.JLabel lblIconoAgregarCliente;
     private javax.swing.JLabel lblIconoConsultaDeConsumo;
     private javax.swing.JLabel lblIconoListaDeClientes;
@@ -505,17 +822,21 @@ boolean activate = true;
     private javax.swing.JLabel lblListaDeClientes;
     private javax.swing.JLabel lblLogo1;
     private javax.swing.JLabel lblLogo2;
+    private javax.swing.JLabel lblMes;
     private javax.swing.JLabel lblSimuladorDeLlamada;
     private javax.swing.JLabel lblTelefono;
+    private javax.swing.JLabel lblVerCliente;
     private javax.swing.JPanel pnlAgregarCliente;
     private javax.swing.JPanel pnlConsultaDeConsumo;
     private javax.swing.JPanel pnlListaDeClientes;
     private javax.swing.JPanel pnlParent;
     private javax.swing.JPanel pnlSimuladorDeLlamada;
+    private javax.swing.JTable tblClientes;
     private javax.swing.JTextField txtApellidos;
     private javax.swing.JLabel txtBarraDireccion;
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtNumeroDeCuenta;
     private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
