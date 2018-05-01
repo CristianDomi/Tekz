@@ -5,18 +5,18 @@
  */
 package mx.itson.tekz.entidades;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.swing.table.DefaultTableModel;
-import org.hibernate.Session;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  *
  * @author josef
  */
+@Entity
 public class Usuario {
+    
+    private int id;
     private int numerodecuenta;
     private String nombre;
     private String apellido;
@@ -24,6 +24,30 @@ public class Usuario {
     private String estado;
     private String ciudad;
     private String telefono;
+
+    public Usuario() {
+    }
+
+    public Usuario(int id, int numerodecuenta, String nombre, String apellido, String direccion, String estado, String ciudad, String telefono) {
+        this.id = id;
+        this.numerodecuenta = numerodecuenta;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.estado = estado;
+        this.ciudad = ciudad;
+        this.telefono = telefono;
+    }
+
+    @Id
+    @GeneratedValue
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public int getNumerodecuenta() {
         return numerodecuenta;
@@ -80,22 +104,6 @@ public class Usuario {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
     
-    public List<Usuario> obtenerTodos(){
-        List<Usuario> usuarios = new ArrayList<Usuario>();
-        try{
-            Session session = HibernateUtil.getSessionFactory().openSession();
-            CriteriaBuilder builder = session.getCriteriaBuilder();
-            CriteriaQuery<Usuario> criteria = builder.createQuery(Usuario.class);
-            criteria.from(Usuario.class);
-            usuarios = session.createQuery(criteria).getResultList();
-//            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-//            for (Compania c : companias) {
-//      model.addRow(new Object[]{ c.nombre});
-//            }
-        } catch (Exception ex){
-            System.out.println("Ocurrió un error al intentar obtener registros de Compañia xdd");
-        }
-        return usuarios;
-    }
 }

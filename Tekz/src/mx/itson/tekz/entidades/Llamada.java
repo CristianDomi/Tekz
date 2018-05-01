@@ -5,22 +5,44 @@
  */
 package mx.itson.tekz.entidades;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import org.hibernate.Session;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  *
  * @author josef
  */
+@Entity
 public class Llamada {
+    
+    private int id;
     private Usuario usuario;
     private int telefono;
     private int duracion;
     private Date fecha;
+
+    public Llamada() {
+    }
+
+    public Llamada(int id, Usuario usuario, int telefono, int duracion, Date fecha) {
+        this.id = id;
+        this.usuario = usuario;
+        this.telefono = telefono;
+        this.duracion = duracion;
+        this.fecha = fecha;
+    }
+  
+    @Id
+    @GeneratedValue
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Usuario getUsuario() {
         return usuario;
@@ -53,22 +75,7 @@ public class Llamada {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
+
     
-    public List<Llamada> obtenerTodos(){
-        List<Llamada> llamadas = new ArrayList<Llamada>();
-        try{
-            Session session = HibernateUtil.getSessionFactory().openSession();
-            CriteriaBuilder builder = session.getCriteriaBuilder();
-            CriteriaQuery<Llamada> criteria = builder.createQuery(Llamada.class);
-            criteria.from(Llamada.class);
-            llamadas = session.createQuery(criteria).getResultList();
-//            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-//            for (Compania c : companias) {
-//      model.addRow(new Object[]{ c.nombre});
-//            }
-        } catch (Exception ex){
-            System.out.println("Ocurrió un error al intentar obtener registros de Compañia xdd");
-        }
-        return llamadas;
-    }
+ 
 }

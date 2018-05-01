@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mx.itson.tekz.entidades;
+package mx.itson.tekz.persistencia;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -15,10 +15,11 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
  *
  * @author josef
  */
-public class HibernateUtil {
+public class HibernateUtil  {
     private static StandardServiceRegistry serviceRegistry;
     private static SessionFactory sessionFactory;
 
+    
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
@@ -37,8 +38,9 @@ public class HibernateUtil {
     }
 
     public static void destroy() {
-        if (serviceRegistry != null) {
+         if (serviceRegistry != null) {
             StandardServiceRegistryBuilder.destroy(serviceRegistry);
         }
     }
+
 }
