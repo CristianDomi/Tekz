@@ -30,12 +30,12 @@ boolean activate = true;
     public mainMenu() {
         initComponents();
         Agregar();
-        lblNombreOculto.setVisible(false);
-        lblApellidosOculto.setVisible(false);
-        lblDireccionOculto.setVisible(false);
-        lblTelefonoOculto.setVisible(false);
-        lblNoCuentaOculto.setVisible(false);
-        lblNoLlamarOculto.setVisible(false);
+        lblNombreOculto.setVisible(true);
+        lblApellidosOculto.setVisible(true);
+        lblDireccionOculto.setVisible(true);
+        lblTelefonoOculto.setVisible(true);
+        lblNoCuentaOculto.setVisible(true);
+        lblNoLlamarOculto.setVisible(true);
       
     }
 
@@ -146,7 +146,6 @@ boolean activate = true;
         lblBarraNumeroALlamar1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1017, 459));
         setMinimumSize(new java.awt.Dimension(1017, 459));
         setUndecorated(true);
         addMouseListener(new java.awt.event.MouseAdapter() {
@@ -329,38 +328,16 @@ boolean activate = true;
         txtNombre.setBackground(new java.awt.Color(51, 51, 51));
         txtNombre.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtNombre.setForeground(new java.awt.Color(255, 255, 255));
-        txtNombre.setText("Nombre :");
         txtNombre.setBorder(null);
         txtNombre.setOpaque(false);
-        txtNombre.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtNombreMouseClicked(evt);
-            }
-        });
-        txtNombre.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtNombreKeyPressed(evt);
-            }
-        });
         pnlAgregarCliente.add(txtNombre);
         txtNombre.setBounds(60, 60, 250, 20);
 
         txtApellidos.setBackground(new java.awt.Color(51, 51, 51));
         txtApellidos.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtApellidos.setForeground(new java.awt.Color(255, 255, 255));
-        txtApellidos.setText("Apellidos :");
         txtApellidos.setBorder(null);
         txtApellidos.setOpaque(false);
-        txtApellidos.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtApellidosMouseClicked(evt);
-            }
-        });
-        txtApellidos.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtApellidosKeyPressed(evt);
-            }
-        });
         pnlAgregarCliente.add(txtApellidos);
         txtApellidos.setBounds(60, 140, 250, 20);
 
@@ -372,19 +349,8 @@ boolean activate = true;
         txtDireccion.setBackground(new java.awt.Color(51, 51, 51));
         txtDireccion.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtDireccion.setForeground(new java.awt.Color(255, 255, 255));
-        txtDireccion.setText("Direccion :");
         txtDireccion.setBorder(null);
         txtDireccion.setOpaque(false);
-        txtDireccion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtDireccionMouseClicked(evt);
-            }
-        });
-        txtDireccion.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtDireccionKeyPressed(evt);
-            }
-        });
         pnlAgregarCliente.add(txtDireccion);
         txtDireccion.setBounds(60, 220, 250, 20);
 
@@ -416,19 +382,8 @@ boolean activate = true;
         txtTelefono.setBackground(new java.awt.Color(51, 51, 51));
         txtTelefono.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtTelefono.setForeground(new java.awt.Color(255, 255, 255));
-        txtTelefono.setText("Telefono:");
         txtTelefono.setBorder(null);
         txtTelefono.setOpaque(false);
-        txtTelefono.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtTelefonoMouseClicked(evt);
-            }
-        });
-        txtTelefono.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtTelefonoKeyPressed(evt);
-            }
-        });
         pnlAgregarCliente.add(txtTelefono);
         txtTelefono.setBounds(60, 310, 250, 20);
 
@@ -439,20 +394,15 @@ boolean activate = true;
 
         lblAceptar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblAceptar.setText("Aceptar");
-        lblAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblAceptar.setFocusable(false);
         lblAceptar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlAgregarCliente.add(lblAceptar);
         lblAceptar.setBounds(330, 410, 60, 30);
 
         lblFondoAceptar.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoAceptar.setOpaque(true);
-        lblFondoAceptar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblFondoAceptarMouseClicked(evt);
-            }
-        });
         pnlAgregarCliente.add(lblFondoAceptar);
         lblFondoAceptar.setBounds(30, 410, 690, 30);
 
@@ -643,14 +593,8 @@ boolean activate = true;
         txtNumeroDeCuentaSDL.setBackground(new java.awt.Color(51, 51, 51));
         txtNumeroDeCuentaSDL.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtNumeroDeCuentaSDL.setForeground(new java.awt.Color(255, 255, 255));
-        txtNumeroDeCuentaSDL.setText("Numero de cuenta :");
         txtNumeroDeCuentaSDL.setToolTipText("");
         txtNumeroDeCuentaSDL.setBorder(null);
-        txtNumeroDeCuentaSDL.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtNumeroDeCuentaSDLMouseClicked(evt);
-            }
-        });
         txtNumeroDeCuentaSDL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNumeroDeCuentaSDLActionPerformed(evt);
@@ -662,14 +606,8 @@ boolean activate = true;
         txtNumeroALlamar.setBackground(new java.awt.Color(51, 51, 51));
         txtNumeroALlamar.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtNumeroALlamar.setForeground(new java.awt.Color(255, 255, 255));
-        txtNumeroALlamar.setText("Numero a llamar:");
         txtNumeroALlamar.setToolTipText("");
         txtNumeroALlamar.setBorder(null);
-        txtNumeroALlamar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                txtNumeroALlamarMouseClicked(evt);
-            }
-        });
         pnlSimuladorDeLlamada.add(txtNumeroALlamar);
         txtNumeroALlamar.setBounds(80, 80, 250, 20);
 
@@ -730,31 +668,26 @@ boolean activate = true;
 
         lblAceptarSDL.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAceptarSDL.setText("Aceptar");
-        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lblAceptarSDL);
         lblAceptarSDL.setBounds(200, 320, 60, 23);
 
         lblFondoAceptarSDL.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAceptarSDL.setAutoscrolls(true);
-        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoAceptarSDL.setOpaque(true);
-        lblFondoAceptarSDL.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblFondoAceptarSDLMouseClicked(evt);
-            }
-        });
         pnlSimuladorDeLlamada.add(lblFondoAceptarSDL);
         lblFondoAceptarSDL.setBounds(140, 320, 180, 20);
 
         lblAutoGenerarLlamada.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAutoGenerarLlamada.setText("Auto-generar llamada");
-        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lblAutoGenerarLlamada);
         lblAutoGenerarLlamada.setBounds(160, 380, 142, 20);
 
         lblFondoAutoGenerarLlamada.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAutoGenerarLlamada.setAutoscrolls(true);
-        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoAutoGenerarLlamada.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondoAutoGenerarLlamada);
         lblFondoAutoGenerarLlamada.setBounds(110, 380, 240, 20);
@@ -762,123 +695,123 @@ boolean activate = true;
         lbl1.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl1.setForeground(new java.awt.Color(255, 255, 255));
         lbl1.setText("1");
-        lbl1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl1);
         lbl1.setBounds(500, 139, 20, 30);
 
         lbl2.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl2.setForeground(new java.awt.Color(255, 255, 255));
         lbl2.setText("2");
-        lbl2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl2);
         lbl2.setBounds(560, 139, 30, 30);
 
         lbl3.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl3.setForeground(new java.awt.Color(255, 255, 255));
         lbl3.setText("3");
-        lbl3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl3);
         lbl3.setBounds(620, 140, 30, 30);
 
         lbl4.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl4.setForeground(new java.awt.Color(255, 255, 255));
         lbl4.setText("4");
-        lbl4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl4);
         lbl4.setBounds(500, 189, 30, 30);
 
         lbl5.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl5.setForeground(new java.awt.Color(255, 255, 255));
         lbl5.setText("5");
-        lbl5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl5);
         lbl5.setBounds(559, 189, 21, 30);
 
         lbl6.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl6.setForeground(new java.awt.Color(255, 255, 255));
         lbl6.setText("6");
-        lbl6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl6);
         lbl6.setBounds(620, 190, 30, 30);
 
         lbl7.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl7.setForeground(new java.awt.Color(255, 255, 255));
         lbl7.setText("7");
-        lbl7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl7);
         lbl7.setBounds(500, 239, 20, 30);
 
         lbl8.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl8.setForeground(new java.awt.Color(255, 255, 255));
         lbl8.setText("8");
-        lbl8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl8);
         lbl8.setBounds(560, 240, 30, 30);
 
         lbl9.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl9.setForeground(new java.awt.Color(255, 255, 255));
         lbl9.setText("9");
-        lbl9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl9);
         lbl9.setBounds(617, 239, 23, 30);
 
         lbl0.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl0.setForeground(new java.awt.Color(255, 255, 255));
         lbl0.setText("0");
-        lbl0.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lbl0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lbl0);
         lbl0.setBounds(560, 289, 30, 30);
 
         lblFondo2.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo2.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo2);
         lblFondo2.setBounds(550, 140, 40, 30);
 
         lblFondo3.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo3.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo3);
         lblFondo3.setBounds(610, 140, 40, 30);
 
         lblFondo4.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo4.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo4);
         lblFondo4.setBounds(490, 190, 40, 30);
 
         lblFondo5.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo5.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo5);
         lblFondo5.setBounds(550, 190, 40, 30);
 
         lblFondo6.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo6.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo6);
         lblFondo6.setBounds(610, 190, 40, 30);
 
         lblFondo7.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo7.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo7);
         lblFondo7.setBounds(490, 240, 40, 30);
 
         lblFondo8.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo8.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo8);
         lblFondo8.setBounds(550, 240, 40, 30);
 
         lblFondo9.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo9.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo9);
         lblFondo9.setBounds(610, 240, 40, 30);
 
         lblFondo0.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo0.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondo0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondo0.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo0);
         lblFondo0.setBounds(550, 290, 40, 30);
@@ -918,19 +851,6 @@ boolean activate = true;
             
 
     }//GEN-LAST:event_formMouseClicked
-
-    private void txtNombreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreKeyPressed
-
-
-    }//GEN-LAST:event_txtNombreKeyPressed
-
-    private void txtApellidosKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtApellidosKeyPressed
-   
-    }//GEN-LAST:event_txtApellidosKeyPressed
-
-    private void txtDireccionKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDireccionKeyPressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDireccionKeyPressed
 
     private void lblFondoConsultaDeConsumoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoConsultaDeConsumoMouseMoved
      
@@ -999,10 +919,6 @@ boolean activate = true;
    this.repaint();
        this.revalidate();
     }//GEN-LAST:event_lblFondoIzquierdoMouseMoved
-
-    private void txtTelefonoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoKeyPressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTelefonoKeyPressed
 
     private void lblFondoListaDeClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoListaDeClientesMouseClicked
 
@@ -1101,73 +1017,9 @@ boolean activate = true;
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbAñoActionPerformed
 
-    private void txtNombreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNombreMouseClicked
-       
-        txtNombre.setText("");
-        lblNombreOculto.setVisible(true);
-        
-    }//GEN-LAST:event_txtNombreMouseClicked
-
-    private void lblFondoAceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarMouseClicked
-        
-        lblNombreOculto.setVisible(false);
-        txtNombre.setText("Nombre :");
-        lblApellidosOculto.setVisible(false);
-        txtApellidos.setText("Apellidos: ");
-        lblDireccionOculto.setVisible(false);
-        txtDireccion.setText("Dirección :");
-        lblTelefonoOculto.setVisible(false);
-        txtTelefono.setText("Teléfono :");
-        
-    }//GEN-LAST:event_lblFondoAceptarMouseClicked
-
-    private void txtApellidosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtApellidosMouseClicked
-        
-        txtApellidos.setText("");
-        lblApellidosOculto.setVisible(true);
-        
-    }//GEN-LAST:event_txtApellidosMouseClicked
-
-    private void txtDireccionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtDireccionMouseClicked
-     
-        txtDireccion.setText("");
-        lblDireccionOculto.setVisible(true);
-        
-    }//GEN-LAST:event_txtDireccionMouseClicked
-
-    private void txtTelefonoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtTelefonoMouseClicked
-       
-        txtTelefono.setText("");
-        lblTelefonoOculto.setVisible(true);
-        
-    }//GEN-LAST:event_txtTelefonoMouseClicked
-
     private void txtNumeroDeCuentaSDLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroDeCuentaSDLActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNumeroDeCuentaSDLActionPerformed
-
-    private void txtNumeroDeCuentaSDLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNumeroDeCuentaSDLMouseClicked
-        
-        txtNumeroDeCuentaSDL.setText("");
-        lblNoCuentaOculto.setVisible(true);
-        
-    }//GEN-LAST:event_txtNumeroDeCuentaSDLMouseClicked
-
-    private void txtNumeroALlamarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNumeroALlamarMouseClicked
-        
-        txtNumeroALlamar.setText("");
-        lblNoLlamarOculto.setVisible(true);
-        
-    }//GEN-LAST:event_txtNumeroALlamarMouseClicked
-
-    private void lblFondoAceptarSDLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarSDLMouseClicked
-      
-        txtNumeroDeCuentaSDL.setText("Número de cuenta :");
-        lblNoCuentaOculto.setVisible(false);
-        txtNumeroALlamar.setText("Número a llamar :");
-        lblNoLlamarOculto.setVisible(false);
-        
-    }//GEN-LAST:event_lblFondoAceptarSDLMouseClicked
 
     /**
      * @param args the command line arguments
