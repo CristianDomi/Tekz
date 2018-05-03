@@ -8,7 +8,9 @@ package mx.itson.tekz.presentacion;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
+import java.util.Random;
 import javax.swing.table.DefaultTableCellRenderer;
+import mx.itson.tekz.implementacion.operacionUsuario;
 
 
 
@@ -394,15 +396,20 @@ boolean activate = true;
 
         lblAceptar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblAceptar.setText("Aceptar");
-        lblAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblAceptar.setFocusable(false);
         lblAceptar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlAgregarCliente.add(lblAceptar);
         lblAceptar.setBounds(330, 410, 60, 30);
 
         lblFondoAceptar.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoAceptar.setOpaque(true);
+        lblFondoAceptar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblFondoAceptarMouseClicked(evt);
+            }
+        });
         pnlAgregarCliente.add(lblFondoAceptar);
         lblFondoAceptar.setBounds(30, 410, 690, 30);
 
@@ -668,26 +675,26 @@ boolean activate = true;
 
         lblAceptarSDL.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAceptarSDL.setText("Aceptar");
-        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lblAceptarSDL);
         lblAceptarSDL.setBounds(200, 320, 60, 23);
 
         lblFondoAceptarSDL.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAceptarSDL.setAutoscrolls(true);
-        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoAceptarSDL.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondoAceptarSDL);
         lblFondoAceptarSDL.setBounds(140, 320, 180, 20);
 
         lblAutoGenerarLlamada.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAutoGenerarLlamada.setText("Auto-generar llamada");
-        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lblAutoGenerarLlamada);
         lblAutoGenerarLlamada.setBounds(160, 380, 142, 20);
 
         lblFondoAutoGenerarLlamada.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAutoGenerarLlamada.setAutoscrolls(true);
-        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoAutoGenerarLlamada.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondoAutoGenerarLlamada);
         lblFondoAutoGenerarLlamada.setBounds(110, 380, 240, 20);
@@ -695,123 +702,123 @@ boolean activate = true;
         lbl1.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl1.setForeground(new java.awt.Color(255, 255, 255));
         lbl1.setText("1");
-        lbl1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl1);
         lbl1.setBounds(500, 139, 20, 30);
 
         lbl2.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl2.setForeground(new java.awt.Color(255, 255, 255));
         lbl2.setText("2");
-        lbl2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl2);
         lbl2.setBounds(560, 139, 30, 30);
 
         lbl3.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl3.setForeground(new java.awt.Color(255, 255, 255));
         lbl3.setText("3");
-        lbl3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl3);
         lbl3.setBounds(620, 140, 30, 30);
 
         lbl4.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl4.setForeground(new java.awt.Color(255, 255, 255));
         lbl4.setText("4");
-        lbl4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl4);
         lbl4.setBounds(500, 189, 30, 30);
 
         lbl5.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl5.setForeground(new java.awt.Color(255, 255, 255));
         lbl5.setText("5");
-        lbl5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl5);
         lbl5.setBounds(559, 189, 21, 30);
 
         lbl6.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl6.setForeground(new java.awt.Color(255, 255, 255));
         lbl6.setText("6");
-        lbl6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl6);
         lbl6.setBounds(620, 190, 30, 30);
 
         lbl7.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl7.setForeground(new java.awt.Color(255, 255, 255));
         lbl7.setText("7");
-        lbl7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl7);
         lbl7.setBounds(500, 239, 20, 30);
 
         lbl8.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl8.setForeground(new java.awt.Color(255, 255, 255));
         lbl8.setText("8");
-        lbl8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl8);
         lbl8.setBounds(560, 240, 30, 30);
 
         lbl9.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl9.setForeground(new java.awt.Color(255, 255, 255));
         lbl9.setText("9");
-        lbl9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl9);
         lbl9.setBounds(617, 239, 23, 30);
 
         lbl0.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl0.setForeground(new java.awt.Color(255, 255, 255));
         lbl0.setText("0");
-        lbl0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl0.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lbl0);
         lbl0.setBounds(560, 289, 30, 30);
 
         lblFondo2.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo2.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo2);
         lblFondo2.setBounds(550, 140, 40, 30);
 
         lblFondo3.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo3.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo3);
         lblFondo3.setBounds(610, 140, 40, 30);
 
         lblFondo4.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo4.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo4);
         lblFondo4.setBounds(490, 190, 40, 30);
 
         lblFondo5.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo5.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo5);
         lblFondo5.setBounds(550, 190, 40, 30);
 
         lblFondo6.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo6.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo6);
         lblFondo6.setBounds(610, 190, 40, 30);
 
         lblFondo7.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo7.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo7);
         lblFondo7.setBounds(490, 240, 40, 30);
 
         lblFondo8.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo8.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo8);
         lblFondo8.setBounds(550, 240, 40, 30);
 
         lblFondo9.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo9.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo9);
         lblFondo9.setBounds(610, 240, 40, 30);
 
         lblFondo0.setBackground(new java.awt.Color(0, 121, 107));
-        lblFondo0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondo0.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondo0.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblFondo0);
         lblFondo0.setBounds(550, 290, 40, 30);
@@ -1020,6 +1027,14 @@ boolean activate = true;
     private void txtNumeroDeCuentaSDLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroDeCuentaSDLActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNumeroDeCuentaSDLActionPerformed
+
+    private void lblFondoAceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarMouseClicked
+         Random rng = new Random();
+       int ran = rng.nextInt(90000000)+10000000; 
+        
+        operacionUsuario opu = new operacionUsuario();
+        opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
+    }//GEN-LAST:event_lblFondoAceptarMouseClicked
 
     /**
      * @param args the command line arguments
