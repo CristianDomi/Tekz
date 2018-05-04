@@ -1,0 +1,410 @@
+313	Aquila
+313	Coahuayana de Hidalgo
+313	La Placita de Morelos
+313	San Juan de Alima
+328	Changuitiro
+328	Churintzio
+328	Colesio
+328	Ecuandureo
+328	El Capulín
+328	El Cuenqueño
+328	Huapamacato
+328	Ixtlán de los Hervores
+328	La Estanzuela
+328	La Luz
+328	La Noria
+328	La Plaza de Fco. J. Mugica (Plaza del Limón)
+328	Las Fuentes
+328	Los Pilares
+328	Quiringuicharo (La Hacienda)
+328	Tecomatán
+328	Ucacuaro
+328	Vista Hermosa
+351	Aquiles Serdán (Santiaguillo)
+351	Ario de Rayón
+351	Atacheo de Regalado
+351	El Sauz de Abajo
+351	Jacona de Plancarte
+351	La Ladera
+351	La Sauceda
+351	Romero de Torres
+351	Zamora
+352	El Algodonal
+352	La Piedad
+352	Los Guajes
+352	Paredones
+352	Patzímaro de Aviña (Patzímaro del Rincón)
+352	Ticuitaco (Tocuitaco)
+352	Zaragoza
+353	(La Palma de Jesús)
+353	Abadiano (Los Bajos)
+353	Cerrito Colorado
+353	Cumuatillo
+353	El Fortín
+353	Jaripo
+353	Jiquilpan de Juárez
+353	La Magdalena
+353	Pajarearán
+353	Pueblo Viejo
+353	Sahuayo
+353	San Antonio Guaracha
+353	Venustiano Carranza
+354	Atapan
+354	Gildardo Magaña (Los Angeles)
+354	Guascuaro de Mugica
+354	J. Jesús Díaz Tzirio
+354	La Laguneta
+354	Los Limones
+354	Los Palillos
+354	Los Reyes
+354	Nuevo Zirosto
+354	Pamatacuaro
+354	Peribán de Ramos
+354	San Francisco Periban
+354	San Isidro
+354	Tacatzcuaro
+354	Tinguindín
+354	Tocumbo
+354	Zacan
+354	Zicuicho
+355	Adolfo Ruíz Continez (Capricho)
+355	Carapán
+355	Chilchota
+355	Colonia Las Malvinas
+355	Etucuaro
+355	Los Nogales
+355	Patambán (Patambam)
+355	San Antonio Ocampo (Rincón del Tepetate)
+355	Tangancícuaro
+355	Tenguecho
+356	El Tequesquite
+356	Las Cieneguitas
+356	Los Charcos
+356	Monteleón
+356	Tanhuato de Guerrero
+356	Tarimoro
+356	Tinaja de Vargas
+356	Yurécuaro
+359	El Colorado (Zerecuato)
+359	Guandaro
+359	La Luz
+359	Numerán
+359	Patambarillo
+359	Penjamillo
+359	San Antonio Carupo
+359	San José de Rábago
+359	Santa Fe del Río
+359	Tirimácuaro (Valanciana)
+359	Zinaparo
+359	Ziquitaro
+381	Cojumatlán
+381	El Sabino
+381	Ojo de Rana
+381	Palo Alto
+381	San José de Gracia
+381	San Miguel
+383	Chavinda
+383	El Platanal
+383	La Cuestita
+383	La Esperanza
+383	Las Zarquillas
+383	Los Hucuares
+383	Santiago Tangamandapio
+383	Tarecuato
+383	Telonzo
+383	Villamar
+393	Ibarra
+394	Cotija de la Paz
+394	El Barrio
+394	Vista Hermosa
+421	Epitacio Huerta
+422	Ario de Rosales
+422	Gabriel Zamora (Lombardia)
+422	Nuevo Urecho
+422	Taretán
+423	Ahuirán
+423	Arantepacua
+423	Charapan
+423	Cherán
+423	Cherán Atzicuirin
+423	Comachuen
+423	Nahuatzen
+423	Nurio
+423	Ocumicho
+423	Paracho
+423	Quinceo
+423	San Andrés Coru
+423	San Francisco Pichataro
+423	Santiago Tingambato
+423	Sevina
+423	Tanaco
+423	Turicuaro
+423	Ziracuaretiro
+424	Coalcoman
+424	El Ahuaje
+424	Plaza Vieja
+424	Tepalcatepec
+425	Antunez
+425	Churumuco de Morelos
+425	Condembaro
+425	El Chauz
+425	El Letrero
+425	Gambara
+425	La Huacana
+425	Nueva Italia
+425	Parácuaro
+425	Poturo
+425	Tancítaro
+425	Uspero (Reynosa)
+425	Zicuiran
+426	Aguililla
+426	Buenavista Tomatlán
+426	Catalinas (Francisco Villa)
+426	Dieciocho de Marzo
+426	El Terrero
+426	Felipe Carrillo Puerto (La Ruana)
+426	General Lázaro Cardenas
+426	Pizándaro
+426	Punta del Agua
+426	Santa Ana Amatlán
+434	Acuitzio del Canje
+434	Cuanajo
+434	El Pedregal
+434	Erongaicuaro
+434	Fontezuelas
+434	Huiramba
+434	Ihuatzio
+434	Jarácuaro
+434	Lagunillas
+434	Pátzcuaro
+434	Puacuaro
+434	Santa Clara del Cobre
+434	Santa María Huiramangaro (San Juan)
+434	Tzintzuntzan
+434	Zirahuén
+435	Angao de los Herrera
+435	El Rosario
+435	Huetamo
+435	Salguero
+435	San Lucas
+435	Turitzio
+436	Cantabria
+436	La Escondida
+436	San Antonio Tariacuri
+436	Tarejero
+436	Tirindaro
+436	Zacapu
+438	Batuecas
+438	El Granjenal
+438	El Pueblito
+438	Galeana
+438	Heroes de Chapultepec
+438	Isaac Arriaga (Santa Ana Mance)
+438	Janambo
+438	Janamuato
+438	La Barranca
+438	La Calera (Nacimientos)
+438	La Excusa
+438	Las Ranas
+438	Mancera
+438	Manuel Villalongín
+438	Pastor Ortiz
+438	Puruándiro
+438	San José Huipana
+438	San Lorenzo
+438	San Martín
+438	San Nicolás
+438	Santa Clara
+438	Tres Mezquites
+438	Villa Morelos
+438	Villachuato
+438	Zapote de Parras
+443	Capula
+443	Chucándiro
+443	Cuto de la Esperanza
+443	Cuto del Porvenir
+443	Iratzio
+443	La Palma (Las Palmas)
+443	Morelia
+443	Salto de Tepuxtepec (Tepuxtepec)
+443	San Bernabe
+443	San Pedro de los Sauces
+443	Santiago Undameo
+443	Tarímbaro
+443	Tejaro de los Izquierdo (Tejaro)
+443	Tiripetio
+443	Tungareo
+443	Tziritzicuaro (Nativitas)
+443	Uruetaro
+447	Apeo
+447	Contepec
+447	Maravatío
+447	Santiago Puriatzicuaro
+447	Uripitio
+447	Venta de Bravo
+451	Araro
+451	Charo
+451	Estación Queréndaro
+451	Heriberto Jara (La Presa)
+451	Indaparapeo
+451	La Goleta
+451	Otzumatlan (Rio de Parras)
+451	Pueblo Viejo
+451	Queréndaro
+451	San Bernardo
+451	San Lucas Pío
+451	San Miguel Buenavista
+451	San Miguel Taimeo (Taimeo)
+451	Santa Clara del Tule
+451	Unión de Progreso (Lomas de Ira)
+451	Valle de Juárez (Jerahuaro)
+451	Zinapécuaro
+451	Zurumbeneo
+452	Ampliación los Angeles
+452	Capacuaro
+452	Corupo
+452	Jucatacato
+452	Nuevo San Juan Parangaricutiro
+452	San Lorenzo
+452	Santa Ana Zirosto
+452	Tumbiscatio de Ruiz
+452	Uruapan
+453	Apatzingán
+453	Cenobio Moreno (Las Colonias)
+453	La Parota
+453	Pareo
+453	Presa del Rosario
+453	San José de Chila
+453	San Juan de los Platanos
+454	Agua Caliente (Ojo de Agua)
+454	Angamacutiro
+454	Bellas Fuentes
+454	Caurio de Guadalupe (Cabrio)
+454	Coeneo de la Libertad
+454	Comanja
+454	Copandaro
+454	Copandaro Rancho Nuevo
+454	Curimeo
+454	El Fresno de la Reforma
+454	El Maluco
+454	Huaniqueo de Morales
+454	La Cañada
+454	Panindicuaro
+454	Puerta de Tierra
+454	Quiroga
+454	San Agustín del Maíz
+454	San Andrés Zirondaro
+454	San Miguel Epejan
+454	Santa Fé de la Laguna
+454	Santiago Conguripo
+454	Villa Jiménez
+455	Álvaro Obregón
+455	Capacho
+455	Chupicuaro
+455	Cuamío
+455	Cuaracurio
+455	Cuitzeo del Porvenir
+455	Huandacareo
+455	Las Trojes
+455	Mariano Escobedo
+455	Puerto de Cabras
+455	Rancho La Begonia
+455	Rancho Nuevo
+455	San Juan Benito Juárez
+455	Santa Ana Maya
+459	Carácuaro
+459	Chupío
+459	Etucuaro
+459	Papatzindan de Romero (El Limón)
+459	Paso de Nuñez
+459	Pedernales
+459	Puruarán
+459	San Juan de Viña
+459	Tacámbaro
+459	Tafetán
+459	Tecario
+459	Tiquicheo
+459	Turicato
+459	Tzitzio
+459	Villa Madero
+459	Yoricostio (La Villita)
+471	Acuitzeramo
+471	La Yerbabuena
+471	Purépero
+471	Tlazazalca
+711	Tlalpujahua
+711	Tlalpujahua
+715	Angangueo
+715	Angangueo
+715	Jungapeo
+715	Jungapeo
+715	Ocampo
+715	Ocampo
+715	Zirahuato de Los Bernal
+715	Zirahuato de Los Bernal
+715	Zitacuaro
+715	Zitacuaro
+753	Acalpican de Morelos
+753	Acalpican de Morelos
+753	Arteaga
+753	Arteaga
+753	Bahía Bufadero
+753	Bahía Bufadero
+753	Buenos Aires
+753	Buenos Aires
+753	Ciudad Lázaro Cárdenas
+753	Ciudad Lázaro Cárdenas
+753	La Mira
+753	La Mira
+753	Las Guacamayas
+753	Las Guacamayas
+753	Morelos de Infiernillo
+753	Morelos de Infiernillo
+753	Playa Azul
+753	Playa Azul
+786	Agostitlán
+786	Agostitlán
+786	Aporo
+786	Aporo
+786	Benito Juárez
+786	Benito Juárez
+786	Ciudad Hidalgo
+786	Ciudad Hidalgo
+786	Huajumbaro
+786	Huajumbaro
+786	Irimbo
+786	Irimbo
+786	Las Grutas
+786	Las Grutas
+786	Melchor Ocampo (Paso de Tierra)
+786	Melchor Ocampo (Paso de Tierra)
+786	Parícuaro
+786	Parícuaro
+786	Puente de Tierra
+786	Puente de Tierra
+786	Rincón de San Jeronimo
+786	Rincón de San Jeronimo
+786	San Andrés La Venta
+786	San Andrés La Venta
+786	San Antonio Villalongín
+786	San Antonio Villalongín
+786	San Bartolo Cuitareo (Cuitareo)
+786	San Bartolo Cuitareo (Cuitareo)
+786	San Lucas Huarirapeo
+786	San Lucas Huarirapeo
+786	San Matías Grande
+786	San Matías Grande
+786	San Pedro Jácuaro (Las Joyas)
+786	San Pedro Jácuaro (Las Joyas)
+786	Senguio
+786	Senguio
+786	Susupuato de Guerrero
+786	Susupuato de Guerrero
+786	Tupataro
+786	Tupataro
+786	Tuxpan
+786	Tuxpan
+786	Tuzantla
+786	Tuzantla
+786	Tzintzingareo
+786	Tzintzingareo

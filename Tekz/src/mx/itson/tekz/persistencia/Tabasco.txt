@@ -1,0 +1,85 @@
+913	Cuauhtémoc
+913	Francisco I. Madero
+913	Frontera
+913	Ignacio Allende
+913	Jonuta
+913	Simón Sarlat
+913	Vicente Guerrero
+914	Ayapa
+914	Cucuyulapa
+914	Cunduacán
+914	Guatacalca
+914	Hermenegildo Galeana
+914	Humango
+914	Iquinuapa
+914	Jalpa de Méndez
+914	Libertad
+914	Lomitas
+914	Nacajuca
+914	Once de Febrero
+914	Saloya
+914	Soyataco
+914	Tapotzingo
+916	Catazajá
+917	Estación Chontalpa
+917	Francisco Villa
+917	Huimanguillo
+923	Francisco Rueda
+923	La Venta
+923	Sánchez Magallanes
+923	Villa Benito Juárez (Campo Magallanes)
+932	Jalapa
+932	Tacotalpa
+932	Tapijulapa
+932	Teapa
+932	Tequila
+933	Carlos Greene
+933	Chichicapa
+933	Comalcalco
+933	Francisco I. Madero
+933	José María Morelos y Pavón
+933	José María Pino Suárez
+933	Libertad
+933	Miguel Hidalgo
+933	Nicolás Bravo
+933	Paraíso
+933	Puerto Chiltepec
+933	Reyes Hernández
+933	Tecolutilla
+933	Villa Aldama
+934	Arena de Hidalgo
+934	Balancán
+934	Cap. Felipe Castellanos (San Pedro)
+934	Chable
+934	El Triunfo
+934	Emiliano Zapata
+934	Tenosique
+936	Aquilés Serdán (San Fernando)
+936	Benito Juárez (San Carlos)
+936	Ciudad Pemex
+936	Macuspana
+936	Tepetitán
+937	Cárdenas
+937	Coronel Gregorio Mendez Magaña
+937	General Vicente Guerrero
+937	Ingenio Benito Juárez
+937	Miguel Hidalgo
+937	Río Seco
+993	Anacleto Canabal
+993	Boquerón (Guanal)
+993	Buena Vista Río Nuevo
+993	El Cerro
+993	González
+993	Guineo
+993	Ixtacomitán
+993	Lagartera
+993	Lázaro Cárdenas
+993	Luis Gil Peréz
+993	Macultepec-Ocuiltzapotlan
+993	Pablo L. Sidar
+993	Parrilla
+993	Plátano y Cacao
+993	Playas del Rosario (Subteniente García)
+993	Pueblo Nuevo de las Raices
+993	Tamulte de las Sábanas
+993	Villahermosa

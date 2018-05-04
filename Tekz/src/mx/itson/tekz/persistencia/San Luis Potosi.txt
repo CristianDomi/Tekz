@@ -1,0 +1,125 @@
+444	Agua Señora
+444	Ahualulco
+444	Cerritos de Villa de Pozos
+444	Corte Primero
+444	El Carrizal
+444	El Palmar Primero
+444	Escalerillas
+444	Estacion Hacienda de Bocas
+444	La Loma
+444	La Mantequilla
+444	Lomas de San Francisco
+444	Los Moreno
+444	Mexquitic de Carmona
+444	Palma de la Cruz
+444	Paso Blanco
+444	Paso Bonito
+444	Ranchería de Guadalupe
+444	Rincón del Porvenir
+444	Rinconada
+444	San José de Goméz
+444	San José del Barro
+444	San Juan de Coyotillo
+444	San Luis Potosí
+444	San Marcos Carmona
+444	San Pedro Ojo Zarco
+444	Soledad de Graciano Sánchez
+444	Suspiro Picacho
+458	Dulce Grande
+458	El Barril
+458	El Zacatón
+458	Hernández
+458	Illescas
+458	Salitral de Carrera
+458	Santo Domingo
+458	Villa de Ramos
+481	Álvaro Obregón (Pujal)
+481	Ciudad Valles
+481	Laguna del Mante
+481	Rascón
+481	San Felipe
+482	Agua Buena
+482	Alaquines
+482	Aquismón
+482	Ciudad del Maíz
+482	Colonia Álvaro Obregón
+482	Colonia El Meco
+482	Damián Carmona
+482	El Naranjo
+482	Huehuetlan
+482	Huichihuayan
+482	Tamasopo
+482	Tambaca
+482	Tancanhuitz
+482	Tanchanaco
+483	Chapulhuacanito
+483	El Huexco
+483	Matlapa
+483	San Martín Chalchicuautla
+483	Tamán
+483	Tamazunchale
+483	Tampacan
+485	Bledos
+485	Enramadas
+485	Exhacienda de Jesús María
+485	Laguna de San Vicente
+485	Ojo Caliente
+485	Santa María del Río
+485	Tierranueva
+485	Villa de Arriaga
+485	Villa de Reyes
+486	Buenavista
+486	Cerritos
+486	Charcas
+486	Entronque de Matehuala (El Huiz)
+486	Granjenal
+486	Guadalcázar
+486	La Hincada
+486	Moctezuma
+486	Peotillos
+486	Santa Catarina
+486	Venado
+486	Villa de Arista
+486	Villa de Guadalupe
+486	Villa Hidalgo
+486	Villa Juárez
+487	Cañada Grande
+487	Cárdenas
+487	Ciudad Fernandez
+487	El Capulín
+487	El Jabalí
+487	La Reforma
+487	Plazuela
+487	Progreso
+487	Rayón
+487	Rioverde
+487	San Ciro de Acosta
+487	San Diego
+487	San José del Tapanco
+488	Cedral
+488	Estación Catorce
+488	Estación Wadley
+488	La Paz
+488	Matehuala
+488	Real de Catorce
+488	Tanque Colorado
+488	Vanegas
+489	Axtla de Terrazas
+489	Coxcatlán
+489	Jalpilla
+489	Las Palmas
+489	San Antonio
+489	San Vicente Tancuayalab
+489	Tampamolón Corona
+489	Tamuín
+489	Tanlajas
+489	Tanquián de Escobedo
+489	Xilitla
+496	Palma Pegada
+496	Salinas de Hidalgo
+845	Aurelio Manrique
+845	Ebano
+845	Plan de Iguala
+845	Ponciano Arriaga
+845	Pujal Coy
+845	Santa Martha

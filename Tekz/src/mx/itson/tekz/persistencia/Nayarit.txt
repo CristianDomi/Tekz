@@ -1,0 +1,95 @@
+311	Bellavista
+311	El Jicote
+311	Francisco I. Madero (Puga)
+311	Pantanal
+311	San Cayetano,Nayarit
+311	San Francisco
+311	Santiago de Pochotitan
+311	Tepic
+311	Testerazo (El Refugio)
+311	Xalisco
+319	Chilapa
+319	Coamiles
+319	Cofradía de Cuyutlán
+319	Colonia 18 de Marzo
+319	El Tamarindo
+319	El Venado
+319	La Boquita
+319	Las Peñitas
+319	Palma Grande
+319	Pimentillo
+319	Rosamorada
+319	Ruiz
+319	Tuxpan
+319	Unión de Corrientes
+322	Las Jarretaderas
+322	Nuevo Vallarta
+323	Amapa
+323	Aticama
+323	Boca de Camichin
+323	Cañada del Tabaco
+323	El Botadero
+323	El Tizate
+323	Estación Yago
+323	Guadalupe Victoria (La Virocha)
+323	La Presa
+323	Mexcaltitán
+323	Pozo de Ibarra
+323	Puerta de Mangos
+323	San Blas
+323	Santa Cruz de Miramar
+323	Santiago Ixcuintla
+323	Sauta
+323	Sentispac
+323	Villa Hidalgo (El Nuevo)
+323	Villa Juárez (La Trozada)
+324	Ahuacatlán
+324	Amatlán de Cañas
+324	El Rosario
+324	Estancia de Los López
+324	Ixtlán del Río
+324	Jala
+324	Rosa Blanca
+324	Tepuzhuacán
+324	Tetitlán
+324	Uzeta
+325	Acaponeta
+325	Huajicori
+327	Amado Nervo (El Conde)
+327	Chacala
+327	Chapalilla
+327	Colonia Moderna (Moderna)
+327	Compostela
+327	El Capomo
+327	Felipe Carrillo Puerto
+327	Ixtapa de la Concepción
+327	Jalcocotán
+327	Juan Escutia (Borbollón)
+327	La Labor
+327	La Peñita de Jaltemba
+327	Las Varas
+327	Lo de Marcos
+327	Mecatán
+327	Monteón
+327	Navarrete
+327	Rincón de Guayabitos
+327	San José de Mojarras
+327	San Pedro Lagunillas
+327	Santa María del Oro
+327	Zacualpan
+329	Bucerías
+329	Cruz de Juanacaxtle
+329	El Colomo
+329	Emiliano Zapata
+329	Higuera Blanca
+329	Mezcales
+329	San José del Valle
+329	San Juan de Abajo
+329	San Vicente
+329	Sayulita
+329	Valle de Banderas
+389	El Limón
+389	Milpas Viejas
+389	Quimichis
+389	San Felipe Aztatán
+389	Tecuala

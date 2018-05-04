@@ -1,0 +1,95 @@
+346	Apulco
+346	La Estancia
+346	Nochistlán
+346	Tlachichila
+346	Toyahua de Abajo
+433	Benito Juárez
+433	Campo Cinco (La Honda)
+433	Campo Diecisiete (La Honda)
+433	Charco Blanco
+433	Colonia Gonzalez Ortega
+433	Emilio Carranza
+433	Hidalgo
+433	Ignacio Zaragoza
+433	José Santos Bañuelos
+433	Los Corrales
+433	Miguel Auza
+433	San José de Ranchos
+433	Sombrerete
+433	Villa Insurgentes (El Calabazal)
+437	Atolinga
+437	Momax
+437	Tepechitlán
+437	Tlaltenango
+457	Chalchihuites
+457	Gualterio
+457	Jiménez del Teul
+457	José María Morelos (San Jose de Gracia)
+457	Laguna Grande
+457	Lobatos
+457	Milpillas de la Sierra
+457	Monte Escobedo
+457	San Mateo (General Jesús González)
+457	Valparaíso
+458	Bajío de la Tesorera
+458	Cañitas de Felipe Pescador
+458	Chaparrosa
+458	Chupaderos
+458	Coecillo
+458	El Rucio
+458	El Saladillo
+458	El Saucito
+458	El Tule
+458	Esteban S. Castorena
+458	General Genaro Codina
+458	González Ortega (Bañon)
+458	Las Lajas
+458	Luis Moya
+458	Nueva Pastoría (Las Peñitas)
+458	Ojocaliente
+458	Palmillas
+458	Pánfilo Natera
+458	Pastoria
+458	Piedra Gorda
+458	San Cristóbal
+458	San Pablo
+458	San Pedro Piedra Gorda
+458	Santa Elena (Francisco Zarco)
+458	Villa de Cos
+463	El Chique
+463	Huanusco
+463	Jalpa
+463	Tabasco
+467	Apozol
+467	Benito Juárez (Mpio. B. Juárez)
+467	Cuxpala
+467	García de la Cadena
+467	Ignacio Allende
+467	Juchipila
+467	Mezquital del Oro
+467	Milpillas de Allende
+467	Moyahua
+467	Teul de González Ortega
+478	Calera de Víctor Rosales
+478	General Enrique Estrada
+478	Pánuco
+478	Pozo de Gamboa
+478	Ramón López Velarde (Toribio)
+478	San Antonio del Ciprés
+492	El Bordo Buenavista
+492	Guadalupe
+492	Hacienda Nueva
+492	La Escondida
+492	La Luz
+492	Martínez Domínguez
+492	Morelos
+492	Pimienta
+492	San Jerónimo
+492	San José de la Era
+492	Sauceda de la Borda
+492	Tacoaleche
+492	Trancoso
+492	Vetagrande
+492	Zacatecas
+492	Zoquite
+493	Altamira

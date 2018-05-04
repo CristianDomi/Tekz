@@ -1,0 +1,383 @@
+352	Cuevas de Morales
+411	Cañada de Caracheo
+411	Colonia 18 de Marzo
+411	Cortazar
+411	El Diezmo
+411	El Huizache
+411	El Salteador
+411	El Tigre
+411	Hacienda de la Bolsa (La Bolsa)
+411	Jaral del Progreso
+411	Juan Lucas
+411	La Calera (El Canario)
+411	La Mocha
+411	Loma de Zempoala
+411	Ochomitas
+411	Parangarico
+411	Providencia de Calera
+411	San Andres Enguaro
+411	San Isidro Culiacán
+411	San José de Gracia
+411	San José del Cerrito de Camargo
+411	San Pablo Casacuarán
+411	San Salvador Torrecillas
+411	Santa Mónica Ozumbil
+411	Santa Rosa
+411	Santiago Capitiro
+411	Sarabia
+411	Tierra Fría
+411	Valencia de Fuentes
+411	Villagrán
+411	Zapotitos
+412	Comonfort
+412	Emiliano Zapata
+412	Empalme Escobedo
+412	Franco Tavera
+412	Juventino Rosas
+412	Neutla
+412	Orduña de Arriba
+412	Pozos CD. Porfirio Díaz
+412	Rincón de Centeno
+412	San Antonio de Morales
+412	San José de Merino
+412	Santiago de Cuenda
+413	Apaseo el Alto
+413	Apaseo el Grande
+413	Belen
+413	Congregación de la Cruz (La Cue)
+413	El Jocoque
+413	Ixtla
+413	La Cuevita
+413	La Norita
+413	Marroquín
+413	Obrajuelo
+413	Ojo de Agua de la Trinidad
+413	San Antonio Calichar
+413	San Bartolomé de Agua Caliente
+413	San Isidro de Gamboa
+413	San Juan del Llanito
+413	San Pedro Tenango El Nuevo
+413	San Pedro Tenango El Viejo
+415	Atotonilco
+415	Cerritos
+415	Corralejo de Arriba
+415	La Talega
+415	Los Frailes
+415	Los Rodríguez
+415	Nigromante
+415	Puerto Sosa
+415	Residencial Malanquin
+415	San Miguel de Allende
+415	Santas Marías
+417	Acámbaro
+417	Agua Caliente
+417	Andocutin
+417	Arroyo Colorado
+417	Chamácuaro
+417	El Maguey
+417	Iramuco
+417	Jaral del Refugio (El Jaral)
+417	La Encarnación
+417	Loreto (Teresa)
+417	Los Organos de Aba
+417	Nuevo Chupicuaro
+417	Obrajuelo
+417	Parácuaro
+417	San Diego de Alcalá
+417	San Juan Jaripeo
+417	San Mateo Tocuaro
+417	San Vicente Munguía
+418	Adjuntas del Río
+418	Cerrito de San Pablo
+418	Dolores Hidalgo
+418	La Sauceda
+418	Río Laja
+418	San Antonio El Gallinero
+418	San Diego de la Unión
+418	San Gabriel
+418	Santa Clara
+418	Santa Teresa
+418	Xoconoxtle el Grande
+419	Buenavistilla
+419	Doctor Mora
+419	El Capulín
+419	Jesús María
+419	Ojo de Agua del Refugio
+419	San José Iturbide
+419	San Sebastian del Salitre
+419	Santa Catarina
+419	Tierra Blanca
+419	Victoria
+419	Xichú
+421	Coroneo
+421	Estanzuela de Romero
+421	Jerécuaro
+421	Ojo de Agua de Mendoza
+421	Piedras de Lumbre
+421	Puruagua
+421	Salto de Peña
+421	San Lorenzo
+421	San Lucas
+421	San Pablo
+421	San Pedro de los Agustinos
+421	Tarandacuao
+428	El Carretón
+428	Jaral de Berrios
+428	La Escondida
+428	La Quemada
+428	Ocampo
+428	San Bartolo de Berrios
+428	San Felipe, Guanajuato
+428	San José de los Barcos (Los Bar)
+428	San Juan de Llanos
+428	San Pedro de Ibarra (Ibarra)
+428	Santa Bárbara
+428	Santa Rosa
+429	Abasolo
+429	Cuerámaro
+429	El Varal
+429	Estación Joaquín
+429	Galera de la Grulla
+429	Huanimaro
+429	Huitzatarito
+429	La Joya de Calvillo
+429	La Lobera (El Riñón)
+429	La Luz Masas
+429	La Nueva Esperanza
+429	La Presa de Uribe
+429	Labor de Peralta
+429	Loma de la Esperanza
+429	Los Otates
+429	Ojos de Agua
+429	Peralta
+429	Platanar
+429	Progreso de la Unión
+429	Pueblo Nuevo
+429	Rancho de Guadalupe (El Gato)
+429	Rancho Nuevo de la Cruz
+429	San Cristóbal de Ayala (San Cristóbal)
+429	San Gregorio
+429	San José de Ayala
+429	Tres villas
+429	Tupataro
+429	Yostiro de San Antonio
+429	Zapote de Peralta
+432	Calzada del Tepozán (El Tepozán)
+432	El Jaguey
+432	Frías
+432	Gavia de Rivas
+432	Guayabo de Santa Rita
+432	La Calzada de la Merced
+432	La Sardina
+432	Las Liebres
+432	Manuel Doblado
+432	Mezquite Gordo
+432	Romita
+432	San José de Otates
+432	San Juan de la Puerta
+432	Santa Rosa de Rivas
+432	Zapote de Adjuntas
+438	San Juan Cerano
+442	Ameche
+442	Caleras de Ameche
+442	Mineral de San Pedro Pozos (Mineral de Pozos)
+445	El Cerro
+445	El Derramadero
+445	Huahuemba
+445	La Barranca
+445	Moroleón
+445	Pamaseo
+445	Piñicuaro
+445	Sepio
+445	Uriangato
+445	Yuriria
+456	Cerro Colorado
+456	Copales
+456	El Perico
+456	El Tambor
+456	Guarapo
+456	La Compañía
+456	Magdalena de Araceo
+456	Puerta de Andaracua
+456	Rancho Nuevo de San Andrés
+456	Rancho Seco de Guantes
+456	Rincón de Alonso Sánchez
+456	Rincón de Parangueo
+456	Salitre de Aguilares
+456	San Diego Quiriceo
+456	San Nicólas Parangueo
+456	San Vicente de Garma (Garma)
+456	Santa Bárbara
+456	Valle de Santiago
+461	Arreguín de Abajo
+461	Celaya
+461	El Fresno
+461	El Sauz (El Sauz de Villaseñor)
+461	Estrada
+461	Juan Martín
+461	La Palmita
+461	Praderas de la Hacienda (Antillón)
+461	Presa Blanca
+461	Rincón de Tamayo
+461	San Isidro de la Concepción
+461	San José de Guanajuato
+461	San José el Nuevo
+461	San Juan de la Vega
+461	San Miguel Octopan
+461	Teneria del Santuario
+461	Yustis
+462	Aldama
+462	Arandas
+462	Carrizal Grande
+462	Charco de Pantoja
+462	Cuchicuato
+462	Fraccionamiento Haciendas del C
+462	Guadalupe de Rivera
+462	Irapuato
+462	La Caja
+462	La Calera
+462	La Soledad[disambiguation needed]
+462	Laguna Larga
+462	Las Cañas
+462	Las Jicamas
+462	Lo de Juárez
+462	Noria de Camarena
+462	Purísima de Temascatío de Arrib
+462	Rancho Guadalupe (El Ranchito)
+462	Rancho San Javier (San Javier)
+462	San Antonio de Mogotes
+462	San Antonio El Rico
+462	San Nicolás Temascatío
+462	San Roque
+462	San Vicente
+462	Tomelopitos
+462	Valencianita
+462	Villas de Irapuato
+464	Barrón
+464	Callejones y Granados
+464	Cardenas
+464	Cerro Gordo (San Rafael)
+464	El Recuerdo de Ancon
+464	La Ordeña
+464	La Palma
+464	La Tinaja
+464	Labor de Valtierra
+464	Loma Pelada
+464	Los Prietos (El Cajón)
+464	Oteros
+464	Salamanca
+464	San José de Mendoza
+464	San José Temascatio
+464	San Vicente de Flores
+464	Santo Domingo
+464	Valtierrilla
+466	Cupareo
+466	El Sabino
+466	Galera de Panales (Panales)
+466	Huapango
+466	La Estancia de San José del Carmen
+466	La Luz
+466	La Moncada
+466	La Quemada
+466	Llano Grande
+466	Los Fierros
+466	Maravatio del Encinal
+466	Ojo de Agua de Ballesteros
+466	Salvatierra
+466	San Miguel Emenguaro
+466	San Nicolás de la Condesa
+466	San Nicolás de los Agustinos
+466	San Pablo Pejo (San Pablo)
+466	San Pedro de los Naranjos
+466	Santiago Maravatío
+466	Tarimoro
+468	Covadonga
+468	Crucero San Luis de la Paz
+468	Fraccion de Lourdes (Lourdes)
+468	San Luis de la Paz
+469	Aratzipu
+469	Buenavista de Cortés
+469	Colonia Morelos
+469	Corralejo de Hidalgo
+469	Cruces de Rojas
+469	El Mármol
+469	Estación Pénjamo
+469	Huandarillo (Guandarillo)
+469	La Atarjea
+469	La Cal Grande
+469	La Calle
+469	La Estancia del Refugio
+469	Laguna Larga de Cortes
+469	Lagunillas
+469	Los Ocotes
+469	Magallanes
+469	Ordeñita de Barajas (Ordeña de Barajas)
+469	Palo Alto de Abajo
+469	Palo Verde
+469	Pénjamo
+469	Potreros
+469	San Felipe (El Chilarillo)
+469	San Gabriel (San Gabriel y San Ignacio)
+469	Tacubaya
+469	Zapote de Cestau
+472	Aguas Buenas
+472	Bajío de Bonillas
+472	Chichimequillas
+472	Comanjilla
+472	Exhacienda de Trejo
+472	La Aldea
+472	Los Rodríguez
+472	Nuevo México
+472	Paxtle
+472	Silao
+473	Arperos
+473	Cañada de Bustos
+473	Guanajuato
+473	La Luz Mineral de la Luz
+473	Llanitos de Santa Ana
+473	Los Lorenzos
+473	Marfil
+473	Puentecillas
+473	San José de Llanos
+473	Santa Fe de Guadalupe (La Sauce)
+473	Santa Rosa de Lima
+473	Santa Teresa
+473	Yerbabuena
+476	aguey
+476	Cañada de Negros
+476	Dolores
+476	El Nacimiento
+476	El Tecolote
+476	El Toro
+476	Guadalupe de Jalpa
+476	Jalpa de Canovas
+476	Jesús del Monte (El Talayote)
+476	Loma de San Rafael
+476	Peñuelas
+476	Potrerillos (Guanajal)
+476	Purísima de Bustos
+476	San Cristóbal (El Cerrito)
+476	San Francisco del Rincón
+476	San Ignacio de Hidalgo (San Ign)
+476	San Isidro
+476	San Jerónimo
+476	San Roque de Montes (San Roque)
+476	Sauz de Armenta
+476	Silva
+477	Álvaro Obregón
+477	Barretos
+477	Duarte
+477	El Ramillete
+477	Lagunillas (Mpio. León)
+477	Las Hilamas (El Piedrero)
+477	León
+477	Los Ramirez
+477	Los Sauces
+477	Loza de los Padres
+477	Medina
+477	Nuevo Valle de Moreno
+477	Plan de Ayala (Santa Rosa)
+477	Plan Guanajuato (La Sandía)
+477	San José de los Sapos (Santa El)
+477	San Juan de Otates
+477	San Judas

@@ -1,0 +1,129 @@
+618	Cinco de Febrero
+618	Colonia Hidalgo
+618	Durango
+618	El Arenal (San Jerónimo)
+618	El Nayar
+618	José María Pino Suárez
+618	José Refugio Salcido
+618	Llano Grande
+618	Praxedis G. Guerrero
+618	Santiago Bayacora
+618	Sebastíán Lerdo de Tejada
+618	Villa Montemorelos
+629	Ceballos
+629	Ejido Revolución (Las Víboras)
+629	Villa Hidalgo
+649	Canutillo
+649	General Escobedo
+649	Indé
+649	Las Nieves
+649	San Bernardo
+649	Santa María del Oro
+649	Torreón de Cañas
+649	Villa Ocampo
+649	Villa Orestes Pereyra (Rosario)
+671	Cuencame de Ceniceros
+671	Estación Pedriceña
+671	Las Mercedes
+671	Nazas
+671	Pasaje
+671	Paso Nacional
+671	San Juan de Guadalupe
+671	San Luis del Cordero
+671	San Pedro del Gallo
+671	Santa Clara
+671	Simón BolívarGeneral Simón Bolívar
+671	Velardeña
+674	Canelas
+674	Ciénaga de Nuestra Señora de Guadalupe
+674	El Durazno
+674	Guanacevi
+674	José María Morelos (Chinacates)
+674	La Purísima
+674	Los Herrera
+674	Nuevo San Diego Tensaenz (El Caballo)
+674	Otaez
+674	San José de la Boca
+674	San Miguel de Cruces
+674	San Nicolás
+674	San Nicolás de Presidio (Presidio de Arriba)
+674	Santiago Papasquiaro
+674	Tamazula de Victoria
+674	Tayoltita
+674	Tepehuanes
+674	Topia
+674	Vencedores
+675	Cieneguilla
+675	El Salto
+675	Francisco Murguía
+675	Gabriel Hernández (Mancinas)
+675	Graceros
+675	La Ciudad
+675	La Constancia
+675	La Joya
+675	Los Ángeles
+675	Nombre de Dios
+675	Rojas
+675	San Francisco del Mezquital
+675	San Francisco Javier
+675	San José de la Parrilla
+675	San José de Tuitán
+675	Súchil
+675	Veracruz
+675	Vicente Guerrero
+675	Villa Unión
+676	Antonio Amaro
+676	Cuauhtémoc
+676	Emiliano Zapata
+676	Felipe Carrillo PuertoGral. Felipe Carrillo Puerto
+676	General Calixto Contreras (Colo)
+676	General Jesús Agustín Castro (Independencia)
+676	Guadalupe Victoria
+676	Ignacio Allende
+676	Ignacio Ramírez
+676	José Guadalupe Rodríguez (Peñuelas)
+676	Luis Moya (San Isidro)
+676	Pánuco de Coronado
+676	Peñon Blanco
+676	Ramón Corona
+677	Abasolo
+677	Canatlán
+677	Coneto de Comonfort
+677	Diez de Octubre (San Lucas de Ocampo)
+677	Donato Guerra, Durango
+677	Francisco I. Madero
+677	Francisco Rueda Serrano
+677	General Ignacio Zaragoza
+677	Guatimape
+677	José Guadalupe Aguilera (Santa Lucia)
+677	La Soledad[disambiguation needed]
+677	Miguel Negrete (El Toboso)
+677	Nicolás Bravo
+677	Nuevo Ideal
+677	Ricardo Flores Magón
+677	Rodeo
+677	San Juan del Río del Centauro del Norte
+677	Santa Barba
+677	Venustiano Carranza (Ocotan)
+871	California
+871	Ciudad Lerdo
+871	El Vergel
+871	Esmeralda
+871	Estación Noé
+871	Gómez Palacio
+871	La Goma
+871	La Popular
+871	Nazareno
+871	Pastor Rouaix
+871	Picardías
+871	San Felipe
+871	San Jacinto
+871	Sapioris
+871	Seis de Enero
+871	Villa Gregorio García
+871	Villa Juárez
+872	Bermejillo
+872	El Lucero (Arcinas)
+872	Mapimí
+872	San Francisco de Horizonte
+872	Tlahualilo de Zaragoza

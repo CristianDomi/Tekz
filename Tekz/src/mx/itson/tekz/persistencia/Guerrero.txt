@@ -1,0 +1,386 @@
+721	Pilcaya
+721	Pilcaya
+721	Tetipac
+721	Tetipac
+727	Atenango del Río
+727	Atenango del Río
+727	Buenavista de Cuéllar
+727	Buenavista de Cuéllar
+727	Chaucingo
+727	Chaucingo
+727	Copalillo
+727	Copalillo
+727	Huitzuco
+727	Huitzuco
+727	Paso Morelos (Cuetlajuchi)
+727	Paso Morelos (Cuetlajuchi)
+727	Quetzalapa
+727	Quetzalapa
+727	Tlaxmalac
+727	Tlaxmalac
+727	Tulimán
+727	Tulimán
+727	Zacapalco
+727	Zacapalco
+732	Acuchillán del Progreso
+732	Acuchillán del Progreso
+732	Arcelia
+732	Arcelia
+732	Arroyo Grande
+732	Arroyo Grande
+732	Changata
+732	Changata
+732	Cutzamala de Pinzón
+732	Cutzamala de Pinzón
+732	El Escondido
+732	El Escondido
+732	Nuevo Galeana
+732	Nuevo Galeana
+732	Presa Palos Altos
+732	Presa Palos Altos
+732	San José Poliutla
+732	San José Poliutla
+732	San Miguel Totolapan
+732	San Miguel Totolapan
+732	Santa Ana del Aguila
+732	Santa Ana del Aguila
+732	Tamácuaro
+732	Tamácuaro
+732	Tlalchapa
+732	Tlalchapa
+732	Tlapehuala
+732	Tlapehuala
+732	Villa Hidalgo (El Cubo)
+732	Villa Hidalgo (El Cubo)
+732	Villa Nicolás Bravo
+732	Villa Nicolás Bravo
+732	Zacapuato
+732	Zacapuato
+733	Ahuehuepan
+733	Ahuehuepan
+733	Coacoyula de Alvarez
+733	Coacoyula de Alvarez
+733	El Crucero de Pololcingo
+733	El Crucero de Pololcingo
+733	El Naranjo
+733	El Naranjo
+733	Iguala
+733	Iguala
+733	Maxela
+733	Maxela
+733	Mayanalán
+733	Mayanalán
+733	Mezcala
+733	Mezcala
+733	Sabana Grande
+733	Sabana Grande
+733	San Juan Tetelcingo
+733	San Juan Tetelcingo
+733	San Miguel Tecuixiapan
+733	San Miguel Tecuixiapan
+733	San Vicente Palapa
+733	San Vicente Palapa
+733	Santa Teresa
+733	Santa Teresa
+733	Tepecoacuilco de Trujano
+733	Tepecoacuilco de Trujano
+733	Tonalapa del Sur
+733	Tonalapa del Sur
+733	Tuxpan
+733	Tuxpan
+733	Zacacoyuca
+733	Zacacoyuca
+736	Acapetlahuaya
+736	Acapetlahuaya
+736	Acatempan
+736	Acatempan
+736	Apaxtla de Castrejón
+736	Apaxtla de Castrejón
+736	Apipilulco
+736	Apipilulco
+736	Chilacachapa
+736	Chilacachapa
+736	Cocula
+736	Cocula
+736	Cuetzala del Progreso
+736	Cuetzala del Progreso
+736	Ixcapuzalco
+736	Ixcapuzalco
+736	Ixcateopan de Cuauhtémoc
+736	Ixcateopan de Cuauhtémoc
+736	Los Sauces
+736	Los Sauces
+736	Nuevo Balsas
+736	Nuevo Balsas
+736	Oxtotitlán
+736	Oxtotitlán
+736	San Martín Pachivia
+736	San Martín Pachivia
+736	Teloloapan
+736	Teloloapan
+736	Tlacotepec
+736	Tlacotepec
+741	Acatepec
+741	Acatepec
+741	Azoyu
+741	Azoyu
+741	Cochoapa
+741	Cochoapa
+741	Comaltepec (Comal)
+741	Comaltepec (Comal)
+741	Copala
+741	Copala
+741	Cuajinicuilapa
+741	Cuajinicuilapa
+741	Cuanacastitlan
+741	Cuanacastitlan
+741	El Pitahayo
+741	El Pitahayo
+741	Huajintepec
+741	Huajintepec
+741	Huehuetán
+741	Huehuetán
+741	Huixtepec
+741	Huixtepec
+741	Igualapa
+741	Igualapa
+741	Juchitán
+741	Juchitán
+741	Maldonado
+741	Maldonado
+741	Marquelia
+741	Marquelia
+741	Ojo de Agua (Las Salinas)
+741	Ojo de Agua (Las Salinas)
+741	Ometepec
+741	Ometepec
+741	Quetzalapa
+741	Quetzalapa
+741	San Juan de los Lanos
+741	San Juan de los Lanos
+741	San Luis Acatlán
+741	San Luis Acatlán
+741	San Nicolás
+741	San Nicolás
+741	Santa María Asunción
+741	Santa María Asunción
+741	Tlacoachistlahuaca
+741	Tlacoachistlahuaca
+741	Xochistlahuaca
+741	Xochistlahuaca
+741	Yoloxochitl
+741	Yoloxochitl
+742	Atoyac de Álvarez
+742	Atoyac de Álvarez
+742	Coyuquilla Norte
+742	Coyuquilla Norte
+742	El Ciruelar
+742	El Ciruelar
+742	El Paraíso
+742	El Paraíso
+742	El Suchil
+742	El Suchil
+742	Nuxco
+742	Nuxco
+742	Papanoa
+742	Papanoa
+742	San Luis de la Loma
+742	San Luis de la Loma
+742	Tecpán de Galeana
+742	Tecpán de Galeana
+742	Tenexpa
+742	Tenexpa
+742	Tetitlán
+742	Tetitlán
+742	Zacualpan
+742	Zacualpan
+744	Acapulco
+744	Acapulco
+744	Amatillo
+744	Amatillo
+744	Barra Vieja
+744	Barra Vieja
+744	Dos Arroyos
+744	Dos Arroyos
+744	Ejido Nuevo
+744	Ejido Nuevo
+744	Kilometro 21
+744	Kilometro 21
+744	Kilometro 30
+744	Kilometro 30
+744	La Providencia
+744	La Providencia
+744	Los Mogotes
+744	Los Mogotes
+744	Luces del Mar
+744	Luces del Mar
+744	San Pedro las Playas
+744	San Pedro las Playas
+744	Texca
+744	Texca
+744	Xaltianguis
+744	Xaltianguis
+745	Ayutla de los Libres
+745	Ayutla de los Libres
+745	Colotepec
+745	Colotepec
+745	Cruz Grande
+745	Cruz Grande
+745	Cruz Quemada
+745	Cruz Quemada
+745	El Ocotito
+745	El Ocotito
+745	La Azozuca
+745	La Azozuca
+745	Las Cruces
+745	Las Cruces
+745	Las Mesas
+745	Las Mesas
+745	Las Vigas
+745	Las Vigas
+745	Llano Grande
+745	Llano Grande
+745	San Juan del Reparo (San Juan D)
+745	San Juan del Reparo (San Juan D)
+745	San Marcos
+745	San Marcos
+745	Tecoanapa
+745	Tecoanapa
+745	Tierra Colorada
+745	Tierra Colorada
+747	Chichihualco
+747	Chichihualco
+747	Chilpancingo
+747	Chilpancingo
+747	El Palmar
+747	El Palmar
+747	Las Petaquillas
+747	Las Petaquillas
+747	Mazatlán
+747	Mazatlán
+747	Palo Blanco
+747	Palo Blanco
+747	Xochipala
+747	Xochipala
+747	Zumpango del Río
+747	Zumpango del Río
+753	Petacalco
+753	Petacalco
+754	Apango
+754	Apango
+754	Atliaca
+754	Atliaca
+754	Mochitlán
+754	Mochitlán
+754	Tixtla
+754	Tixtla
+755	Coacoyul
+755	Coacoyul
+755	Ixtapa Zihuatanejo
+755	Ixtapa Zihuatanejo
+755	La Unión
+755	La Unión
+755	Lagunillas
+755	Lagunillas
+755	Los Achotes
+755	Los Achotes
+755	Troncones (Emiliano Zapata)
+755	Troncones (Emiliano Zapata)
+755	Zihuatanejo
+755	Zihuatanejo
+756	Ahuacuotzingo
+756	Ahuacuotzingo
+756	Atlixtac
+756	Atlixtac
+756	Chilapa
+756	Chilapa
+756	Colotlipa
+756	Colotlipa
+756	Olinalá
+756	Olinalá
+756	Pochahuizco
+756	Pochahuizco
+756	Quechultenango
+756	Quechultenango
+756	Temalacatzingo
+756	Temalacatzingo
+756	Zitlala
+756	Zitlala
+757	Alcozauca de Guerrero
+757	Alcozauca de Guerrero
+757	Alpoyeca
+757	Alpoyeca
+757	Copanatoyac
+757	Copanatoyac
+757	Cualac
+757	Cualac
+757	Huamuxtitlán
+757	Huamuxtitlán
+757	San José Buenavista
+757	San José Buenavista
+757	Santa Cruz
+757	Santa Cruz
+757	Tlalixtaquilla
+757	Tlalixtaquilla
+757	Tlalquetzala
+757	Tlalquetzala
+757	Tlapa de Comonfort
+757	Tlapa de Comonfort
+757	Xochihuehuetlan
+757	Xochihuehuetlan
+757	Zacatipa
+757	Zacatipa
+758	Petatlán
+758	Petatlán
+758	San Jeronimito (San Jerónimo)
+758	San Jeronimito (San Jerónimo)
+762	Acamixtla
+762	Acamixtla
+762	El Fraile
+762	El Fraile
+762	Huixtac
+762	Huixtac
+762	Paintla
+762	Paintla
+762	Taxco
+762	Taxco
+762	Taxco El Viejo
+762	Taxco El Viejo
+762	Tlamacazapa
+762	Tlamacazapa
+767	Amuco de la Reforma
+767	Amuco de la Reforma
+767	Anonas
+767	Anonas
+767	Aratichanguio
+767	Aratichanguio
+767	Ciudad Altamirano
+767	Ciudad Altamirano
+767	Coyuca de Catalán
+767	Coyuca de Catalán
+767	Guayameo
+767	Guayameo
+767	Paso de Arena
+767	Paso de Arena
+767	Placeres del Oro
+767	Placeres del Oro
+767	Tanganhuato
+767	Tanganhuato
+767	Zirándaro
+767	Zirándaro
+781	Bajos del Ejido
+781	Bajos del Ejido
+781	Coyuca de Benítez
+781	Coyuca de Benítez
+781	El Espinalillo
+781	El Espinalillo
+781	El Papayo
+781	El Papayo
+781	Hacienda de Cabañas
+781	Hacienda de Cabañas
+781	San Jerónimo de Juárez
+781	San Jerónimo de Juárez
+781	Tepetixtla
+781	Tepetixtla
+781	Tixtlancingo
+781	Tixtlancingo

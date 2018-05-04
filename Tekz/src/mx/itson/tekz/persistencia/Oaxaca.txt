@@ -1,0 +1,285 @@
+236	Cuicatlán
+236	Huautla de Jiménez
+236	San Andrés Hidalgo
+236	Santa María Tecomavaca
+236	Teotitlán de Flores Magón
+274	Acatlán de Pérez Figueroa
+274	Temascal
+274	Tetela
+274	Vicente Camalote
+281	Loma Bonita
+283	Ayotzintepec
+283	Lombardo de Caso
+283	San Juan Bautista Valle Nacional
+287	Benemérito Juárez (Palo Gacho)
+287	Camelia Roja
+287	El Edén
+287	Papaloapam
+287	San Felipe Jalapa de Díaz
+287	San José Chiltepec
+287	San Juan Bautista de Matamoros
+287	San Lucas Ojitlán
+287	San Pedro Ixtacatlán
+287	Tuxtepec
+741	Santo Domingo Armenta
+741	Santo Domingo Armenta
+757	Zapotitlán Lagunas
+757	Zapotitlán Lagunas
+924	El Porvenir
+951	Abejones
+951	Agua del Espino
+951	Asunción Nochixtlán
+951	Ayoquezco de Aldama
+951	Capulalpam de Méndez
+951	Coatecas Altas
+951	Cuajimoloyas (San Antonio Cuaji)
+951	Ejutla de Crespo
+951	El Rosario
+951	Guegovela
+951	Ixtlán de Juárez
+951	Magdalena Teitipac
+951	Miahuatlán
+951	Mitla
+951	Oaxaca de Juárez
+951	Ocotlán de Morelos
+951	Reyes Mantecón
+951	San Agustín Amatengo
+951	San Agustín Etla
+951	San Andrés Huayapam
+951	San Andrés Sinaxtla
+951	San Andrés Zabache
+951	San Baltazar Chichicapam
+951	San Baltazar Guelavila
+951	San Bartolo Coyotepec
+951	San Bartolomé Zoogocho
+951	San Bernardo Mixtepec
+951	San Cristobal Amatlán
+951	San Dionisio Ocotepec
+951	San Francisco Yatee
+951	San Ildefonso Villa Alta
+951	San Jerónimo Tlacochahuaya
+951	San José del Progreso
+951	San Juan Atepec
+951	San Juan Chilateca
+951	San Juan del Estado
+951	San Juan del Río
+951	San Juan Quiotepec
+951	San Lorenzo Cacaotepec
+951	San Lucas Quiavini
+951	San Martín Tilcajete
+951	San Mateo Sindihui
+951	San Miguel del Valle
+951	San Miguel Sola de Vega
+951	San Nicolás
+951	San Pablo Huitzo
+951	San Pablo Huixtepec
+951	San Pablo Macuiltianguis
+951	San Pedro Apóstol
+951	San Pedro Cajonos
+951	San Pedro Ixtlahuaca
+951	San Pedro Totolapa
+951	San Pedro y San Pablo Ayutla
+951	San Pedro Yolox
+951	San Raymundo Jalpan
+951	San Vicente Coatlán
+951	Santa Ana Tlapacoyan
+951	Santa Ana Yareni
+951	Santa Ana Zegache
+951	Santa Catarina Cuixtla
+951	Santa Catarina Minas
+951	Santa Cruz Amilpas
+951	Santa Cruz Mixtepec
+951	Santa Cruz Papalutla
+951	Santa Cruz Xitla
+951	Santa Cruz Xoxocotlán
+951	Santa Gertrudis
+951	Santa Inés Yatzeche
+951	Santa Lucía Ocotlán
+951	Santa María Atzompa
+951	Santa María Chachoapam
+951	Santa María del Tule
+951	Santa María Guelace
+951	Santa María Zoquitlán
+951	Santa Martha Chichihualtepec
+951	Santiago Matatlán
+951	Santo Domingo Xagacia
+951	Santo Domingo Yanhuitlán
+951	Santo Tomás Mazaltepec
+951	Soledad Etla
+951	Teococuilco de Marcos Pérez
+951	Teotitlán del Valle
+951	Tlacolula de Matamoros
+951	Trapiche de Santa Cruz
+951	Trinidad de Viguera
+951	Trinidad Zaachila
+951	Villa de Etla
+951	Villa Hidalgo
+951	Villa Talea de Castro
+951	Yogana
+951	Zaachila
+951	Zimatlán de Alvarez
+953	Asunción Atoyaquillo
+953	Chalcatongo de Hidalgo
+953	Ciudad de Huajuapan de León
+953	Coicoyan de Las Flores
+953	Guadalupe de Cisneros
+953	Guadalupe de Ramírez
+953	Guadalupe la Huertilla
+953	Ixpantepec Nieves
+953	Mariscala de Juárez
+953	Mesones Hidalgo San José
+953	Putla Villa de Guerrero
+953	San Agustín Atenango
+953	San Antonino Monte Verde
+953	San Jorge Nuchita
+953	San Juan Bautista Coixtlahuaca
+953	San Juan Lagunas
+953	San Juan Mixtepec -distr. 08-
+953	San Marcos Arteaga
+953	San Martín Peras
+953	San Miguel Ahuehuetitlán
+953	San Miguel El Grande
+953	San Miguel Tlacotepec
+953	San Nicolás Hidalgo
+953	San Pedro y San Pablo Teposcolula
+953	San Sebastián del Monte
+953	San Sebatían Nicananduta
+953	Santa Catarina Ticua
+953	Santa Cruz (Santa Cruz Mixtepex)
+953	Santa Cruz Tacache de Mina
+953	Santa María Chilapa de Díaz
+953	Santiago Ayuquililla
+953	Santiago Cacaloxtepec
+953	Santiago Chazumba
+953	Santiago Juxtlahuaca
+953	Santiago Tamazola
+953	Santiago Yolomécatl
+953	Santiago Yosondua
+953	Santo Domingo Tonalá
+953	Santos Reyes Tepejillo
+953	Silacayoapam
+953	Tezoatlán de Segura y Luna
+953	Tlaxiaco
+953	Villa de Tamazulapam del Progreso
+953	Villa Tejupam de la Unión
+953	Yetla de Juárez
+953	Yucuquimi de Ocampo
+953	Zapotitlán Palmas
+954	Bajos de Chila
+954	Camotinchan
+954	Chacahua
+954	Collantes
+954	Corralero
+954	El Carrizo
+954	El Ciruelo
+954	José María Morelos (Poza Verde)
+954	La Reforma
+954	Mancuernas
+954	Mártires de Tacubaya
+954	Pinotepa de Don Luis
+954	Pinotepa Nacional
+954	Puerto Escondido
+954	Río Grande
+954	San Agustín Chayuco
+954	San Andrés Huaxpaltepec
+954	San Antonio Ocotlán
+954	San Antonio Tepetlapa
+954	San Gabriel Mixtepec
+954	San José del Progreso (Mp. Villa)
+954	San José Estancia Grande
+954	San Juan Bautista lo de Soto
+954	San Juan Cabeza del Río
+954	San Juan Cacahuatepec
+954	San Juan Jicayan
+954	San Juan Quiahije
+954	San Miguel Panixtlahuaca
+954	San Miguel Tlacamama
+954	San Pedro Amuzgos
+954	San Pedro Atoyac
+954	San Pedro de Tututepec
+954	San Pedro Juchatengo
+954	San Pedro Mixtepec Distrito 22
+954	San Pedro Tulixtlahuaca
+954	San Sebastían Ixcapa
+954	San Vicente Piñas
+954	Santa Catarina Juquila
+954	Santa Catarina Mechoacán
+954	Santa Cruz Itundujia
+954	Santa María Cortijo
+954	Santa María El Rincón
+954	Santa María Ipalapa
+954	Santa María Magdalena Tiltepec
+954	Santa María Zacatepec
+954	Santiago Ixtayutla
+954	Santiago Jamiltepec
+954	Santiago Jocotepec
+954	Santiago Llano Grande
+954	Santiago Yaitepec
+954	Santos Reyes Nopala
+954	Tataltepec de Valdés
+954	Villa Nueva
+954	Zaragoza
+954	Zocoteaca de León
+958	Bahía de Huatulco (Crucesita)
+958	Candelaria Loxicha
+958	Paso Ancho
+958	Puerto Ángel
+958	San Agustín Loxicha
+958	San Baltazar Loxicha
+958	San Bartolomé Loxicha
+958	San Francisco Cozoaltepec
+958	San José Chacalapa
+958	San Pedro Pochutla
+958	Santa Catarina Loxicha
+958	Santa María Huatulco
+958	Santa María Tonameca
+958	Santo Domingo de Morelos
+971	Álvaro Obregón
+971	Asunción Ixtaltepec
+971	Chicapa de Castro
+971	Espinal
+971	Ixtepec
+971	Juchitán
+971	La Venta
+971	La Ventosa
+971	Morro de Mazatan
+971	Salina Cruz
+971	San Mateo del Mar
+971	San Pedro Comitancillo
+971	San Pedro Huilotepec
+971	Santa María Mixtequilla
+971	Santa María Xadani
+971	Santiago Ixtaltepec
+971	Santo Domingo Chihuitán
+971	Tehuantepec
+971	Unión Hidalgo
+972	El Barrio de La Soledad
+972	Estación Sarabia
+972	Lagunas
+972	Matías Romero
+972	Mogoñe Estación
+972	Palomares
+972	San Juan Guichicovi
+972	Santo Domingo Petapa
+972	Tolosa Donají
+994	Chahuites
+994	Huamuchil
+994	La Esmeralda
+994	Rincón Juárez
+994	San Dionisio del Mar
+994	San Francisco Ixhuatán
+994	San Pedro Tapanatepec
+994	Santa María Chimalapa
+994	Santiago Niltepec
+994	Santo Domingo Ingenio
+994	Santo Domingo Zanatepec
+995	El Camarón
+995	Jalapa del Marque
+995	La Soledad Salinas
+995	Magdalena Tequisistlán
+995	Nejapa de Madero
+995	San Carlos Yautepec
+995	San Juan Juquilla Mixes
+995	San Pedro Huamelula
+995	San Pedro Quiatoni
+995	Santiago Astata

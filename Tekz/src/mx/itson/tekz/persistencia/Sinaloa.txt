@@ -1,0 +1,132 @@
+667	Costa Rica
+667	Culiacán
+667	Culiacancito
+667	Ejido El Quemadito
+667	El Dorado
+667	El Salado
+667	Estación Rosales
+667	Guadalupe Victoria
+667	Higueras de Abuya
+667	Limón de los Ramos
+667	Oso Viejo
+667	Pueblos Unidos
+667	Quila
+667	Sánchez Celis
+667	Villa Adolfo López Mateos (El Tamarindo)
+668	Ahome
+668	Alfonso G. Calderón (Poblado 7)
+668	Bachomobampo Número Dos
+668	Bagojo Colectivo Emiliano Zapata
+668	Cerrillos (Campo 35)
+668	Chihuahuita
+668	Cohuibampo
+668	General Chávez Talamantes
+668	Gustavo Díaz Ordaz (El Carrizo)
+668	Higuera de Zaragoza
+668	Las Grullas Margen Izquierdo
+668	Los Mochis
+668	Nueve de Diciembre
+668	Poblado Número Cinco
+668	Poblado Número Seis (Los Natoches)
+668	Revolución Mexicana
+668	San José de Ahome
+668	San Miguel Zapotitlán
+668	Topolobampo
+669	El Castillo
+669	El Habal
+669	El Quelite
+669	El Recodo
+669	El Roble
+669	Escamillas
+669	Marmol de salcido (Marmol)
+669	Mazatlán
+669	Siqueros
+669	Villa Unión
+672	Altata
+672	Campo Balbuena
+672	Dautillos
+672	El Castillo
+672	El Potrero de Sataya
+672	Navolato
+672	Villa Angel Flores
+672	Villa Juárez
+673	Benito Juárez
+673	Cerro Agudo
+673	Guamuchil
+673	Mocorito
+687	Adolfo Ruiz Cortines
+687	Alfonso G. Calderón Velarde
+687	Bachoco
+687	Batamote
+687	Corerepe (El Gallo)
+687	Cubilete
+687	Cubiri de Portelas
+687	El Burrión
+687	El Cerro Cabezón
+687	El Huitussi
+687	El Pitahayal
+687	Estación Bamoa (Campo Wilson)
+687	Estación Capomas
+687	Estación Naranjo
+687	Gabriel Leyva Solano (Benito Juárez)
+687	Genaro Estrada
+687	Guasave
+687	Juan José Ríos
+687	La Brecha
+687	La Trinidad
+687	Las Brisas (Emiliano Zapata)
+687	Las Glorias
+687	León Fonseca Estación (Verdura)
+687	Maripa
+687	Marmol de Salcido (Marmol)
+687	Mezquite Alto
+687	Nio
+687	Palos Blancos
+687	Portugués de Galvez
+687	Sinaloa de Leyva
+687	Tamazula
+694	Agua Caliente de Garate
+694	Agua Verde
+694	Cacalotán
+694	Chametla
+694	Concordia
+694	El Huajote
+694	El Pozole
+694	El Verde
+694	Los Pozos
+694	Potrerillos
+694	Rosario
+695	Cristo Rey
+695	Escuinapa
+695	Isla del Bosque
+695	La Concha
+695	Ojo de Agua de Palmillas
+695	Teacapan
+696	Cosala
+696	Coyotitán
+696	El Bolillo
+696	El Espinal
+696	Estación Dimas
+696	La Cruz
+696	Piaxtla de Arriba
+696	Potrerillo del Norote
+696	San Ignacio
+697	Angostura
+697	Badiraguato
+697	Caimanero
+697	Colonia Agricola Independencia
+697	Colonia Agrícola México (Plamitas)
+697	Costa Azul
+697	El Progreso (El Jalón)
+697	Juan Aldama (El Tigre)
+697	La Reforma
+697	Pericos
+697	Sánchez Celis (El Gato de Lara)
+697	Villa Gustavo Díaz Ordaz (Campo Plata)
+698	Adolfo López Mateos (El Jahuara )
+698	Camajoa
+698	Charay
+698	Choix
+698	El Fuerte
+698	Mochicahui Pueblo
+698	San Blas

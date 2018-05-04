@@ -8,7 +8,15 @@ package mx.itson.tekz.presentacion;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.DefaultTableCellRenderer;
 import mx.itson.tekz.implementacion.operacionUsuario;
 
@@ -22,22 +30,15 @@ import mx.itson.tekz.implementacion.operacionUsuario;
  */
 public class mainMenu extends javax.swing.JFrame {
 boolean activate = true;
-      //  pnlAgregarClientesetFont(new Font("Serif", Font.BOLD, 20));
+operacionUsuario opu = new operacionUsuario();
 
-//    setCursor(hourglassCursor);
 
     /**
      * Creates new form mainMenu
      */
     public mainMenu() {
         initComponents();
-        Agregar();
-        lblNombreOculto.setVisible(true);
-        lblApellidosOculto.setVisible(true);
-        lblDireccionOculto.setVisible(true);
-        lblTelefonoOculto.setVisible(true);
-        lblNoCuentaOculto.setVisible(true);
-        lblNoLlamarOculto.setVisible(true);
+        Cargar();
       
     }
 
@@ -105,7 +106,6 @@ boolean activate = true;
         pnlSimuladorDeLlamada = new javax.swing.JPanel();
         lblDuracion = new javax.swing.JLabel();
         sdrDuracion = new javax.swing.JSlider();
-        txtNumeroDeCuentaSDL = new javax.swing.JTextField();
         txtNumeroALlamar = new javax.swing.JTextField();
         lblMin = new javax.swing.JLabel();
         lblMesSDL = new javax.swing.JLabel();
@@ -113,7 +113,6 @@ boolean activate = true;
         cmbMesSDL = new javax.swing.JComboBox<>();
         cmbDia = new javax.swing.JComboBox<>();
         cmdAñoSDL = new javax.swing.JComboBox<>();
-        lblBarraNumeroDeCuentaSDL = new javax.swing.JLabel();
         lblBarraNumeroALlamar = new javax.swing.JLabel();
         lblDia = new javax.swing.JLabel();
         cmbHora = new javax.swing.JComboBox<>();
@@ -146,6 +145,8 @@ boolean activate = true;
         lblNoLlamarOculto = new javax.swing.JLabel();
         lblNoCuentaOculto = new javax.swing.JLabel();
         lblBarraNumeroALlamar1 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        lblCuenta = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1017, 459));
@@ -330,7 +331,6 @@ boolean activate = true;
         txtNombre.setBackground(new java.awt.Color(51, 51, 51));
         txtNombre.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtNombre.setForeground(new java.awt.Color(255, 255, 255));
-        txtNombre.setBorder(null);
         txtNombre.setOpaque(false);
         pnlAgregarCliente.add(txtNombre);
         txtNombre.setBounds(60, 60, 250, 20);
@@ -338,7 +338,6 @@ boolean activate = true;
         txtApellidos.setBackground(new java.awt.Color(51, 51, 51));
         txtApellidos.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtApellidos.setForeground(new java.awt.Color(255, 255, 255));
-        txtApellidos.setBorder(null);
         txtApellidos.setOpaque(false);
         pnlAgregarCliente.add(txtApellidos);
         txtApellidos.setBounds(60, 140, 250, 20);
@@ -351,7 +350,6 @@ boolean activate = true;
         txtDireccion.setBackground(new java.awt.Color(51, 51, 51));
         txtDireccion.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtDireccion.setForeground(new java.awt.Color(255, 255, 255));
-        txtDireccion.setBorder(null);
         txtDireccion.setOpaque(false);
         pnlAgregarCliente.add(txtDireccion);
         txtDireccion.setBounds(60, 220, 250, 20);
@@ -367,11 +365,15 @@ boolean activate = true;
         pnlAgregarCliente.add(lblCiudad);
         lblCiudad.setBounds(370, 210, 60, 20);
 
-        cmbEstado.setBorder(null);
+        cmbEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua", "Ciudad de Mexico", "Coahuila", "Colima", "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Mexico", "Michoacan", "Morelos", "Nayarit", "Nuevo Leon", "Oaxaca", "Puebla", "Queretaro", "Quintana Roo", "San Luis Potosi", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatan", "Zacatecas" }));
+        cmbEstado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbEstadoActionPerformed(evt);
+            }
+        });
         pnlAgregarCliente.add(cmbEstado);
         cmbEstado.setBounds(450, 140, 190, 30);
 
-        cmbCiudad.setBorder(null);
         pnlAgregarCliente.add(cmbCiudad);
         cmbCiudad.setBounds(450, 200, 190, 30);
 
@@ -384,7 +386,6 @@ boolean activate = true;
         txtTelefono.setBackground(new java.awt.Color(51, 51, 51));
         txtTelefono.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtTelefono.setForeground(new java.awt.Color(255, 255, 255));
-        txtTelefono.setBorder(null);
         txtTelefono.setOpaque(false);
         pnlAgregarCliente.add(txtTelefono);
         txtTelefono.setBounds(60, 310, 250, 20);
@@ -446,12 +447,7 @@ boolean activate = true;
 
         tblClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+
             },
             new String [] {
                 "Nombre", "Apellidos", "Telefono", "Direccion", "Ciudad", "Estado", "Cuenta"
@@ -527,7 +523,6 @@ boolean activate = true;
         txtNumeroDeCuenta.setForeground(new java.awt.Color(255, 255, 255));
         txtNumeroDeCuenta.setText("Numero de cuenta :");
         txtNumeroDeCuenta.setToolTipText("");
-        txtNumeroDeCuenta.setBorder(null);
         pnlConsultaDeConsumo.add(txtNumeroDeCuenta);
         txtNumeroDeCuenta.setBounds(30, 30, 230, 20);
 
@@ -597,26 +592,12 @@ boolean activate = true;
         pnlSimuladorDeLlamada.add(sdrDuracion);
         sdrDuracion.setBounds(150, 150, 190, 20);
 
-        txtNumeroDeCuentaSDL.setBackground(new java.awt.Color(51, 51, 51));
-        txtNumeroDeCuentaSDL.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
-        txtNumeroDeCuentaSDL.setForeground(new java.awt.Color(255, 255, 255));
-        txtNumeroDeCuentaSDL.setToolTipText("");
-        txtNumeroDeCuentaSDL.setBorder(null);
-        txtNumeroDeCuentaSDL.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNumeroDeCuentaSDLActionPerformed(evt);
-            }
-        });
-        pnlSimuladorDeLlamada.add(txtNumeroDeCuentaSDL);
-        txtNumeroDeCuentaSDL.setBounds(80, 30, 250, 20);
-
         txtNumeroALlamar.setBackground(new java.awt.Color(51, 51, 51));
         txtNumeroALlamar.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtNumeroALlamar.setForeground(new java.awt.Color(255, 255, 255));
         txtNumeroALlamar.setToolTipText("");
-        txtNumeroALlamar.setBorder(null);
         pnlSimuladorDeLlamada.add(txtNumeroALlamar);
-        txtNumeroALlamar.setBounds(80, 80, 250, 20);
+        txtNumeroALlamar.setBounds(80, 100, 320, 20);
 
         lblMin.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         lblMin.setForeground(new java.awt.Color(255, 255, 255));
@@ -634,26 +615,23 @@ boolean activate = true;
         lblAñoSDL.setForeground(new java.awt.Color(255, 255, 255));
         lblAñoSDL.setText("Año:");
         pnlSimuladorDeLlamada.add(lblAñoSDL);
-        lblAñoSDL.setBounds(280, 210, 30, 30);
+        lblAñoSDL.setBounds(300, 210, 30, 30);
 
+        cmbMesSDL.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
         pnlSimuladorDeLlamada.add(cmbMesSDL);
-        cmbMesSDL.setBounds(220, 210, 50, 30);
+        cmbMesSDL.setBounds(220, 210, 60, 30);
 
+        cmbDia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" }));
         pnlSimuladorDeLlamada.add(cmbDia);
-        cmbDia.setBounds(110, 210, 50, 30);
+        cmbDia.setBounds(110, 210, 60, 30);
 
         pnlSimuladorDeLlamada.add(cmdAñoSDL);
-        cmdAñoSDL.setBounds(320, 210, 50, 30);
-
-        lblBarraNumeroDeCuentaSDL.setBackground(new java.awt.Color(153, 153, 153));
-        lblBarraNumeroDeCuentaSDL.setOpaque(true);
-        pnlSimuladorDeLlamada.add(lblBarraNumeroDeCuentaSDL);
-        lblBarraNumeroDeCuentaSDL.setBounds(80, 50, 250, 1);
+        cmdAñoSDL.setBounds(340, 210, 50, 30);
 
         lblBarraNumeroALlamar.setBackground(new java.awt.Color(153, 153, 153));
         lblBarraNumeroALlamar.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblBarraNumeroALlamar);
-        lblBarraNumeroALlamar.setBounds(80, 100, 250, 1);
+        lblBarraNumeroALlamar.setBounds(80, 120, 250, 1);
 
         lblDia.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         lblDia.setForeground(new java.awt.Color(255, 255, 255));
@@ -661,17 +639,19 @@ boolean activate = true;
         pnlSimuladorDeLlamada.add(lblDia);
         lblDia.setBounds(80, 210, 30, 30);
 
+        cmbHora.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" }));
         pnlSimuladorDeLlamada.add(cmbHora);
-        cmbHora.setBounds(150, 270, 60, 30);
+        cmbHora.setBounds(180, 270, 40, 30);
 
         lblHora.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         lblHora.setForeground(new java.awt.Color(255, 255, 255));
         lblHora.setText("Hora :");
         pnlSimuladorDeLlamada.add(lblHora);
-        lblHora.setBounds(100, 270, 40, 30);
+        lblHora.setBounds(130, 270, 40, 30);
 
+        cmbMin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59" }));
         pnlSimuladorDeLlamada.add(cmbMin);
-        cmbMin.setBounds(280, 270, 60, 30);
+        cmbMin.setBounds(280, 270, 40, 30);
 
         lblAceptarSDL.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAceptarSDL.setText("Aceptar");
@@ -832,11 +812,11 @@ boolean activate = true;
         lblNoLlamarOculto.setForeground(new java.awt.Color(255, 255, 255));
         lblNoLlamarOculto.setText("Número a llamar :");
         pnlSimuladorDeLlamada.add(lblNoLlamarOculto);
-        lblNoLlamarOculto.setBounds(80, 60, 160, 21);
+        lblNoLlamarOculto.setBounds(80, 80, 160, 21);
 
         lblNoCuentaOculto.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
         lblNoCuentaOculto.setForeground(new java.awt.Color(255, 255, 255));
-        lblNoCuentaOculto.setText("Número de cuenta :");
+        lblNoCuentaOculto.setText("Cliente :");
         pnlSimuladorDeLlamada.add(lblNoCuentaOculto);
         lblNoCuentaOculto.setBounds(80, 10, 170, 21);
 
@@ -844,6 +824,14 @@ boolean activate = true;
         lblBarraNumeroALlamar1.setOpaque(true);
         pnlSimuladorDeLlamada.add(lblBarraNumeroALlamar1);
         lblBarraNumeroALlamar1.setBounds(90, 60, 250, 0);
+
+        pnlSimuladorDeLlamada.add(jComboBox1);
+        jComboBox1.setBounds(80, 30, 250, 30);
+
+        lblCuenta.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblCuenta.setForeground(new java.awt.Color(255, 255, 255));
+        pnlSimuladorDeLlamada.add(lblCuenta);
+        lblCuenta.setBounds(400, 30, 300, 30);
 
         pnlParent.add(pnlSimuladorDeLlamada, "card2");
 
@@ -1024,17 +1012,50 @@ boolean activate = true;
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbAñoActionPerformed
 
-    private void txtNumeroDeCuentaSDLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroDeCuentaSDLActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNumeroDeCuentaSDLActionPerformed
-
     private void lblFondoAceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarMouseClicked
          Random rng = new Random();
        int ran = rng.nextInt(90000000)+10000000; 
-        
-        operacionUsuario opu = new operacionUsuario();
-        opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
+       opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
+       txtNombre.setText(null);
+       txtApellidos.setText(null);
+       txtDireccion.setText(null);
+       txtTelefono.setText(null);
     }//GEN-LAST:event_lblFondoAceptarMouseClicked
+
+    private void cmbEstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEstadoActionPerformed
+    cmbCiudad.removeAllItems();
+    BufferedReader abc = null;
+    String xdd = cmbEstado.getSelectedItem().toString()+".txt";
+        try {
+            abc = new BufferedReader(new FileReader("src/mx/itson/tekz/persistencia/"+xdd));
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    String Linea;
+    String ciudad = "";
+    ArrayList<String> Municipios = new ArrayList<String>(); 
+    DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCiudad.getModel();
+    try {
+            while((Linea = abc.readLine()) != null) {
+                String [] xd =Linea.split("\\s+");
+                        
+                if (xd.length > 1) {
+                    for (int i = 1; i < xd.length; i++) {
+                        ciudad += xd[i]+" ";
+                    }
+                }
+                 
+                
+                //Municipios.add(xd[1]);
+                modelc.addElement(ciudad);
+                ciudad="";
+              //  System.out.println(line);
+            }       } catch (IOException ex) {
+            Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }//GEN-LAST:event_cmbEstadoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1072,7 +1093,7 @@ boolean activate = true;
         
     }
     
-   public void Agregar(){
+   public void Cargar(){
     tblClientes.getTableHeader().setFont(new Font("Microsoft Tai Le", Font.ITALIC, 14));
     tblClientes.getTableHeader().setForeground(Color.WHITE);
     tblClientes.getTableHeader().setBackground(Color.yellow);
@@ -1083,8 +1104,36 @@ boolean activate = true;
     jScrollPane1.setOpaque(false);
     jScrollPane1.getViewport().setOpaque(false);
     
+    BufferedReader abc = null;
+    String xdd = "Aguascalientes.txt";
+        try {
+            abc = new BufferedReader(new FileReader("src/mx/itson/tekz/persistencia/"+xdd));
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
-
+    String Linea;
+    String ciudad = "";
+    ArrayList<String> Municipios = new ArrayList<String>(); 
+    DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCiudad.getModel();
+    try {
+            while((Linea = abc.readLine()) != null) {
+                String [] xd =Linea.split("\\s+");
+                        
+                if (xd.length > 1) {
+                    for (int i = 1; i < xd.length; i++) {
+                        ciudad += xd[i]+" ";
+                    }
+                }
+                 
+                
+                Municipios.add(xd[1]);
+                modelc.addElement(ciudad);
+                ciudad="";
+              //  System.out.println(line);
+            }       } catch (IOException ex) {
+            Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -1097,6 +1146,7 @@ boolean activate = true;
     private javax.swing.JComboBox<String> cmbMesSDL;
     private javax.swing.JComboBox<String> cmbMin;
     private javax.swing.JComboBox<String> cmdAñoSDL;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
@@ -1122,9 +1172,9 @@ boolean activate = true;
     private javax.swing.JLabel lblBarraNumeroALlamar;
     private javax.swing.JLabel lblBarraNumeroALlamar1;
     private javax.swing.JLabel lblBarraNumeroDeCuenta;
-    private javax.swing.JLabel lblBarraNumeroDeCuentaSDL;
     private javax.swing.JLabel lblCiudad;
     private javax.swing.JLabel lblConsultaDeConsumo;
+    private javax.swing.JLabel lblCuenta;
     private javax.swing.JLabel lblDia;
     private static javax.swing.JLabel lblDireccionOculto;
     private javax.swing.JLabel lblDuracion;
@@ -1182,7 +1232,6 @@ boolean activate = true;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtNumeroALlamar;
     private javax.swing.JTextField txtNumeroDeCuenta;
-    private javax.swing.JTextField txtNumeroDeCuentaSDL;
     private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }

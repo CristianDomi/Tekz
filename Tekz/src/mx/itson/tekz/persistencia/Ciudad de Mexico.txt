@@ -1,0 +1,27 @@
+55	Álvaro Obregón, D.FAlvaro Obregón
+55	Azcapotzalco
+55	Benito Juárez
+55	Coyoacán
+55	Cuajimalpa de Morelos
+55	Cuauhtémoc
+55	Gustavo A. Madero
+55	Iztacalco
+55	Iztapalapa
+55	La Magdalena Contreras
+55	Miguel Hidalgo
+55	Parres (El Guarda)
+55	San Antonio Tecómitl
+55	San Bartolome Xicomulco
+55	San Juan Ixtayopan
+55	San Lorenzo Acopilco
+55	San Miguel Ajusco
+55	San Miguel Topilejo
+55	San Nicolás Tetelco
+55	San Pablo Oztotepec
+55	San Pedro Atocpan
+55	Santa Catarina Yecahuitzotl
+55	Tláhuac
+55	Tlalpan
+55	Venustiano Carranza
+55	Villa Milpa Alta
+55	Xochimilco

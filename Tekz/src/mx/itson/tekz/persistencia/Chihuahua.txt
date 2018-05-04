@@ -1,0 +1,159 @@
+614	Santa Eulalia
+614	Chihuahua
+614	El Sauz
+614	San Andrés
+614	Santa Isabel
+614	Satevo
+614	Villa Aldama
+621	Julimes
+621	Naica
+621	Santa Gertrudis (La Hacienda)
+621	Saucillo
+625	Campo Menonita Número 106
+625	Campo Número Ciento Uno Viejo
+625	Campo Número Cientosiete
+625	Campo Número Diez
+625	Campo Número Ocho
+625	Campo Número Seis y Medio B
+625	Campo Número Veinte
+625	Campo Número Veintidós
+625	Ciudad Cuauhtémoc
+625	Colonia Alvaro Obregón
+625	Colonia Anáhuac
+625	La Paz
+625	Lázaro Cárdenas
+625	San Lorenzo
+625	San Nicolás de Carretas
+625	Santa Bárbara de Tutuaca (Tutuaca)
+625	Santa Rosalía de Cuevas
+626	Coyame
+626	Manuel Benavides
+626	Manuel Ojinaga
+627	Parral
+628	Mariano Matamoros
+628	Pueblito de Allende
+628	San Francisco del Oro
+628	Santa Bárbara
+628	Valle de Ignacio Allende
+629	Ciudad Jiménez
+629	Escalón
+629	José Esteban Coronado
+629	Salaices
+629	Santa María
+629	Villa López
+635	Areponapuchi
+635	Bahuichivo
+635	Basaseachi
+635	Basuchil
+635	Bocoyna
+635	Carichi
+635	Cerocahui
+635	Chinpas de Almada
+635	Creel
+635	El Terrero
+635	Lic. Adolfo López Mateos
+635	Moris
+635	Nonoava
+635	Pascual Orozco (San Isidro)
+635	San Francisco de Borja
+635	San Juanito
+635	San Rafael
+635	Santo Tomás
+635	Sisoguichi
+635	Temoris
+635	Tomochi
+635	Urique
+635	Uruachi
+635	Vicente Guerrero
+636	Benito Juárez
+636	Buenos Aires
+636	Casa de Janos
+636	Casas Grandes
+636	Colonia El Valle
+636	Colonia Juárez
+636	Colonia Le Barón
+636	Colonia Madero
+636	Ejido Constitución
+636	Ejido Hidalgo
+636	El Bismarck
+636	Galeana
+636	Guadalupe Victoria
+636	Ignacio Allende
+636	Ignacio Zaragoza
+636	Janos
+636	Juan Mata Ortíz (Pearson)
+636	La Ascensión
+636	Las Virginias
+636	Monte Verde (El Coyote)
+636	Nuevo Casas Grandes
+636	Pancho Villa (La Morita)
+636	Ricardo Flores Magón (El Carmen)
+636	Rodrigo M. Quevedo
+636	San Buenaventura
+636	San Lorenzo
+636	Sección Enríquez
+636	Tres Alamos
+639	Ciudad Delicias
+639	Colonia Campesina
+639	Colonia Felipe Angeles
+639	Colonia Revolución
+639	El Molino
+639	Estación Consuelo
+639	Guadalupe Victoria
+639	Kilometro Noventa y Nueve
+639	Las Varas
+639	Lázaro Cárdenas
+639	Pedro Meoqui
+639	Santa Cruz de Rosales
+648	Ciudad Camargo
+648	La Boquilla del Conchos
+648	La Cruz
+648	La Perla
+648	San Francisco de Conchos
+649	Baborigame
+649	Batopilas
+649	Ejido El Vergel
+649	El Tule
+649	Guachochi
+649	Guadalupe y Calvo
+649	La Magdalena
+649	Las Yerbitas
+649	Mesa San Rafael
+649	San Pablo Balleza
+649	Valle de Zaragoza
+652	Ciudad Madera
+652	Ejido El Largo
+652	La Norteña
+652	La Pinta
+652	Mesa del Huracán
+652	Nicolás Bravo
+652	Nueva Madera
+652	Peña Blanca
+652	San José Babicora
+652	Valentín Gómez Farías
+656	Barreales
+656	Ciudad Juárez
+656	Doctor Porfirio Parra (La Caseta)
+656	El Millón
+656	El Porvenir
+656	G. Rodrigo M. Quevedo (Pto. Palomas)
+656	Guadalupe Distrito Bravos
+656	Jesús Carranza (La Colorada)
+656	Loma Blanca
+656	Miguel Ahumada
+656	Praxedis G. Guerrero
+656	Samalayuca
+656	San Isidro (Río Grande)
+659	Abraham González
+659	Bachiniva
+659	Campo 303
+659	Campo 305 (Jagueyes)
+659	Ejido Benito Juárez
+659	El Molino
+659	El Porvenir (Mpio. Bachiniva)
+659	El Terrero
+659	Independencia (Cologachi)
+659	Matachic
+659	Namiquipa
+659	Oscar Soto Maynez
+659	Temosachi

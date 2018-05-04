@@ -1,0 +1,36 @@
+612	Chametla
+612	El Centenario
+612	El Pescadero
+612	El Sargento
+612	La Paz
+612	San Juan de los Planes
+612	Todos Santos
+613	Benito Juárez (Buenavista)
+613	Ciudad Constitución
+613	Loreto
+613	Nopolo
+613	Puerto Adolfo López Mateos
+613	Puerto San Carlos
+613	Villa Ignacio Zaragoza (Las Flores)
+613	Villa Insurgentes
+615	Bahia Asunción
+615	Bahía Tortugas
+615	Estero de la Bocana
+615	Guerrero Negro
+615	Gustavo Díaz Ordaz (Vizcaíno)
+615	Mulegé
+615	Punta Abreojos
+615	San Bruno
+615	San Ignacio
+615	San Lucas
+615	Santa Rosalía
+624	Buena Vista
+624	Cabo del Sol
+624	Cabo San Lucas
+624	La Ribera
+624	Las Lagunitas
+624	Miraflores
+624	San José del Cabo
+624	San José Viejo
+624	Santa Anita
+624	Santiago

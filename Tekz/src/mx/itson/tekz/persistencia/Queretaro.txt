@@ -1,0 +1,100 @@
+414	Granjas Residenciales
+414	La Fuente
+414	San Nicolás
+414	Santa María del Camino
+414	Tequisquiapan
+419	Ajuchitlán
+419	Colón
+419	El Blanco
+419	Esperanza
+419	Galeras
+419	La Peñuela
+427	Dolores Cuadrilla de Enmedio
+427	El Cazadero
+427	La Estancia
+427	La Valla
+427	Loma Linda
+427	Puerta de Palmillas
+427	San José Galindo
+427	San Juan del Río
+427	Santa Matilde
+427	Santa Rosa Xajay
+441	Agua Zarca
+441	Ahuacatlán de Guadalupe
+441	Bernal
+441	Boye
+441	Cadereyta
+441	El Cuervo
+441	El Lobo
+441	Ezequiel Montes
+441	Higuerillas
+441	Jalpan de Serra
+441	La Lagunita
+441	Landa
+441	Maconi
+441	Peñamiller
+441	Pinal de Amoles
+441	San Joaquín
+441	San Pablo Toliman
+441	Santa María del Palmar
+441	Toliman
+441	Villa Guerrero
+441	Villa Progreso
+441	Vizarrón de Montes
+442	Amazcala
+442	Atongo
+442	Buenavista
+442	Casa Blanca
+442	Charco Blanco
+442	Chichimequillas
+442	El Carmen
+442	El Pueblito
+442	El Rosario
+442	El Salitre
+442	General Lázaro Cárdenas (El Col)
+442	Joaquin Herrera (La Cueva)
+442	Jofrito
+442	Juriquilla
+442	La Cañada
+442	La Estacada
+442	La Gotera
+442	La Griega
+442	La Loma
+442	La Monja
+442	La Piedad (San Miguel Colorado)
+442	Mompani
+442	Montenegro
+442	Palo Alto
+442	Pie de Gallo
+442	Provincia Juriquilla
+442	Querétaro
+442	Saldarriaga
+442	San José el Alto
+442	San José el Alto
+442	San Miguelito
+442	San Rafel
+442	Santa Catarina
+442	Santa María de los Baños
+442	Santa Rosa Jáuregui
+442	Tlacote El Bajo
+448	Amealco
+448	El Milagro
+448	El Vegil
+448	Epigmenio González (El Ahorcado)
+448	Escolasticas
+448	Huimilpan
+448	La D
+448	La Noria
+448	La Venta de Ajuchitlancito
+448	Las Taponas
+448	Los Cues
+448	Pedro Escobedo
+448	San Clemente
+448	San Nicólas de la Torre
+448	San Pedro
+448	Santiago Mexquititlán Barrio
+487	Arroyo Seco
+487	Conca
+487	Refugio
+761	Bella Vista del Río
+761	Bella Vista del Río

@@ -1,0 +1,129 @@
+427	Polotitlán
+712	San Lorenzo Toxico
+712	San Lorenzo Toxico
+55	Axotlán
+55	Buenavista
+55	Campo Militar N. 37B (El Cabi)
+55	Chalco
+55	Chimalhuacán
+55	Ciudad López Mateos
+55	Ciudad Nezahualcoyotl
+55	Coatepec
+55	Cocotitlán
+55	Colonia El Mirador
+55	Cuautitlán
+55	Cuautitlán Izcalli
+55	Ecatepec de Morelos
+55	Fuentes del Valle
+55	Huixquilucan
+55	Ixtapaluca
+55	Las Cabañas
+55	Loma del Río
+55	Los Reyes Acaquilpan
+55	Magdalena Chichicaspa
+55	Melchor Ocampo
+55	Naucalpan de Juárez
+55	Ojo de Agua
+55	Ozumbilla(Ejido El Zapote)
+55	Progreso Industrial
+55	Pueblo Tecamac
+55	Rancho Coxtitlán
+55	Rancho Tlalmimilolpan
+55	Río Frío, Mexico
+55	Salazar
+55	San Francisco Acuautla
+55	San Francisco Chimalpa
+55	San Francisco Coacalco
+55	San Francisco Magu
+55	San Gregorio Cuautzingo
+55	San José El Vidrio
+55	San José Tejamanil
+55	San Juan de las Tablas
+55	San Luis Ayucan
+55	San Martín Cuautlalpan
+55	San Pablo Atlazalpan
+55	San Vicente Chicoloapán
+55	Santa Ana Jilotzingo
+55	Santa Cruz
+55	Santa Cruz Ayotuzco
+55	Santa María Magdalena Cahuacán
+55	Santa María Mazatla
+55	Santa María Tonanitla
+55	Santiago Cuautlalpan (Mp. Tepotzot)
+55	Santiago Yancuitlalpan
+55	Temamatla
+55	Tepojaco
+55	Tepotzotlán
+55	Tlalnepantla
+55	Tlazala de Fabela
+55	Transfiguración
+55	Tultepec
+55	Tultitlán de Mariano Escobedo
+55	Villa Nicolás Romero
+55	Xico
+55	Zacamulpa
+588	Chapa de Mota
+588	Dongú
+588	La Esperanza
+588	Loma Alta
+588	Loma Alta Taxhimay
+588	Los Arana
+588	Monte de Peña
+588	San Gabriel Docuan
+588	San Luis Anáhuac (Toriles)
+588	San Martín Cachihuapan
+588	Tenjay
+588	Villa del Carbón
+591	Nextlalpan
+591	San Bartolo Cuautlalpan
+591	San Juan Pueblo Nuevo
+591	Santa María Cuevas (Cuevas)
+591	Tequixquiac
+591	Zitlaltepec
+591	Zumpango
+592	Nopaltepec
+592	Otumba
+592	Oxtotipac
+592	San Miguel Jaltepec
+592	Santiago Tolman
+592	Xala
+593	Barrio La Cañada
+593	Coyotepec
+593	El Tajuelo
+593	Huehuetoca
+593	Jorobas
+593	San Miguel Jaguey
+593	Teoloyucan
+594	Ampliación los Angeles
+594	San Marcos Nepantla
+594	San Martín de las Pirámides
+594	Teotihuacán
+594	Tepexpan
+594	Tezoyuca
+594	Xometla
+595	Chiconcuac de Juárez
+595	San Bernardino
+595	San Bernardo Tlalmimilolpan
+595	San Jerónimo Amanalco
+595	San Miguel Tlaixpan
+595	San Salvador Atenco
+595	Santiago Cuautlalpan
+595	Santo Tomás Apipilhuasco
+595	Tepetitlán
+595	Tepetlaoxtoc
+595	Tequexquinahuac
+595	Texcoco de Mora
+596	Los Reyes Acozac
+596	San Luis Tecuahutitlán
+596	San Miguel Atlamajac
+596	Temascalapa
+597	Amecameca
+597	Juchitepec
+597	Nepantla de Sor Juana Inés de la Cruz
+597	Ozumba
+597	Pahuacan
+597	San Andrés Tlalamac
+597	San Rafael
+597	Tenango del Aire
+597	Tlalmanalco
+599	Apaxco

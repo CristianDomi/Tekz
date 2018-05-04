@@ -1,0 +1,269 @@
+427	Tlaxcalilla
+441	Cuesta Colorada
+441	El Pinalito
+441	Jacala
+483	Chapulhuacán
+483	Coacuilco
+483	Huitzitzilingo
+483	Pisaflores Hidalgo
+483	San Felipe Orizatlán
+591	Praderas del Potrero
+736	Tonalapa del Río
+736	Tonalapa del Río
+738	Alfajayucan
+738	Alfajayucan
+738	Chilcuautla
+738	Chilcuautla
+738	Colonia Morelos
+738	Colonia Morelos
+738	Dextho de Victoria
+738	Dextho de Victoria
+738	El Mejay
+738	El Mejay
+738	El Rosario
+738	El Rosario
+738	El Tothie
+738	El Tothie
+738	Huitexcalco de Morelos
+738	Huitexcalco de Morelos
+738	Jaguey Blanco
+738	Jaguey Blanco
+738	Mixquiahuala
+738	Mixquiahuala
+738	Progreso
+738	Progreso
+738	San Salvador
+738	San Salvador
+738	Teñhe
+738	Teñhe
+738	Tepatepec
+738	Tepatepec
+738	Xochitlán
+738	Xochitlán
+743	Acayuca
+743	Acayuca
+743	General Felipe Angeles
+743	General Felipe Angeles
+743	Jagüey de Téllez (Estación Téllez)
+743	Jagüey de Téllez (Estación Téllez)
+743	San Agustín Tlaxiaca
+743	San Agustín Tlaxiaca
+743	San Agustín Zapotlán
+743	San Agustín Zapotlán
+743	San Juan Solís
+743	San Juan Solís
+743	San Pedro Tlaquilpan
+743	San Pedro Tlaquilpan
+743	Santiago Tepeyahualco
+743	Santiago Tepeyahualco
+743	Santo Tomás
+743	Santo Tomás
+743	Tolcayuca
+743	Tolcayuca
+743	Villa Tezontepec
+743	Villa Tezontepec
+743	Zapotlán de Juárez
+743	Zapotlán de Juárez
+743	Zempoala
+743	Zempoala
+745	Cuautepec
+745	Cuautepec
+745	Jalapa
+745	Jalapa
+745	Tonalá
+745	Tonalá
+746	Huautla
+746	Huautla
+748	Almoloya
+748	Almoloya
+748	Apan
+748	Apan
+748	Chimalpa y Tlalayote
+748	Chimalpa y Tlalayote
+748	Emiliano Zapata
+748	Emiliano Zapata
+748	José María Morelos (San José)
+748	José María Morelos (San José)
+748	Lazaro Cárdenas
+748	Lazaro Cárdenas
+759	Caltimacán
+759	Caltimacán
+759	Cardonal
+759	Cardonal
+759	El Alberto
+759	El Alberto
+759	El Deca
+759	El Deca
+759	El Tephe
+759	El Tephe
+759	Ixmiquilpan
+759	Ixmiquilpan
+759	La Loma Julián Villagrán
+759	La Loma Julián Villagrán
+759	Lázaro Cárdenas (Remedios)
+759	Lázaro Cárdenas (Remedios)
+759	Los Remedios
+759	Los Remedios
+759	Orizabita
+759	Orizabita
+759	San Antonio Sabanillas
+759	San Antonio Sabanillas
+759	Santuario Mapethe
+759	Santuario Mapethe
+759	Tasquillo
+759	Tasquillo
+759	Taxadho
+759	Taxadho
+759	Zimapán
+759	Zimapán
+761	El Jaguey
+761	El Jaguey
+761	El Saucillo
+761	El Saucillo
+761	Gandho
+761	Gandho
+761	Huichapan
+761	Huichapan
+761	Llano Largo
+761	Llano Largo
+761	Maravillas
+761	Maravillas
+761	Nopala
+761	Nopala
+761	San Sebastián Tenochtitlán
+761	San Sebastián Tenochtitlán
+761	Tecozautla
+761	Tecozautla
+761	Zothe
+761	Zothe
+763	Chapantongo
+763	Chapantongo
+763	La Cruz
+763	La Cruz
+763	Munitepec de Madero
+763	Munitepec de Madero
+763	Santa María Amealco
+763	Santa María Amealco
+763	Sayula Pueblo
+763	Sayula Pueblo
+763	Tezontepec de Aldama
+763	Tezontepec de Aldama
+763	Tlahuelilpan
+763	Tlahuelilpan
+771	El Venado
+771	El Venado
+771	Epazoyucan
+771	Epazoyucan
+771	Fraccionamiento La Reforma
+771	Fraccionamiento La Reforma
+771	Huasca de Ocampo
+771	Huasca de Ocampo
+771	La Estanzuela
+771	La Estanzuela
+771	La Providencia
+771	La Providencia
+771	Mineral del Monte
+771	Mineral del Monte
+771	Omitlán de Juárez
+771	Omitlán de Juárez
+771	Pachuca de Soto
+771	Pachuca de Soto
+771	San Juan Tilcuautla
+771	San Juan Tilcuautla
+771	San Juan Tizahuapan
+771	San Juan Tizahuapan
+771	Santa Maria la Calera
+771	Santa Maria la Calera
+771	Santa Matilde
+771	Santa Matilde
+771	Santa Mónica
+771	Santa Mónica
+771	Santiago Tlapacoya
+771	Santiago Tlapacoya
+771	Xochihuacan (Las Palomas)
+771	Xochihuacan (Las Palomas)
+772	Actopan
+772	Actopan
+772	Caxuxi
+772	Caxuxi
+772	Chicavasco
+772	Chicavasco
+772	Dajiedhi
+772	Dajiedhi
+772	El Arenal
+772	El Arenal
+772	El Mezquital
+772	El Mezquital
+772	La Estancia
+772	La Estancia
+772	Santiago de Anaya
+772	Santiago de Anaya
+772	Yolotepec
+772	Yolotepec
+773	Bomintzha
+773	Bomintzha
+773	Cruz Azul San Miguel Vindho
+773	Cruz Azul San Miguel Vindho
+773	General Pedro María Anaya (San Mateo)
+773	General Pedro María Anaya (San Mateo)
+773	Melchor Ocampo (El Salto)
+773	Melchor Ocampo (El Salto)
+773	San Buenaventura
+773	San Buenaventura
+773	Santa Ana Ahuehuepan
+773	Santa Ana Ahuehuepan
+773	Santiago Tlautla
+773	Santiago Tlautla
+773	Tepeji de Ocampo
+773	Tepeji de Ocampo
+773	Tinajas
+773	Tinajas
+773	Tula
+773	Tula
+773	Xiteje de Zapata
+773	Xiteje de Zapata
+774	Agua Blanca Iturbide
+774	Agua Blanca Iturbide
+774	Atotonilco El Grande
+774	Atotonilco El Grande
+774	Calnali
+774	Calnali
+774	Cerro Colorado
+774	Cerro Colorado
+774	Ejido Alcholoya
+774	Ejido Alcholoya
+774	El Contadero
+774	El Contadero
+774	Estación de Apulco
+774	Estación de Apulco
+774	Metepec
+774	Metepec
+774	Metztitlán
+774	Metztitlán
+774	Mezquititlán
+774	Mezquititlán
+774	Molango
+774	Molango
+774	San Bartolo Tutotepec
+774	San Bartolo Tutotepec
+774	San Francisco Tlahuelompa
+774	San Francisco Tlahuelompa
+774	San Martín
+774	San Martín
+774	Tenango
+774	Tenango
+774	Tepehuacán de Guerrero
+774	Tepehuacán de Guerrero
+774	Tianguistengo
+774	Tianguistengo
+774	Tlanchinol
+774	Tlanchinol
+774	Xochicoatlán
+774	Xochicoatlán
+774	Zacualtipán
+774	Zacualtipán
+775	Acatlán
+775	Acatlán
+775	Colonia 28 de Mayo (Santa Rosa)
+775	Colonia 28 de Mayo (Santa Rosa)
+775	Cuautepec de Hinojosa

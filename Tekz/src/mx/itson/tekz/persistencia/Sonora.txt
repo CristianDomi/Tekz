@@ -1,0 +1,132 @@
+622	Empalme
+622	Fraccionamiento Nuevo Empalme
+622	Guaymas
+622	José María Morelos y Pavón
+622	Ortiz
+622	San Carlos Nuevo Guaymas
+623	Aconchi
+623	Banámichi
+623	Baviácora
+623	Carbó
+623	Guadalupe de Ures
+623	Huepac
+623	Mazatán
+623	Pesqueira
+623	Pueblo de Alamos
+623	Rayón
+623	San Pedro de la Cueva
+623	Ures
+623	Villa Pesqueira
+623	Yécora
+631	Cibuta
+631	Nogales
+632	Ímuris
+632	Magdalena de Kino
+632	San Ignacio
+632	Terrenate
+633	Agua Prieta
+633	Esqueda
+633	Fronteras
+633	Naco
+634	Arivechi
+634	Arizpe
+634	Bacadéhuachi
+634	Bacerac
+634	Bavispe
+634	Colonia El Tajo
+634	Cumpas
+634	Huachinera
+634	Huasabas
+634	La Caridad (Fracción G)
+634	Los Abanicos
+634	Los Globos
+634	Moctezuma
+634	Nacori Chico
+634	Nacozari
+634	Sahuaripa
+634	Tepache
+634	Villa Hidalgo
+637	Altar
+637	Atil
+637	Caborca
+637	Pitiquito
+637	Plutarco Elías Calles Dos (La Y Griega)
+637	Puerto Libertad
+637	Saric
+637	Sasabe
+637	Tubutama
+638	La Choya
+638	Puerto Peñasco
+641	Benjamin Hill
+641	El Claro
+641	Estación Llano
+641	Querobabi
+641	Santa Ana
+641	Trincheras
+642	Bacabachi
+642	Chinotahueca
+642	Masiaca
+642	Navojoa
+642	Pueblo Mayo
+643	Agua Blanca
+643	Buaysiacobe
+643	Colonia Jecopaco
+643	Ejido 31 de Octubre
+643	Ejido Francisco Javier Mina
+643	Jecopaco
+643	Pótam
+643	Primero de Mayo (Campo 77)
+643	Pueblo Yaqui
+643	Quetchehueca
+643	San Ignacio Río Muerto (Colonia Militar)
+643	San José de Bacum
+643	Vícam
+643	Villa Juárez
+644	Bacum
+644	Ciudad Obregón
+644	Ejido Cuauhtémoc (Campo Cinco)
+644	Esperanza
+644	Los Hornos
+644	Marte R. Gómez (Tobarito)
+644	Paredón Colorado (Paredón Viejo)
+644	Providencia
+645	Bacoachi
+645	Cananea
+645	Santa Cruz
+647	Álamos
+647	Bacobampo
+647	Became Nuevo
+647	El Chucarit
+647	Etchojoa
+647	Etchoropo
+647	Huatabampo
+647	Quiriego
+647	Rosario Tesopaco
+647	Yávaros (Isla Las Viejas)
+651	Sonoita
+653	Ejido Lagunitas
+653	Golfo de Santa Clara
+653	Independencia
+653	Ingeniero Luis B. Sánchez
+653	Islita
+653	San Luis Río Colorado
+662	Bahía de Kino
+662	Ejido La Victoria
+662	Hermosillo
+662	Miguel Alemán (La Doce)
+662	San Pedro O Saucito (San Pedro El Saucito)
+622	Empalme
+622	Fraccionamiento Nuevo Empalme
+622	Guaymas
+622	José María Morelos y Pavón
+622	Ortiz
+622	San Carlos Nuevo Guaymas
+623	Aconchi
+623	Banámichi
+623	Baviácora
+623	Carbó
+623	Guadalupe de Ures
+623	Huepac
+623	Mazatán
+623	Pesqueira
+623	Pueblo de Alamos

@@ -1,0 +1,53 @@
+223	Zitlaltepec
+241	Acopinalco del Peñón
+241	Apizaco
+241	El Rosario
+241	Emiliano Zapata
+241	Españita
+241	Hueyotlipan
+241	La Ascención Huitzcolotepec
+241	Lazaro Cárdenas
+241	Mazaquiahuac
+241	Muñoz
+241	San Cosme Xalostoc
+241	San José Atotonilco
+241	San Martín Xaltocan
+241	San Salvador Tzompantepec
+241	San Simeon Xipetzinco
+241	Terrenate
+241	Tetla
+241	Tlaxco
+241	Unión Ejidal Tierra y Libertad
+246	Alcotitla (Xaltipan)
+246	Chiautempan
+246	Panotla
+246	San Bartolomé Cuahuixmatlac
+246	San Damián Texoloc
+246	San Marcos Contla
+246	San Pedro Tlalcuapan de Nicolás
+246	San Rafael Tenanyecac
+246	San Tadeo Huiloapan
+246	Santa Ana Nopalucan
+246	Santa María Nativitas
+246	Tlaxcala
+246	Zacatelco
+247	Huamantla
+247	Ixtenco
+247	Xicotencatl
+248	San Antonio Atotonilco
+248	San Mateo Tepetitla
+248	Santiago Xochimilco
+248	Villa Mariano Matamoros
+276	Altzayanca
+276	San Lorenzo Cuapiaxtla
+276	Tequexquitla
+748	Benito Juárez
+748	Benito Juárez
+748	Nanacamilpa
+748	Nanacamilpa
+748	Sanctorum Lázaro Cárdenas
+748	Sanctorum Lázaro Cárdenas
+749	Calpulalpan
+749	Calpulalpan
+749	Santiago Cuaula
+749	Santiago Cuaula

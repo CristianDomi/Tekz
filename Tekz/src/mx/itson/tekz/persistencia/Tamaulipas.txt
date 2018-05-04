@@ -1,0 +1,103 @@
+482	Nuevo Morelos
+831	Antiguo Morelos
+831	Celaya
+831	Ciudad Mante
+831	Division del Norte
+831	El Abra
+831	El Limón
+831	Fortines y Emiliano Zapata
+831	Francisco I. Madero
+831	Los Aztecas
+831	Nuevo Tantoán
+831	Plan de Ayala
+831	Quintero
+831	San Miguel de la Mora
+831	Tantoyuquita
+832	Adolfo López Mateos (Chamal Nuevo)
+832	Bustamante
+832	El Azúcar
+832	Jaumave
+832	Llera de Canales
+832	Loma Alta de Gómez Farias
+832	Miquihuana
+832	Ocampo
+832	Palmillas
+832	Segunda Unidad Xicotencatl (Aquishe)
+832	Tula
+832	Xicoténcatl
+833	Altamira
+833	Ciudad Madero
+833	Lomas del Real
+833	Tampico
+834	Aquilés Serdán
+834	Ciudad Victoria
+834	Congregación Caballeros
+834	La Presa
+835	Abasolo
+835	Allende
+835	Casas
+835	El Barretal
+835	Estación Santa Engracia
+835	Gsemez
+835	Guadalupe Victoria
+835	Hidalgo
+835	La Pesca
+835	Magueyes
+835	Nicolas Bravo (Palo Alto)
+835	Nuevo Morelos
+835	Nuevo Padilla
+835	San Carlos
+835	Santander Jiménez
+835	Soto la Marina
+835	Tampiquito (Soto la Marina)
+835	Villa Mainero
+835	Villagrán
+836	Estación Colonias
+836	Estación Cuauhtémoc
+836	Estación Manuel
+836	Esteros
+836	González
+836	Graciano Sánchez
+836	López Rayón
+836	Río Tamiahua
+836	San Antonio Rayón
+836	Santa Fé
+836	Villa Aldama
+841	Burgos
+841	Carboneras (La Carbonera)
+841	Cruillas
+841	El Maguey
+841	General Francisco Villa
+841	Gral. Fco. González Villarreal (San Juan)
+841	La Carreta Dos
+841	San Fernando
+841	San Germán
+841	Santa Teresa
+841	Villa de Méndez
+867	Nuevo Laredo
+868	Alfredo V. Bonfil
+868	El Control
+868	Matamoros
+868	Sandoval
+868	Santa Adelaida
+891	Ciudad Camargo
+891	Gustavo Díaz Ordaz
+891	Los Comales
+891	Santa Rosalía
+891	Valadeces
+894	Anáhuac
+894	Empalme
+894	Mario Souza
+894	Santa Apolonia
+894	Valle Hermoso
+897	Arcabuz
+897	Ciudad Mier
+897	Ciudad Miguel Alemán
+897	Guardados de Arriba
+897	Los Guerra
+897	Nueva Ciudad Guerrero
+899	La Soledad
+899	Nuevo Progreso
+899	Reynosa
+899	Reynosa Díaz
+899	Río Bravo

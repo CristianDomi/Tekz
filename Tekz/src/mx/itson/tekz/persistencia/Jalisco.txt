@@ -1,0 +1,347 @@
+33	Base Aérea Militar No. 5
+33	Buenavista
+33	Cajititlán
+33	Centro de Readaptación Social
+33	Club de Golf Santa Anita
+33	Colonia Guadalupana
+33	Coyula
+33	El Salto
+33	Emiliano Zapata
+33	Guadalajara
+33	La Calera
+33	La Primavera, Jalisco
+33	La Tijera
+33	La Venta del Astillero
+33	Las Cañadas (Bosques de San Isidro)
+33	Las Pintas
+33	Loma Bonita
+33	Nicolás R. Casillas
+33	Nuevo México
+33	Palomar
+33	Puente Grande
+33	Rancho Contento
+33	Río Blanco
+33	San Esteban
+33	San Gaspar de las Flores
+33	San Isidro Mazatepec
+33	San José del Castillo
+33	San Juan Evangelista
+33	San Martín de las Flores de Abajo
+33	San Miguel Cuyutlán
+33	San Nicolás
+33	San Sebastián El Grande
+33	Santa Anita
+33	Santa Cruz de la Loma
+33	Santa Cruz de las Flores[disambiguation needed]
+33	Santa Cruz del Valle
+33	Tesistán (San Francisco Tesistán)
+33	Tlajomulco de Zuñiga
+33	Tlaquepaque
+33	Tonalá
+33	Zapopan
+33	Zapote del Valle (Zapote de Santa Cruz)
+312	La Estrella
+312	La Higuera
+312	Pihuamo
+312	San Marcos
+312	Tonila
+315	Barra de Navidad
+315	Careyes
+315	Cihuatlán
+315	Emiliano Zapata
+315	La Manzanilla
+315	San Mateo
+315	San Patricio (Melaque)
+316	Ayutla
+316	Cuautla
+316	San Clemente
+316	Unión de Tula
+317	Ahuacapan
+317	Autlán
+317	El Chante
+317	El Corcovado
+317	El Mentidero
+317	Las Lagunillas
+317	Las Paredes
+317	Mezquitán
+321	Ayuquila
+321	El Grullo
+321	El Limón
+321	El Palmar de San Antonio
+322	Campamento Sarh
+322	Campo Acosta
+322	El Tuito
+322	Ixtapa
+322	José María Morelos
+322	La Cruz de Loreto
+322	La Desembocada
+322	Las Juntas y los Veranos
+322	Las Palmas de Arriba
+322	Mismaloya
+322	Puerto Vallarta
+322	San Sebastián del Oeste
+322	Tequesquite
+322	Tomatlán
+322	Yelapa
+326	Atemajac de Brizuela
+326	Barranca de Otates
+326	Barranca de Santa Clara (Barranca de Enmedio)
+326	San Andrés Figueroa
+326	San Marcos (Mp. Zacoalco de Torres)
+326	Verdía
+326	Zacoalco
+341	Ciudad Guzmán
+341	El Rincón
+341	Gómez Farías
+341	La Mesa (El Fresnito)
+341	Tasinaxtla (La Cañada)
+341	Villa Lázaro Cárdenas (El Aserradero)
+341	Zapotiltic
+342	Sayula
+343	Ejutla
+343	El Jazmín
+343	Juanacatlán
+343	La Frontera
+343	San Gabriel
+343	San Isidro
+343	San José del Carmen
+343	Tapalpa
+343	Tolimán
+343	Tonaya
+343	Tuxcacuesco
+343	Zapotitlán de Vadillo
+344	Huisquilco (Huiscuilco)
+344	Manalisco
+344	Mexticacán
+344	Yahualica
+345	Ayotlán
+345	Betania
+345	Buenos Aires
+345	Degollado
+345	Huascato
+345	La Concepción
+345	Santa Rita
+346	Belén del Refugio
+346	Mechoacanejo
+346	Teocaltiche
+347	Mirandillas
+347	San Julián
+347	San Miguel El Alto
+347	Valle de Guadalupe
+348	Arandas
+348	Jesús María
+348	Josefino de Allende
+348	La Trinidad
+348	San Ignacio Cerro Gordo
+348	Santa María del Valle
+348	Santiaguito de Velázquez
+349	Atengo
+349	Juchitlán
+349	Los Guajes (San José de los Guajes)
+349	Quila (Quila El Grande)
+349	Tecolotlán
+349	Tenamaxtlán
+354	Manuel M. Dieguez
+357	Casimiro Castillo
+357	Cuautitlán
+357	El Chico
+357	La Huerta
+357	Lo Arado
+357	Los Tecomates (Piedra Pesada)
+357	Tequesquitlán
+357	Villa Purificación
+358	Arroyo Hondo
+358	La Garita
+358	San Francisco
+358	Tamazula
+358	Villa de Contla (Contla)
+358	Vista Hermosa (Santa Cruz del Cortijo)
+371	Atenquique
+371	Tecalitlán
+371	Tuxpan
+372	Amacueca
+372	Atoyac
+372	Citala
+372	Cofradía
+372	Concepción de Buenos Aires
+372	Cuyacapan
+372	El Zapote
+372	La Manzanilla de La Paz
+372	Teocuitatlán de Corona
+372	Unión de Guadalupe
+373	Cuquío
+373	Ixtlahuacán del Río
+373	Las Cruces
+373	Matatlán
+373	Palos Altos
+373	San Antonio de los Vázquez
+373	San Cristóbal de la Barranca
+373	San José de las Flores
+373	Santa Fe
+373	Saucillo de Maldonado
+373	Trejos
+373	Zapotlanejo
+374	Amatitán
+374	El Arenal
+374	El Salvador
+374	Santa Cruz del Astillero
+374	Santa Teresa
+374	Tequila
+375	Altavista de Ramos
+375	Ameca
+375	El Cabezón
+375	El Sabino
+375	Los Pocitos
+375	San Antonio Matute
+375	San Antonio Puerta de la Vega
+375	San Nicolás
+375	Texcalame
+376	Ajijic
+376	Atequiza
+376	Buenavista
+376	Chapala
+376	El Tepeguaje
+376	Ixtlahuacán de los Membrillos
+376	Mezcala de los Romeros
+376	Mismaloya
+376	San Jacinto
+376	San Juan Tecomatlán
+376	San Luis Soyatlán
+376	San Pedro Itzican
+376	Santa Cruz de la Soledad
+376	Tizapan El Alto
+376	Villa Emiliano Zapata
+377	Agua Caliente
+377	Atotonilco El Bajo
+377	Camichines
+377	Cocula
+377	El Crucero de Santa María
+377	Estipac
+377	Tateposco (San José de Tateposc)
+378	Acatic
+378	Capilla de Guadalupe
+378	Capilla de Milpillas (Milpillas)
+378	Mezcala (Mp. Tepatitlán de Morelo)
+378	Ojo de Agua de Latillas
+378	Pegueros
+378	San José de Bazarte
+378	Tecomotlan
+378	Tepatitlan de Morelos
+378	Tierras Coloradas
+382	Mazamitla
+382	Quitupan
+382	Valle de Juárez
+384	Cuisillos
+384	Las Navajas
+384	Tala
+384	Teuchitlán
+385	Buenavista
+385	Camajapita
+385	Chiquilistlán
+385	El Salitre
+385	Ipazoltic
+385	Los Guerrero
+385	San Martín Hidalgo
+385	San Nicolás de Acuña
+385	Tamazulita
+386	Ahualulco
+386	Antonio Escobedo
+386	El Carmen
+386	Etzatlán
+386	Hostotipaquillo
+386	La Estancia de Ayones
+386	La Quemada
+386	Magdalena
+386	Oconahua
+386	San Andrés
+386	San Marcos
+386	San Pedro
+387	Acatlán de Juárez
+387	Bellavista
+387	El Molino
+387	Huejotitan
+387	Jocotepec
+387	Las Trojes
+387	Potrerillos
+387	San Juan Cosala
+387	San Pedro Tesistán
+387	Villa Corona
+387	Zapotitán de Hidalgo
+388	Atenguillo
+388	Guachinango
+388	La Laja
+388	Los Volcanes
+388	Mascota
+388	Mixtlán
+388	San Antonio de los Macedo
+388	Talpa de Allende
+391	Atotonilco El Alto
+391	Francisco Javier Mina
+391	La Purísima
+391	Margaritas
+391	Nuevo Refugio de Afuera
+391	Nuevo Valle
+391	Otatlán
+391	Poncitlán
+391	San Antonio de Fernández
+391	San Isidro
+391	San José de Gracia
+391	San Miguel Zapotitlán
+391	Santa Cruz El Grande
+391	Tecualtitán
+391	Tototlán
+391	Zapotlán del Rey
+392	Jamay
+392	Joconoxtle (La Tuna)
+392	Ocotlán
+392	San José de la Paz
+392	San Martín de Zula (Zula)
+393	Condiro
+393	La Barca
+393	La Paz de Ordaz
+393	San Francisco de Rivas
+393	San José Casas Caídas
+393	San José de las Moras
+393	San Ramón
+395	Mezquitic de la Magdalena
+395	San Diego de Alejandría
+395	San Juan de los Lagos
+395	Tlacuitapan
+395	Unión de San Antonio
+424	Jilotlán de los Dolores
+431	Cañadas de Obregón
+431	Jalostotitlán
+431	San Gaspar de los Reyes (San Gaspar)
+431	Teocaltitan de Guadalupe
+437	Bolaños
+437	Chimaltitán
+437	Temastian
+437	Totatiche
+437	Villa Guerrero
+457	Huejúcar
+457	Huejuquilla El Alto
+457	Mezquitic
+457	Tlalcosahua
+474	Betulia
+474	Dieciocho de Marzo
+474	El Puesto
+474	Lagos de Moreno
+474	Los Azulitos
+474	Matanzas
+474	Paso de Cuarenta
+474	San Cristóbal
+474	San José de los Reynoso
+475	Bajío de San José
+475	Encarnación de Díaz
+475	Estación San Juan de los Lagos
+475	Mesón de los Sauces
+475	San Sebastián del Alamo
+475	Santa María de Abajo
+495	Tepusco
+495	Villa Hidalgo
+496	Guadalupe Victoria
+496	La Paz
+496	Los Campos
+496	Matancillas
+496	Ojuelos de Jalisco
+499	Colotlán

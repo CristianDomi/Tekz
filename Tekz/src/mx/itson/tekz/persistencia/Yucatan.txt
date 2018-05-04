@@ -1,0 +1,95 @@
+969	Flamboyanes
+969	Progreso
+985	Chemax
+985	Chichimila
+985	Dzitas
+985	Kaua
+985	Piste
+985	Temozón
+985	Valladolid
+985	X-can
+985	Yaxcaba
+986	Calotmul
+986	Colonia Yucatán
+986	Dzonot Carretero
+986	El Cuyo
+986	Espita
+986	Las Coloradas
+986	Panabá
+986	Río Lagartos
+986	San Felipe
+986	Sucila
+986	Tixcancal
+986	Tizimín
+988	Acanceh
+988	Celestun
+988	Chochola
+988	Hocaba
+988	Hoctun
+988	Holca
+988	Homún
+988	Huhi
+988	Hunucma
+988	Izamal
+988	Kantunil
+988	Kimbila
+988	Kinchil
+988	Sahcaba
+988	Seye
+988	Sisal
+988	Sotuta
+988	Tahmek
+988	Tecoh
+988	Tetiz
+988	Uman
+988	Xocchel
+991	Baca
+991	Buctzotz
+991	Cacalchen
+991	Cansahcab
+991	Cenotillo
+991	Dzemul
+991	Dzidzantun
+991	Dzilam de Bravo
+991	Dzilam González
+991	Dzoncauich
+991	Ixil
+991	Motul
+991	Muxupip
+991	Sinanche
+991	Tekal de Venegas
+991	Tekanto
+991	Telchac Pueblo
+991	Telchac Puerto
+991	Temax
+991	Tepakan
+991	Tixkokob
+991	Tunkas
+991	Yobaín
+997	Akil
+997	Chapab
+997	Dzan
+997	Halacho
+997	Mama
+997	Mani
+997	Maxcanú
+997	Muna
+997	Opichen
+997	Oxkutzcab
+997	Peto
+997	Sacalum
+997	Teabo
+997	Tekax
+997	Tekit
+997	Ticul
+997	Tzucacab
+997	Uxmal
+997	Xohuayan
+999	Caucel
+999	Chicxulub Pueblo
+999	Cholul
+999	Conkal
+999	Kanasin
+999	Komchen
+999	Mérida
+999	Xmatkuil

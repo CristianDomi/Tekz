@@ -1,0 +1,81 @@
+81	Aeropuertos
+81	Carmen
+81	Ciudad Apodaca
+81	Ciudad Benito Juárez
+81	Ciudad General Escobedo
+81	Ciudad Santa Catarina
+81	Ciudad Satélite del Norte
+81	El Barrial, Nuevo León (Rancho de los Benavides)
+81	García
+81	Guadalupe
+81	Juárez
+81	Los Ayala
+81	Monterrey
+81	Monterrey (Valle Alto)
+81	Parque Ind. Cienega de Flores
+81	Parque Industrial Ciudad Mitras
+81	Salinas Victoria
+81	San Nicolás de los Garza
+81	San Pedro Garza García
+81	Santiago (El Cercado)
+81	Villas Campestres
+488	Doctor Arroyo
+488	Mier y Noriega
+821	Guadalupe
+821	Hualahuises
+821	Iturbide
+821	Linares
+823	China
+823	Doctor Coss
+823	Garza González
+823	General Bravo
+823	General Tapia (Mariano Escobedo)
+823	Los Herreras
+823	Los Ramones
+823	San Vicente
+824	Garza Ayala
+824	Los Colorados de Abajo
+824	Sabinas Hidalgo
+824	Vallecillo
+825	Ciénaga de Flores
+825	Doctor González
+825	Dulces Nombres
+825	General Zuazua
+825	Higueras
+825	Marín
+825	Pesqueria
+826	Allende
+826	Aramberri
+826	Atongo de Abajo
+826	Catarino Rodríguez (El Potosí)
+826	Congregación Calles
+826	El Fraile
+826	Galeana
+826	General Terán
+826	General Terán
+826	General Zaragoza
+826	La Ascensión
+826	Laguna de Labradores
+826	Montemorelos
+826	Pablillo
+826	Rayones
+826	San José de Raíces
+826	San Rafael
+828	Cadereyta
+828	Cadereyta
+828	El Barranquito
+828	San Juan
+829	Bustamante
+829	El Potrero
+829	Hidalgo
+829	Mina
+829	Villa Aldama
+867	Colombia, Nuevo León
+873	Ciudad Anáhuac
+873	Lampazos
+892	Agualeguas
+892	Cerralvo
+892	General Treviño
+892	Los Aldamas
+892	Melchor Ocampo
+892	Villa de Paras

@@ -1,0 +1,82 @@
+615	Villa Alberto A. Alvarado A. (El Fundo Legal)
+616	Camalú
+616	Colonia Vicente Guerrero	
+616	Ejido General Leandro Valle	
+616	Ejido José María Morelos	
+616	El Rosario	
+616	Isla de Cedros	
+616	Poblado Héroes de Chapultepec	
+616	Punta Cólonet	
+616	Ruben Jaramillo	
+616	San Quintín	
+616	Venustiano Carranza (Santa María)
+646	Bajamar
+646	Colonia Benito García (El Zorrillo)	
+646	El Porvenir (Guadalupe)	
+646	El Rincón de Punta Banda
+646	El Sauzal	
+646	Ensenada	
+646	Erendira	
+646	Francisco R. Serrano (Valle San Matías)	
+646	Héroes de la Independencia	
+646	La Bufadora	
+646	La Misión
+646	Lázaro Cárdenas (Valle de la Trinidad)	
+646	Maneadero	
+646	Nacionalista de Sánchez Taboada	
+646	Ojos Negros (Real del Castillo)	
+646	San Vicente	
+646	Santo Tomás	
+646	Uruapan	
+646	Valle de la Trinidad
+646	Villa de Juárez, Baja California (San Antonio de las Minas)
+653	Estación Coahuila	
+658	Benito Juárez (Tecolotes)	
+658	Ciudad Morelos (Cuervos)
+658	Ejido Chiapas 1	
+658	Ejido Distrito Federal	
+658	Ejido Dr. Alberto Oviedo Mota (El Indiviso)	
+658	Ejido Guadalajara	
+658	Ejido Lázaro Cárdenas	
+658	Ejido Monterrey (Colonia Bataquez)
+658	Ejido Querétaro
+658	Ejido Quintana Roo
+658	Ejido Yucatán
+658	Guadalupe Victoria
+658	Hermosillo	
+658	Ingeniero Francisco Murguía	
+658	Mérida
+658	Paredones	
+658	República Mexicana	
+658	Saltillo	
+658	Vicente Guerrero (Algodones)	
+658	Villa Hermosa	
+661	Marena Cove	
+661	Playas de Rosarito	
+661	Popotla	
+661	Primo Tapia	
+664	Ejido Ojo de Agua	
+664	San Antonio del Mar	
+664	Tijuana	Baja California
+665	Ejido Nueva Colonia Hindú	
+665	El Descanso	
+665	El Hongo	
+665	El Testerazo	
+665	Tecate	
+665	Valle de las Palmas	
+686	Chihuahua	
+686	Colonia La Puerta	
+686	Delta (Estación Delta)	
+686	Durango	
+686	Ejido Guanajuato	
+686	Ejido Sanson Flores
+686	Ejido Sinaloa	
+686	Islas Agrarias Grupo B	
+686	Jalapa	Baja California
+686	Mexicali	
+686	Michoacán de Ocampo	
+686	Nayarit Llamada	
+686	Nuevo León	
+686	Puebla	
+686	Rumorosa	
+686	San Felipe

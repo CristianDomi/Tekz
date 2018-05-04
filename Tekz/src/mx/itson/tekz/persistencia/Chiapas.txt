@@ -1,0 +1,154 @@
+916	Palenque
+916	Salto de Agua
+917	Las Garzas
+917	Reforma
+918	Acacoyagua
+918	Acapetahua
+918	Colonia Soconusco
+918	El Triunfo
+918	Escuintla
+918	Flores Magón
+918	Hidalgo
+918	Hidalgo Novillero
+918	Mapastepec
+918	Pijijiapan
+918	Pueblo Nuevo Comaltitlán
+918	Sesecapa
+919	Altamirano
+919	Bachajón
+919	Bochil
+919	Chenalho
+919	Chilón
+919	Coapilla
+919	El Rayón
+919	Huitiupan
+919	Ixhuatan
+919	Jitotol de Zaragoza
+919	Ocosingo
+919	Oxchuc
+919	Pantelhó
+919	Petalcingo
+919	Pueblo Nuevo Solistahuacán
+919	Simojovel
+919	Solosuchiapa
+919	Tapilula
+919	Tila
+919	Yajalón
+932	Ixtacomitán
+932	Juárez
+932	Pichucalco
+934	La Libertad
+961	Álvaro Obregón
+961	Berriozabal
+961	Chiapa de Corzo
+961	Chicoasén
+961	Copoya
+961	El Jobo
+961	El Sabino
+961	Ixtapa
+961	Juan del Grijalva
+961	Julián Grajales
+961	Osumacinta
+961	Salvador Urbina
+961	San Fernando
+961	Soyaló
+961	Suchiapa
+961	Tuxtla Gutiérrez
+961	Veinte de Noviembre
+961	Villa de Acala
+962	Agustín de Iturbide
+962	Álvaro Obregón
+962	Belisario Domínguez
+962	Cacahoatán
+962	Carrillo Puerto
+962	Ciudad Hidalgo
+962	Frontera Hidalgo
+962	La Libertad
+962	Mazapa de Madero
+962	Metapa de Domínguez
+962	Motozintla
+962	Puerto Madero (San Benito)
+962	Salvador Urbina
+962	Santo Domingo
+962	Suchiate
+962	Tapachula
+962	Tuxtla Chico
+962	Unión Juárez
+963	Chicomuselo
+963	Ciudad Cuauhtémoc
+963	Comitán de Domínguez
+963	El Pacayal
+963	Frontera Comalapa
+963	José María Morelos
+963	Juan Sabines
+963	La Independencia
+963	La Trinitaria
+963	Las Margaritas
+963	Nuevo Amatenango
+963	Rodulfo Figueroa
+963	Sabinalito
+963	San Caralampio
+963	Siltepec
+963	Tzimol
+964	Buenos Aires (Zinacántal)
+964	El Ingenio Azucarero
+964	Huehuetán
+964	Huixtla
+964	Mazatán
+964	Tuzantán
+965	Cristóbal Obregón
+965	Cuauhtémoc
+965	Doctor Domingo Chanona
+965	El Parral
+965	Guadalupe Victoria (Lázaro Cárd)
+965	Jesús María Garza
+965	Manuel Avila Camacho
+965	Nuevo México
+965	Primero de Mayo
+965	Revolución Mexicana
+965	San Pedro Buenavista
+965	Valle Morelos
+965	Villa Corzo
+965	Villa Flores
+965	Villa Hidalgo
+966	Arriaga
+966	Emiliano Zapata
+966	La Azteca
+966	Tonalá
+967	Chamula
+967	Corazón de María
+967	Huixtán
+967	La Candelaria
+967	Rancho Nuevo
+967	San Cristóbal de las Casas
+967	San Lucas
+967	Tenejapa
+968	Cintalapa
+968	Copainala
+968	Jiquipilas
+968	Lázaro Cárdenas
+968	Ocozocoautla
+968	Ocuilapa de Juárez
+968	Raudales Malpaso
+968	Tecpatán
+968	Tierra y Libertad
+992	Benito Juárez
+992	Chiapilla
+992	Diamante de Echeverría
+992	Independencia
+992	Jaltenango de la Paz
+992	Nueva Concordia
+992	Presidente Echeverría (Laja Ten)
+992	Pujiltic
+992	Ricardo Flores Magón
+992	Socoltenango
+992	Soyatitán
+992	Teopisca
+992	Totolapa
+992	Venustiano Carranza
+992	Vicente Guerrero
+992	Villa de las Rosas
+994	Cabeza de Toro
+994	Paredón
+994	Puerto Arista
+994	Tres Picos

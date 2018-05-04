@@ -1,0 +1,50 @@
+449	Aguascalientes
+449	Buenavista de Peñuelas
+449	Comunidad El Rocio
+449	El Refugio de Peñuelas
+449	El Salto de los Salado
+449	El Vergel (Paraíso)
+449	General Ignacio Zaragoza (Venadero)
+449	General José María Morelos y Pavón (Cañada Honda)
+449	Jaltomate
+449	Jesús María
+449	Los Caños (Aguascalientes)
+449	Los Negritos
+449	Norias de Ojocaliente
+449	Peñuelas (El Cienegal)
+449	San Ignacio
+449	Valladolid
+449	Villa Lic. Jesús Terán (Calvill)
+458	Cosío
+458	La Punta
+465	Carboneras
+465	Colonia Macario J. Gómez
+465	El Chayote
+465	Emiliano Zapata
+465	Escaleras
+465	Fraccionamiento Campestre San C
+465	Mesillas
+465	Pabellón de Arteaga
+465	Pabellón de Hidalgo
+465	Paredes
+465	Rincón de Romos
+465	San Antonio
+465	San Francisco de los Romo
+465	San Jacinto
+465	San José de Gracia
+465	Tepezala
+495	Calvillo
+495	Chiquihuitero (San Isidro)
+495	El Salitre
+495	Jaltiche de Abajo
+495	La Labor
+495	La Panadera
+495	Malpaso
+495	San Tadeo
+496	Amarillas de Esparza
+496	Asientos
+496	Ciénaga Grande
+496	Palo Alto
+496	Pilotos
+496	Pino Suárez (Rancho Viejo)
+496	Villa Juárez

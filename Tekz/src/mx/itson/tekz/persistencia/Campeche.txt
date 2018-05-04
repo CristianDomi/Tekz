@@ -1,0 +1,34 @@
+913	Palizada
+938	Atasta
+938	Ciudad del Carmen
+938	Nuevo Progreso
+938	San Antonio Cárdenas
+981	Alfredo B. Bonfil
+981	Campeche
+981	China
+981	Melchor Ocampo
+982	Candelaria
+982	Centenario
+982	Champotón
+982	División del Norte
+982	Don Samuel
+982	Escárcega
+982	Felipe Carrillo Puerto
+982	Isla Aguada
+982	Ley Federal de Reforma Agraria
+982	Sabancuy
+982	Seybaplaya
+982	Sihochac
+982	Villa Madero
+983	Xpujil
+996	Becal
+996	Bolonchen de Rejón
+996	Calkini
+996	Dzibalchen
+996	Dzitbalche
+996	Hecelchakan
+996	Hopelchen
+996	Nunkini
+996	Pomuch
+996	Tenabo
+996	Vicente Guerrero (Iturbide)

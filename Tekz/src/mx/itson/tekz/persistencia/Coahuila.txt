@@ -1,0 +1,69 @@
+671	Mieleras
+671	Viesca
+842	General Cepeda
+842	Parras de la Fuente
+844	Arteaga
+844	Ramos Arizpe
+844	Saltillo
+844	San Antonio de las Alazanas
+861	Don Martín
+861	Juárez
+861	Nueva Rosita
+861	Progreso
+861	Sabinas
+861	San José de Aura
+861	San Juan de Sabinas
+862	Allende
+862	Guerrero
+862	Morelos
+862	Nava
+862	Río Bravo
+862	Villa Unión
+862	Zaragoza
+864	Las Esperanzas
+864	Minas de Barroterán
+864	Minas La Florida
+864	Muzquiz
+864	Palau
+866	Abasolo
+866	Castaños
+866	Frontera
+866	Monclova
+866	Ocho de Enero
+866	Primero de Mayo
+867	Hidalgo
+869	Cuatrocienegas
+869	Lamadrid
+869	Nadadores
+869	Ocampo
+869	Sacramento
+869	San Buenaventura
+871	El Cambio
+871	El Coyote
+871	Escuadron Doscientos Uno
+871	Hidalgo
+871	Juan Eugenio
+871	La Esperanza
+871	La Flor de Mayo y La Barca
+871	La Luz
+871	La Partida
+871	La Paz
+871	Matamoros
+871	Purísima
+871	Santo Niño Aguanaval
+871	Torreón
+872	El Retiro
+872	Francisco I. Madero
+872	La Concordia (Rosita)
+872	Laguna del Rey
+872	Lequeitio
+872	Luchana
+872	Mayran
+872	San Ignacio
+872	San Pedro
+872	San Rafael de Arriba
+873	Candela
+877	Ciudad Acuña
+877	San Carlos
+878	Jiménez
+878	Piedras Negras

@@ -1,0 +1,37 @@
+983	Bacalar
+983	Calderitas
+983	Chetumal
+983	Chunhuhub
+983	Felipe Carrillo Puerto
+983	Ingenio Álvaro Obregón
+983	Limones
+983	Mahahual
+983	Morocoy
+983	Nicolás Bravo
+983	Noh-bec
+983	Sergio Butrón Casas
+983	Subteniente López (Santa Elena)
+983	Tihosuco
+983	Ucum
+983	Xul-ha
+984	Akumal
+984	Chemuyil
+984	Holbox
+984	Ignacio Zaragoza
+984	Kantunilkin
+984	Nuevo Xcan
+984	Playa del Carmen
+984	Puerto Aventuras
+984	Riviera Tulum
+984	Tulum
+984	Xpu-ha
+987	Cozumel
+997	Dziuche
+997	José María Morelos
+997	Saban
+998	Alfredo V. Bonfil
+998	Cancún
+998	Isla Mujeres
+998	Leona Vicario
+998	Puerto Morelos
+

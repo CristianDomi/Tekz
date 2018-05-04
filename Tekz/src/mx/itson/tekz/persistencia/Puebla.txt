@@ -1,0 +1,298 @@
+222	Amozoc
+222	Chipilo de Francisco Javier Mina (Chipilo)
+222	Cholula de Rivadabia
+222	El Oasis Valsequillo
+222	Estación San Diego
+222	Las Haras Lucero
+222	Los Angeles Tetela
+222	Martiniano Hernández (San José Xilotzingo)
+222	Mazatecochco
+222	Papalotla
+222	Puebla
+222	San Andrés Azumiatla
+222	San Andrés Cholula
+222	San Baltazar Tetela
+222	San Francisco Cuapa
+222	San Francisco Ocotlán
+222	San José Tlautla
+222	San Juan Cuautlancingo
+222	San Luis Tehuiloyocan
+222	San Martín Tlamapa
+222	San Martinito
+222	San Miguel Canoa
+222	San Miguel Xoxtla
+222	San Pedro Tonantzintla
+222	San Pedro Zacachimalpa
+222	San Sebastián Aparicio
+222	Santa Clara Ocoyucan
+222	Santa Isabel Cholula
+222	Santa María Coronango
+222	Santa María Malacatepec
+222	Santa María Xonacatepec
+222	Santiago Momoxpan
+222	Santo Tomás Chautla
+222	Tlaltenango
+222	Tonantzintla
+222	Villa Vicente Guerrero
+222	Xicohtzinco
+223	La Magdalena Tetela Morelos
+223	Santa María Ixtiyucan
+223	Santa María Nenetzintla
+223	Tepatlaxco de Hidalgo
+223	Tepeaca
+224	Almolonga
+224	Atoyatempan
+224	Chigmecatitlán
+224	Huatlatlauca
+224	Huejonapan (San Antonio)
+224	Molcaxac
+224	San Juan Ixcaquixtla
+224	San Luis Ajajalpan
+224	San Miguel Acuexcomac
+224	San Miguel Zacaola
+224	Santa Inés Ahuatempan
+224	Santa Isabel Tlanepantla
+224	Santo Tomás Hueyotlipán
+224	Tecali de Herrera
+224	Tepexi de Rodríguez
+224	Tochtepec
+224	Zacapala
+227	Huejotzingo
+227	San Andrés Calpan
+227	San Buenaventura Nealtican
+227	San Jeronimo Tecuanipan
+227	San Mateo Ozolco
+227	San Nicólas los Ranchos
+227	Santa Ana Xalmimilulco
+227	Santa María Atexcac
+227	Santa María Nepopualco
+231	Chignautla
+231	Ixtahuiata (La Legua)
+231	Teteles
+231	Teziutlán
+232	Hueytamalco
+232	San José Acateno
+233	Ayotoxco de Guerrero
+233	Caxhuacan
+233	Cuetzalán
+233	Huehuetla
+233	Ixtepec
+233	Jonotla
+233	Mazatepec
+233	Nauzontla
+233	Ocotlán
+233	Oyameles
+233	San Miguel Tenextatiloyan
+233	Santiago Zautla
+233	Tatauzoquico
+233	Tenampulco
+233	Tlatlauquitepec
+233	Xochiapulco
+233	Xonocuautla
+233	Zacapoaxtla
+233	Zaragoza
+236	Ajalpan
+236	Altepexi
+236	Calipan
+236	San José Axuxco
+236	San José Miahuatlán
+236	San José Tilapa
+236	San Sebastián Zinacatepec
+236	Santa María del Monte
+236	Zoquitlán
+237	San Antonio Texcala
+237	San Gabriel Chilac
+237	San José Tlacuitlapan
+237	San Simon Yehualtepec
+237	Tlacotepec
+237	Zapotitlán Salinas
+238	Azumbilla
+238	José María Pino Suárez
+238	Nicolás Bravo
+238	San Marcos Necoxtla
+238	Santiago Miahuatlán
+238	Tehuacán
+238	Tepanco de López
+243	Ahuatlán
+243	Atencingo
+243	Ayotla
+243	Chietla
+243	Coatzingo
+243	Escape de Lagunillas
+243	Izúcar de Matamoros
+243	La Galarza
+243	Lagunillas de Rayón (Alchichica)
+243	Pueblo Nuevo de Porfirio Díaz
+243	San Carlos (San Carlos Buenavi)
+243	San Felipe Ayutla
+243	San Felix Rijo
+243	San Juan Calmeca
+243	San Juan Epatlán
+243	San Juan Raboso
+243	San Lucas Colucán
+243	Santa María Xuchapa
+243	Santo Domingo Huehuetlán
+243	Teopantlán
+243	Tepexco
+243	Tilapa
+243	Zolonquiapa
+244	Atlixco
+244	Col. Agr. De Ocotepec
+244	Emiliano Zapata Nexatengo
+244	Huaquechula
+244	La Magdalena Yancuitlalpan
+244	La Trinidad
+244	Rancho La Venta
+244	San Félix Hidalgo
+244	San Jerónimo Coyula
+244	San Juan Amecac
+244	San Juan Bautista
+244	San Lucas Tulcingo
+244	San Pedro Benito Juárez
+244	Santa Catarina Coatepec
+244	Santa Cruz Cuautomatitla
+244	Santa Lucía Cosamaloapan
+244	Santa María Xoyatla
+244	Santo Domingo Atoyatempan
+244	Tepeojuma
+244	Tianguismanalco
+244	Tlapanala
+244	Tochimilco
+244	Tronconal
+245	Atzitzintla
+245	Ciudad Serdán
+245	El Veladero (Santa Cruz Velader)
+245	Esperanza
+245	San Juan Atenco
+245	San Nicolás de Buenos Aires
+245	Tlachichuca
+248	Guadalupe Zaragoza
+248	La Preciosita
+248	San Antonio Chiautla de Arenas
+248	San Baltazar Temaxcalac
+248	San Buenaventura Tecaltzingo
+248	San Felipe Teotlalcingo
+248	San Francisco Tepeyecac
+248	San Jerónimo Tianguismanalco
+248	San Juan Cuauhtémoc
+248	San Lorenzo Chiautzingo
+248	San Lucas El Grande
+248	San Martín Texmelucan de Labastida
+248	San Pedro Matamoros
+248	San Rafael Tlanalapan
+248	San Salvador El Verde
+248	Santa María Moyotzingo
+248	Santa Rita Tlahuapan
+248	Santiago Coltzingo
+249	Acatzingo
+249	Barrio La Soledad
+249	Garcías
+249	Los Reyes de Juárez
+249	Morelos Cañada
+249	Palmar de Bravo
+249	Palmarito Tochapan
+249	San José Ixtapa
+249	San Miguel Tecuitlapa
+249	San Pablo de las Tunas
+249	San Salvador El Seco
+249	San Salvador Huixcolotla
+249	San Sebastián Villanueva
+249	San Simón de Bravo
+249	Santiago Alseseca
+249	Santiago Tenango
+249	Soltepec
+249	Tecamachalco
+249	Tezuapan
+275	Acaxtlahuacán de Albino Zertuche
+275	Aguacatitlán
+275	Ahuehuetitla
+275	Axutla
+275	Chiautla de Tapia
+275	Chila de la Sal
+275	Chinantla
+275	Guadalupe Santa Ana
+275	Guadalupe Victoria
+275	Huachinantla
+275	Huehuetlán El Chico
+275	Ixcamilpa
+275	Jolalpan
+275	La Noria Hidalgo
+275	Progreso
+275	San Antonio Chiltepec
+275	San Miguel de Lozano
+275	San Miguel Tlaltepexi
+275	San Pablo Amicano
+275	San Pedro Cuayuca
+275	Tecomatlán
+275	Tehuitzingo
+275	Tulcingo de Valle
+275	Tzicatlán
+276	Cuyoaco
+276	Libres
+276	Ocotepec
+276	Oriental
+276	San Andrés Payuca
+276	San José Chiapa
+276	Villa Rafael Lara Grajales
+282	Cuauhtémoc
+282	González Ortega
+282	Guadalupe Victoria
+282	Quimixtlán
+282	Rafael J. García
+282	San José Alchichica
+282	Santa Cruz Quechulac
+282	Tepeyahualco
+746	Mecapalapa
+746	Mecapalapa
+746	Metlaltoyuca
+746	Metlaltoyuca
+746	Pantepec
+746	Pantepec
+746	Venustiano Carranza
+746	Venustiano Carranza
+746	Villa Lázaro Cárdenas (La Uno)
+746	Villa Lázaro Cárdenas (La Uno)
+764	Ahuacatlan
+764	Ahuacatlan
+764	Necaxa
+764	Necaxa
+764	Tepango de Rodríguez
+764	Tepango de Rodríguez
+764	Villa Avila Camacho (La Ceiba)
+764	Villa Avila Camacho (La Ceiba)
+764	Xicotepec de Juárez
+764	Xicotepec de Juárez
+776	Ahuazotepec
+776	Ahuazotepec
+776	Honey
+776	Honey
+776	Huauchinango
+776	Huauchinango
+776	Pahuatlán de Valle
+776	Pahuatlán de Valle
+776	San Pablito
+776	San Pablito
+776	Venta Grande
+776	Venta Grande
+797	Aquixtla
+797	Aquixtla
+797	Chignahuapan
+797	Chignahuapan
+797	Loma Alta
+797	Loma Alta
+797	Tetela de Ocampo
+797	Tetela de Ocampo
+797	Tomatlán
+797	Tomatlán
+797	Tonalapa
+797	Tonalapa
+797	Zacatlán
+797	Zacatlán
+953	Acatlán de Osorio
+953	Chila de las Flores
+953	Hermenegildo Galeana
+953	Petlalcingo
+953	San Jerónimo Xayacatlán
+953	San Vicente Boquerón
+953	Tianguistengo
+953	Xayacatlán de Bravo (municipality)

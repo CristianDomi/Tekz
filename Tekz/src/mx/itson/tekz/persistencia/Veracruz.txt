@@ -1,0 +1,451 @@
+225	La Palmilla
+225	Tlapacoyan
+226	Altotonga
+226	Jalacingo
+226	Orilla del Monte
+226	Plan de Arroyos
+228	Acajete
+228	Banderilla
+228	Chiltoyac
+228	Coacoatzintla
+228	Coatepec
+228	Colonia Santa Barbara
+228	Dos Ríos
+228	El Chico
+228	Estanzuela
+228	Jalapa (Xalapa)
+228	La Concepción
+228	La Joya
+228	Las Trancas
+228	Mahuixtlán
+228	Pacho Viejo
+228	Tuzamapan
+228	Xico
+229	Boca del Río
+229	Colonia El Renacimiento
+229	El Conchal
+229	Valente Díaz
+229	Vargas
+229	Veracruz
+232	Arroyo del Potrero
+232	Cañada Rica
+232	Casitas
+232	El Ojite
+232	El Pital
+232	Felipe Carrillo Puerto
+232	Hueytepec
+232	La Vigueta
+232	Manantiales
+232	Martínez de la Torre
+232	San Rafael
+235	Arroyo Hondo
+235	Barra de Palmas
+235	Emilio Carranza
+235	Francisco Sarabia
+235	Jicaltepec
+235	La Defensa
+235	La Libertad
+235	Loma Bonita
+235	Misantla
+235	Nautla
+235	Vega de Alatorre
+235	Venustiano Carranza
+271	Amatlán de los Reyes
+271	Cacahuatal
+271	Córdoba
+271	Cuautlapan
+271	Fortín de las Flores
+271	Monte Salas
+271	Naranjal
+271	Ojo de Agua Grande (California)
+271	Paraje Nuevo
+271	San Matías (Los Mangos)
+272	Acultzingo
+272	Ciudad Mendoza
+272	Cruz Verde
+272	Dos Ríos (Tocuila)
+272	Ixtaczoquitlán
+272	Jalapilla
+272	Loma Grande
+272	Maltrata
+272	Orizaba
+272	Río Blanco
+272	Sumidero
+272	Zapoapan
+273	Boca del Monte
+273	Camarón de Tejeda
+273	Chocamán
+273	Colonia Manuel González
+273	Coscomatepec
+273	Huatusco
+273	Ixhuatlán del Café
+273	Monte Blanco
+273	Paso del Macho
+273	Potrero
+273	Tepatlaxco
+273	Tetelzingo
+273	Tlacotepec de Mejía
+273	Tomatlán
+273	Totutla
+274	El Jícaro
+274	Joachín
+274	Tierra Blanca
+274	Villa Tejeda
+278	Almilinga
+278	Campo Cuichapa
+278	Cotaxtla
+278	Cuitláhuac
+278	El Cuajilote
+278	El Tamarindo
+278	Emiliano Zapata
+278	La Capilla
+278	La Tinaja
+278	Laguna Chica (Pueblo Nuevo)
+278	Loma Angosta
+278	Mata Tenatito (Casco Hacienda)
+278	Omealca
+278	Paraíso La Reforma
+278	Tequila
+278	Tezonapa
+278	Yanga
+278	Zongolica
+279	Acatlán
+279	Actopan
+279	Alto Lucero
+279	Apazapán
+279	Blanca Espuma
+279	Buena Vista
+279	Cerro Gordo
+279	Chahuapán
+279	Chavarrillo
+279	Chiconquiaco
+279	Chicuasén
+279	Colipa
+279	Cosautlán de Carvajal
+279	Coyolillo
+279	Cristóbal Hidalgo
+279	Dos Arroyos
+279	El Espinal
+279	Idolos
+279	Jalcomulco
+279	Juchique de Ferrer
+279	La Reforma
+279	Limones
+279	Mesa de Guadalupe
+279	Naolinco de Victoria
+279	Pacho Nuevo
+279	Paso de la Milpa
+279	Plan de las Hayas
+279	Rinconada
+279	Santa Ana
+279	Santiago Xihuitlán
+279	Teocelo
+279	Tepetlán
+279	Tigrillos
+279	Tlaltetela
+279	Trapiche del Rosario
+279	Villa Emiliano Zapata (El Carrizal)
+279	Yecuatla
+282	El Parador
+282	Ixhuacán de los Reyes
+282	La Gloria
+282	Los Altos
+282	Los Molinos (San José)
+282	Perote
+282	Rafael Ramirez (Las Vigas)
+282	San Antonio Tenextepec
+282	Villa Aldama
+283	Abasolo del Valle
+283	Boca del Monte
+283	El Nigromante
+283	Isla
+283	Linda Vista
+283	Los Tigres (San Marcos)
+283	Nuevo Ixcatlán
+283	Playa Vicente
+283	Rodríguez Clara
+283	Tesechoacán
+283	Villa Azueta
+284	Ángel R. Cabada (municipality)
+284	El Porvenir
+284	Lerdo de Tejada
+284	San Juan de los Reyes
+284	Tecolapan
+284	Tula
+285	El Cocuite
+285	El Hatito
+285	Ignacio de la Llave
+285	Jamapa
+285	La Laguna y Monte del Castillo
+285	Los Robles
+285	Manlio Fabio Altamirano
+285	Mata Loma
+285	Medellín de Bravo
+285	Paso de Ovejas
+285	Piedras Negras
+285	Playa de Vacas
+285	Puente Jula
+285	Soledad de Doblado
+285	Tenenexpan
+285	Tlalixcoyan
+285	Tolome
+285	Zacate Colorado Primero
+287	Otatitlán
+288	Acula
+288	Amartillán
+288	Carlos A. Carrillo (San Cristóbal)
+288	Chacaltianguis
+288	Cosamaloapan
+288	Ixmatlahuacan
+288	La Granja
+288	Moyota
+288	Nopaltepec
+288	Paraíso Novillero
+288	San Francisco (Oyozontle)
+288	Tlacojalpan
+288	Tlacotalpan
+288	Tres Valles
+288	Tuxtilla
+294	Catemaco
+294	Comoapan
+294	Corral Nuevo
+294	Cuatotolapan Estación
+294	El Laurel
+294	Francisco I. Madero
+294	Juan Díaz Covarrubias
+294	Juan Jacobo Torres (Bodega de Totontepec)
+294	La Nueva Victoria
+294	La Victoria
+294	Mazumiapan
+294	Salto de Eyipantla
+294	San Andrés Tuxtla
+294	Santiago Tuxtla
+294	Sihuapan
+294	Sontecomapan
+294	Tapalapan
+294	Tilapan
+294	Tres Zapotes
+294	Tulapan
+296	Chichicaxtle
+296	El Farallón (Campamento CFE)
+296	El Palmar
+296	El Viejon Nuevo
+296	José Cardel
+296	La Antigua
+296	Mozomboa
+296	Nicolás Blanco (San Pancho)
+296	Palma Sola
+296	Paso de Doña Juana
+296	Paso del Cedro
+296	Santa Rosa, Veracruz (General Pinzón)
+296	Ursulo Galván
+296	Zempoala
+297	Alvarado
+297	Anton Lizardo
+297	Arbolillo
+297	Mandinga y Matoza
+297	Salinas
+489	El Higo
+746	Benito Juárez
+746	Benito Juárez
+746	Castillo de Teayo
+746	Castillo de Teayo
+746	Chicontepec
+746	Chicontepec
+746	Colatlan
+746	Colatlan
+746	El Palmar (Mpio. Tihuatlán)
+746	El Palmar (Mpio. Tihuatlán)
+746	Enrique Rodríguez Cano (Zapotal)
+746	Enrique Rodríguez Cano (Zapotal)
+746	Ixhuatlán de Madero
+746	Ixhuatlán de Madero
+746	La Concepción
+746	La Concepción
+746	La Guadalupe
+746	La Guadalupe
+746	Llano Enmedio
+746	Llano Enmedio
+746	Tihuatlán
+746	Tihuatlán
+746	Tlacolula
+746	Tlacolula
+746	Zacate Colorado
+746	Zacate Colorado
+765	Alamo Temapache
+765	Alamo Temapache
+765	La Camelia (Palo Blanco)
+765	La Camelia (Palo Blanco)
+765	Potrero del Llano
+765	Potrero del Llano
+765	Temapache (H. Temapache de G. Z)
+765	Temapache (H. Temapache de G. Z)
+766	Gutiérrez Zamora
+766	Gutiérrez Zamora
+766	Lomas de Arena
+766	Lomas de Arena
+766	Tecolutla
+766	Tecolutla
+768	Amatlán
+768	Amatlán
+768	Naranjos
+768	Naranjos
+768	Saladero
+768	Saladero
+768	Tamalín
+768	Tamalín
+768	Tamiahua
+768	Tamiahua
+774	Huayacocotla
+774	Huayacocotla
+782	Coatzintla
+782	Coatzintla
+782	Nuevo Progreso (El Doce)
+782	Nuevo Progreso (El Doce)
+782	Palma Sola
+782	Palma Sola
+782	Poza Rica
+782	Poza Rica
+783	Praxedis Guerrero (Kilometro Di)
+783	Praxedis Guerrero (Kilometro Di)
+783	Santiago de la Peña
+783	Santiago de la Peña
+783	Tuxpan
+783	Tuxpan
+784	Adolfo Ruiz Cortines
+784	Adolfo Ruiz Cortines
+784	Agua Dulce Papantla
+784	Agua Dulce Papantla
+784	Barra de Cazones
+784	Barra de Cazones
+784	Carrizal
+784	Carrizal
+784	Cazones de Herrera
+784	Cazones de Herrera
+784	Comalteco
+784	Comalteco
+784	Coxquihui
+784	Coxquihui
+784	Coyutla
+784	Coyutla
+784	El Chote
+784	El Chote
+784	El Volador
+784	El Volador
+784	Entabladero
+784	Entabladero
+784	La Unión
+784	La Unión
+784	Mecatlan
+784	Mecatlan
+784	Melchor Ocampo
+784	Melchor Ocampo
+784	Miguel Aemán Valdés
+784	Miguel Aemán Valdés
+784	Papantla
+784	Papantla
+784	Progreso de Zaragoza
+784	Progreso de Zaragoza
+784	Pueblillo
+784	Pueblillo
+784	Zozocolco de Hidalgo
+784	Zozocolco de Hidalgo
+785	Cerro Azul
+785	Cerro Azul
+785	Chontla
+785	Chontla
+785	Citlaltepec
+785	Citlaltepec
+785	Ixcatepec
+785	Ixcatepec
+785	Tancoco
+785	Tancoco
+785	Tepetzintla
+785	Tepetzintla
+785	Zacamixtle
+785	Zacamixtle
+789	Chalma
+789	Chalma
+789	Chapopote Chico (Tlachinolapa)
+789	Chapopote Chico (Tlachinolapa)
+789	Corozal
+789	Corozal
+789	Platón Sánchez
+789	Platón Sánchez
+789	Tantoyuca
+789	Tantoyuca
+789	Tempoal de Sánchez
+789	Tempoal de Sánchez
+833	Anáhuac, Veracruz
+833	Ciudad Cuauhtémoc
+833	El Magozal
+833	El Moralillo
+833	Hidalgotitlán
+833	Tampico Alto
+846	Buenavista (Ejido Buena Vista)
+846	Chijol 17
+846	Colonia Piloto
+846	Huayalejo
+846	Las Cucharas
+846	Lázaro Cárdenas
+846	Nuevo Michoacán
+846	Ozuluama
+846	Pánuco
+846	Poza Del Tule
+846	Tamos
+846	Vega de Otates
+846	Vichinchijol Nuevo
+846	Villa Cacalilao
+921	Allende
+921	Cánticas
+921	Coatzacoalcos
+921	Ixhuatlán del Sureste
+921	Las Barrillas
+921	Lomas de Barrillas
+921	Nanchital de Lázaro Cárdenas del Río
+922	Barranca (Buenos Aires)
+922	Capoacan
+922	Chacalapa
+922	Chinameca
+922	Cosoleacaque
+922	Jaltipán
+922	La Chinantla (Poblado Diez)
+922	La Horqueta (Poblado Doce)
+922	Las Carolinas (Poblado Nueve)
+922	Las Lomas de Tacamichapan
+922	Minatitlán
+922	Río Uxpanapa (Poblado Catorce)
+923	Agua Dulce
+923	Cuichapa
+923	Las Choapas
+923	Moloacan
+924	Acayucan
+924	Achotal
+924	Aguilera
+924	Almagres
+924	Campo Nuevo
+924	Colonia Nuevo Morelos
+924	Cruz del Milagro
+924	Dehesa
+924	Hermanos Cedillo
+924	Hidalgotitlán
+924	Huazuntlan
+924	Jesús Carranza
+924	Juanita
+924	La Cerquilla
+924	La Laguna Poblado Seis
+924	Mecayapan
+924	Medias Aguas
+924	Minzapan
+924	Morelos
+924	Niños Héroes (Los Juanes)
+924	Nuevo Canton (Poblado Siete)
+924	Poblado Cinco
+924	Quiamoloapan
+924	San Juan Evangelista
+924	Sayula de Alemán
+924	Soconusco
+924	Soteapan
+924	Suchilapan del Río
+924	Texistepec
+924	Veinticuatro de Febrero

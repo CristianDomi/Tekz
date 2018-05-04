@@ -1,0 +1,35 @@
+312	Alzada
+312	Chiapa
+312	Ciudad de Villa de Alvarez
+312	Cofradía de Suchitlán
+312	Colima
+312	Comala
+312	Coquimatlán
+312	Cuauhtémoc
+312	El Chanal
+312	El Trapiche
+312	Los Ortices
+312	Los Tepames
+312	Piscila
+312	Pueblo Juárez (La Magdalena)
+312	Quesería
+312	Zacualpan|
+313	Armería
+313	Augusto Gómez Villanueva
+313	Cerro de Ortega
+313	Ciudad de Armería
+313	Colonia Bravo
+313	Cuyutlán
+313	Ixtlahuacán
+313	Madrid
+313	Rincón de López
+313	Tecolapa
+313	Tecomán
+314	Camotlán de Miraflores
+314	El Colomo
+314	El Naranjo
+314	Jalipa
+314	Manzanillo
+314	Minatitlán
+314	Venustiano Carranza (Cualata)
+314	Vida del Mar

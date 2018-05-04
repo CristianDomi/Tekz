@@ -1,0 +1,91 @@
+731	Amayuca
+731	Chalcatzingo
+731	Huecahuasco
+731	Huejotengo (San Marcos)
+731	Jumiltepec
+731	Ocuituco
+731	San Andrés Hueyapán
+731	Tecajec
+731	Tetela del Volcán
+731	Tlacotepec
+731	Yecapixtla
+731	Zacualpan
+734	Acamilpa
+734	Ahuehuetzingo
+734	Jojutla
+734	Nexpa
+734	Pedro Amaro
+734	San José Vistahermosa
+734	Santa Rosa Treinta
+734	Tehuixtla
+734	Tequesquitengo
+734	Ticumán
+734	Tlaltizapan
+734	Tlaquiltenango
+734	Tlatenchi
+734	U. H. J. Ma. Morelos y Pavón
+734	Xoxocotla
+734	Zacatepec de Hidalgo
+735	Atlatlahucán
+735	Chinameca
+735	Ciudad Ayala
+735	Cocoyoc
+735	Cuautla
+735	Felipe Neri (Cuatepec)
+735	Jonacatepec
+735	Juan Morales
+735	Kunetzin de los Volcanes
+735	Lázaro Cárdenas (El Empalme)
+735	Moyotepec
+735	Oacalco
+735	Oaxtepec
+735	Parque Industrial Cuautla
+735	San Isidro
+735	San Vicente de Juárez (Las Piedras)
+735	Tenextepango
+735	Tlalnepantla
+735	Tlayacapan
+735	Tlayca
+735	Tlayecac
+735	Totolapan
+735	Xaloxtoc
+735	Yautepec
+737	Coatetelco
+737	El Rodeo
+737	Miacatlán
+737	Palpan de Baranda
+737	Xochicalco (Cirenio Longares)
+739	Amatlán de Quetzalcoatl
+739	Coajomulco
+739	Huitzilac
+739	San Juan Tlacotenco
+739	Santa Catarina, Morelos
+739	Tepoztlán
+751	Amacuzac
+751	Coahuixtla
+751	Coatlán del Río
+751	Cuahuchichinola
+751	Huajintlán
+751	Michapa
+751	Puente de Ixtla
+751	San Gabriel Las Palmas
+751	Tetecala
+751	Tilzapotla
+769	Axochiapan
+769	Huitchila
+769	Ixtlilco El Grande
+769	Marcelino Rodríguez (San Ignacio)
+769	Quebrantadero (San José)
+769	Telixtac
+769	Tepalcingo
+777	Cuentepec
+777	Cuernavaca
+777	Emiliano Zapata
+777	Jiutepec
+777	La Joya
+777	Monte Casino (Piamonte y Ensueñ)
+777	San Agustín Tetlama
+777	Santa Fe
+777	Temixco
+777	Tetecalita
+777	Xochitepec
