@@ -20,18 +20,14 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.DefaultTableCellRenderer;
 import mx.itson.tekz.implementacion.operacionUsuario;
 
-
-
-
-
 /**
  *
  * @author Cristian
  */
 public class mainMenu extends javax.swing.JFrame {
-boolean activate = true;
-operacionUsuario opu = new operacionUsuario();
 
+    boolean activate = true;
+    operacionUsuario opu = new operacionUsuario();
 
     /**
      * Creates new form mainMenu
@@ -39,7 +35,7 @@ operacionUsuario opu = new operacionUsuario();
     public mainMenu() {
         initComponents();
         Cargar();
-      
+
     }
 
     /**
@@ -147,6 +143,7 @@ operacionUsuario opu = new operacionUsuario();
         lblBarraNumeroALlamar1 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         lblCuenta = new javax.swing.JLabel();
+        lblSliderMinutos = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1017, 459));
@@ -587,8 +584,13 @@ operacionUsuario opu = new operacionUsuario();
         lblDuracion.setBounds(80, 150, 60, 18);
 
         sdrDuracion.setBackground(new java.awt.Color(51, 51, 51));
-        sdrDuracion.setMaximum(1000);
+        sdrDuracion.setMaximum(600);
         sdrDuracion.setValue(500);
+        sdrDuracion.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sdrDuracionStateChanged(evt);
+            }
+        });
         pnlSimuladorDeLlamada.add(sdrDuracion);
         sdrDuracion.setBounds(150, 150, 190, 20);
 
@@ -833,6 +835,11 @@ operacionUsuario opu = new operacionUsuario();
         pnlSimuladorDeLlamada.add(lblCuenta);
         lblCuenta.setBounds(400, 30, 300, 30);
 
+        lblSliderMinutos.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblSliderMinutos.setForeground(new java.awt.Color(240, 240, 240));
+        pnlSimuladorDeLlamada.add(lblSliderMinutos);
+        lblSliderMinutos.setBounds(170, 130, 160, 14);
+
         pnlParent.add(pnlSimuladorDeLlamada, "card2");
 
         getContentPane().add(pnlParent);
@@ -842,166 +849,165 @@ operacionUsuario opu = new operacionUsuario();
     }// </editor-fold>//GEN-END:initComponents
 
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
-     
-            
+
 
     }//GEN-LAST:event_formMouseClicked
 
     private void lblFondoConsultaDeConsumoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoConsultaDeConsumoMouseMoved
-     
-        lblFondoConsultaDeConsumo.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblIconoConsultaDeConsumo.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblConsultaDeConsumo.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblFondoConsultaDeConsumo.setBackground(new Color (66,66,66));	
-        lblFondoListaDeClientes.setBackground(new Color (33,33,33));	
-        lblFondoAgregarCliente.setBackground(new Color (33,33,33));
-        lblFondoSimuladorDeLlamada.setBackground(new Color (33,33,33));
-       this.repaint();
-       this.revalidate();
-       
+
+        lblFondoConsultaDeConsumo.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblIconoConsultaDeConsumo.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblConsultaDeConsumo.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblFondoConsultaDeConsumo.setBackground(new Color(66, 66, 66));
+        lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
+        lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
+        lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
+        this.repaint();
+        this.revalidate();
+
     }//GEN-LAST:event_lblFondoConsultaDeConsumoMouseMoved
 
     private void lblFondoSimuladorDeLlamadaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoSimuladorDeLlamadaMouseMoved
-        lblFondoSimuladorDeLlamada.setCursor(new Cursor (Cursor.HAND_CURSOR));
-         lblIconoSimuladorDeLlamada.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblSimuladorDeLlamada.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblFondoSimuladorDeLlamada.setBackground(new Color (66,66,66));
-        lblFondoListaDeClientes.setBackground(new Color (33,33,33));	
-        lblFondoConsultaDeConsumo.setBackground(new Color (33,33,33));
-        lblFondoAgregarCliente.setBackground(new Color (33,33,33));
-         this.repaint();
-       this.revalidate();
+        lblFondoSimuladorDeLlamada.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblIconoSimuladorDeLlamada.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblSimuladorDeLlamada.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblFondoSimuladorDeLlamada.setBackground(new Color(66, 66, 66));
+        lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
+        lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
+        lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
+        this.repaint();
+        this.revalidate();
     }//GEN-LAST:event_lblFondoSimuladorDeLlamadaMouseMoved
 
     private void pnlParentMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlParentMouseMoved
-         lblFondoSimuladorDeLlamada.setBackground(new Color (33,33,33));	
-        lblFondoConsultaDeConsumo.setBackground(new Color (33,33,33));
-        lblFondoAgregarCliente.setBackground(new Color (33,33,33));  
-                lblFondoListaDeClientes.setBackground(new Color (33,33,33));		
-   this.repaint();
-       this.revalidate();
+        lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
+        lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
+        lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
+        lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
+        this.repaint();
+        this.revalidate();
     }//GEN-LAST:event_pnlParentMouseMoved
 
     private void lblFondoListaDeClientesMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoListaDeClientesMouseMoved
-        lblFondoListaDeClientes.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblIconoListaDeClientes.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblListaDeClientes.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblFondoListaDeClientes.setBackground(new Color (66,66,66));
-        lblFondoSimuladorDeLlamada.setBackground(new Color (33,33,33));	
-        lblFondoConsultaDeConsumo.setBackground(new Color (33,33,33));
-        lblFondoAgregarCliente.setBackground(new Color (33,33,33));
-         this.repaint();
-       this.revalidate();
+        lblFondoListaDeClientes.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblIconoListaDeClientes.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblListaDeClientes.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblFondoListaDeClientes.setBackground(new Color(66, 66, 66));
+        lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
+        lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
+        lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
+        this.repaint();
+        this.revalidate();
     }//GEN-LAST:event_lblFondoListaDeClientesMouseMoved
 
     private void lblFondoAgregarClienteMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAgregarClienteMouseMoved
-         lblFondoAgregarCliente.setCursor(new Cursor (Cursor.HAND_CURSOR));
-         lblIconoAgregarCliente.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblAgregarCliente.setCursor(new Cursor (Cursor.HAND_CURSOR));
-        lblFondoAgregarCliente.setBackground(new Color (66,66,66));
-        lblFondoListaDeClientes.setBackground(new Color (33,33,33));	
-        lblFondoConsultaDeConsumo.setBackground(new Color (33,33,33));
-        lblFondoSimuladorDeLlamada.setBackground(new Color (33,33,33));
-         this.repaint();
-       this.revalidate();
+        lblFondoAgregarCliente.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblIconoAgregarCliente.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblAgregarCliente.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        lblFondoAgregarCliente.setBackground(new Color(66, 66, 66));
+        lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
+        lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
+        lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
+        this.repaint();
+        this.revalidate();
     }//GEN-LAST:event_lblFondoAgregarClienteMouseMoved
 
     private void lblFondoIzquierdoMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoIzquierdoMouseMoved
-   lblFondoSimuladorDeLlamada.setBackground(new Color (33,33,33));	
-        lblFondoConsultaDeConsumo.setBackground(new Color (33,33,33));
-        lblFondoAgregarCliente.setBackground(new Color (33,33,33));  
-                lblFondoListaDeClientes.setBackground(new Color (33,33,33));	
-   this.repaint();
-       this.revalidate();
+        lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
+        lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
+        lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
+        lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
+        this.repaint();
+        this.revalidate();
     }//GEN-LAST:event_lblFondoIzquierdoMouseMoved
 
     private void lblFondoListaDeClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoListaDeClientesMouseClicked
 
-    pnlParent.removeAll();
-    pnlParent.add(pnlListaDeClientes);
-    pnlParent.repaint();
-    pnlParent.revalidate();
-        
+        pnlParent.removeAll();
+        pnlParent.add(pnlListaDeClientes);
+        pnlParent.repaint();
+        pnlParent.revalidate();
+
     }//GEN-LAST:event_lblFondoListaDeClientesMouseClicked
 
     private void lblFondoAgregarClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAgregarClienteMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlAgregarCliente);
-    pnlParent.repaint();
-    pnlParent.revalidate();
-        
+        pnlParent.removeAll();
+        pnlParent.add(pnlAgregarCliente);
+        pnlParent.repaint();
+        pnlParent.revalidate();
+
     }//GEN-LAST:event_lblFondoAgregarClienteMouseClicked
 
     private void lblFondoConsultaDeConsumoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoConsultaDeConsumoMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlConsultaDeConsumo);
-    pnlParent.repaint();    
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlConsultaDeConsumo);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblFondoConsultaDeConsumoMouseClicked
 
     private void lblFondoSimuladorDeLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoSimuladorDeLlamadaMouseClicked
-    
-    pnlParent.removeAll();
-    pnlParent.add(pnlSimuladorDeLlamada);
-    pnlParent.repaint();
-    pnlParent.revalidate();
+
+        pnlParent.removeAll();
+        pnlParent.add(pnlSimuladorDeLlamada);
+        pnlParent.repaint();
+        pnlParent.revalidate();
 
     }//GEN-LAST:event_lblFondoSimuladorDeLlamadaMouseClicked
 
     private void lblAgregarClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAgregarClienteMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlAgregarCliente);
-    pnlParent.repaint();
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlAgregarCliente);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblAgregarClienteMouseClicked
 
     private void lblIconoAgregarClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoAgregarClienteMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlAgregarCliente);
-    pnlParent.repaint();
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlAgregarCliente);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblIconoAgregarClienteMouseClicked
 
     private void lblListaDeClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblListaDeClientesMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlListaDeClientes);
-    pnlParent.repaint();
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlListaDeClientes);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblListaDeClientesMouseClicked
 
     private void lblIconoListaDeClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoListaDeClientesMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlListaDeClientes);
-    pnlParent.repaint();
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlListaDeClientes);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblIconoListaDeClientesMouseClicked
 
     private void lblConsultaDeConsumoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblConsultaDeConsumoMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlConsultaDeConsumo);
-    pnlParent.repaint();    
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlConsultaDeConsumo);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblConsultaDeConsumoMouseClicked
 
     private void lblIconoConsultaDeConsumoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoConsultaDeConsumoMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlConsultaDeConsumo);
-    pnlParent.repaint();    
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlConsultaDeConsumo);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblIconoConsultaDeConsumoMouseClicked
 
     private void lblSimuladorDeLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSimuladorDeLlamadaMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlSimuladorDeLlamada);
-    pnlParent.repaint();
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlSimuladorDeLlamada);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblSimuladorDeLlamadaMouseClicked
 
     private void lblIconoSimuladorDeLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoSimuladorDeLlamadaMouseClicked
-    pnlParent.removeAll();
-    pnlParent.add(pnlSimuladorDeLlamada);
-    pnlParent.repaint();
-    pnlParent.revalidate();
+        pnlParent.removeAll();
+        pnlParent.add(pnlSimuladorDeLlamada);
+        pnlParent.repaint();
+        pnlParent.revalidate();
     }//GEN-LAST:event_lblIconoSimuladorDeLlamadaMouseClicked
 
     private void cmbMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMesActionPerformed
@@ -1013,49 +1019,98 @@ operacionUsuario opu = new operacionUsuario();
     }//GEN-LAST:event_cmbAñoActionPerformed
 
     private void lblFondoAceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarMouseClicked
-         Random rng = new Random();
-       int ran = rng.nextInt(90000000)+10000000; 
-       opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
-       txtNombre.setText(null);
-       txtApellidos.setText(null);
-       txtDireccion.setText(null);
-       txtTelefono.setText(null);
+        Random rng = new Random();
+        int ran = rng.nextInt(90000000) + 10000000;
+        opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
+        txtNombre.setText(null);
+        txtApellidos.setText(null);
+        txtDireccion.setText(null);
+        txtTelefono.setText(null);
     }//GEN-LAST:event_lblFondoAceptarMouseClicked
 
     private void cmbEstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEstadoActionPerformed
-    cmbCiudad.removeAllItems();
-    BufferedReader abc = null;
-    String xdd = cmbEstado.getSelectedItem().toString()+".txt";
+        cmbCiudad.removeAllItems();
+        BufferedReader abc = null;
+        String xdd = cmbEstado.getSelectedItem().toString() + ".txt";
         try {
-            abc = new BufferedReader(new FileReader("src/mx/itson/tekz/persistencia/"+xdd));
+            abc = new BufferedReader(new FileReader("src/mx/itson/tekz/persistencia/" + xdd));
         } catch (FileNotFoundException ex) {
             Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-    String Linea;
-    String ciudad = "";
-    ArrayList<String> Municipios = new ArrayList<String>(); 
-    DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCiudad.getModel();
-    try {
-            while((Linea = abc.readLine()) != null) {
-                String [] xd =Linea.split("\\s+");
-                        
+        String Linea;
+        String ciudad = "";
+        ArrayList<String> Municipios = new ArrayList<String>();
+        DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCiudad.getModel();
+        try {
+            while ((Linea = abc.readLine()) != null) {
+                String[] xd = Linea.split("\\s+");
+
                 if (xd.length > 1) {
                     for (int i = 1; i < xd.length; i++) {
-                        ciudad += xd[i]+" ";
+                        ciudad += xd[i] + " ";
                     }
                 }
-                 
-                
+
                 //Municipios.add(xd[1]);
                 modelc.addElement(ciudad);
-                ciudad="";
-              //  System.out.println(line);
-            }       } catch (IOException ex) {
+                ciudad = "";
+                //  System.out.println(line);
+            }
+        } catch (IOException ex) {
             Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }//GEN-LAST:event_cmbEstadoActionPerformed
+
+    private void sdrDuracionStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sdrDuracionStateChanged
+
+        int minutos = sdrDuracion.getValue();
+        if (minutos <= 59) {
+            lblSliderMinutos.setText("Minutos : " + sdrDuracion.getValue());
+        } else {
+            if (minutos > 59 && minutos < 120) {
+                lblSliderMinutos.setText("Hora : 1:" + (sdrDuracion.getValue() - 60));
+            } else {
+                if (minutos > 119 && minutos < 180) {
+                    lblSliderMinutos.setText("Horas : 2:" + (sdrDuracion.getValue() - 120));
+                } else {
+                    if (minutos > 179 && minutos < 240) {
+                        lblSliderMinutos.setText("Horas : 3:" + (sdrDuracion.getValue() - 180));
+                    } else {
+                        if (minutos > 239 && minutos < 300) {
+                            lblSliderMinutos.setText("Horas : 4:" + (sdrDuracion.getValue() - 240));
+                        } else {
+                            if (minutos > 299 && minutos < 360) {
+                                lblSliderMinutos.setText("Horas : 5:" + (sdrDuracion.getValue() - 300));
+                            } else {
+                                if (minutos > 359 && minutos < 420) {
+                                    lblSliderMinutos.setText("Horas : 6:" + (sdrDuracion.getValue() - 360));
+                                } else {
+                                    if (minutos > 419 && minutos < 480) {
+                                        lblSliderMinutos.setText("Horas : 7:" + (sdrDuracion.getValue() - 420));
+                                    } else {
+                                        if (minutos > 479 && minutos < 540) {
+                                            lblSliderMinutos.setText("Horas : 8:" + (sdrDuracion.getValue() - 480));
+                                        } else {
+                                            if (minutos > 539 && minutos < 600) {
+                                                lblSliderMinutos.setText("Horas : 9:" + (sdrDuracion.getValue() - 540));
+                                            } else {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //lblSliderMinutos.setText("Horas : " + sdrDuracion.getValue());
+        }
+
+        //lblSliderMinutos.setText("Minutos : "+sdrDuracion.getValue());
+
+    }//GEN-LAST:event_sdrDuracionStateChanged
 
     /**
      * @param args the command line arguments
@@ -1090,48 +1145,48 @@ operacionUsuario opu = new operacionUsuario();
                 new mainMenu().setVisible(true);
             }
         });
-        
+
     }
-    
-   public void Cargar(){
-    tblClientes.getTableHeader().setFont(new Font("Microsoft Tai Le", Font.ITALIC, 14));
-    tblClientes.getTableHeader().setForeground(Color.WHITE);
-    tblClientes.getTableHeader().setBackground(Color.yellow);
-    tblClientes.getTableHeader().setOpaque(false);
-    tblClientes.setShowGrid(false);
-    tblClientes.setOpaque(false);
-   ((DefaultTableCellRenderer)tblClientes.getDefaultRenderer(Object.class)).setOpaque(false);
-    jScrollPane1.setOpaque(false);
-    jScrollPane1.getViewport().setOpaque(false);
-    
-    BufferedReader abc = null;
-    String xdd = "Aguascalientes.txt";
+
+    public void Cargar() {
+        tblClientes.getTableHeader().setFont(new Font("Microsoft Tai Le", Font.ITALIC, 14));
+        tblClientes.getTableHeader().setForeground(Color.WHITE);
+        tblClientes.getTableHeader().setBackground(Color.yellow);
+        tblClientes.getTableHeader().setOpaque(false);
+        tblClientes.setShowGrid(false);
+        tblClientes.setOpaque(false);
+        ((DefaultTableCellRenderer) tblClientes.getDefaultRenderer(Object.class)).setOpaque(false);
+        jScrollPane1.setOpaque(false);
+        jScrollPane1.getViewport().setOpaque(false);
+
+        BufferedReader abc = null;
+        String xdd = "Aguascalientes.txt";
         try {
-            abc = new BufferedReader(new FileReader("src/mx/itson/tekz/persistencia/"+xdd));
+            abc = new BufferedReader(new FileReader("src/mx/itson/tekz/persistencia/" + xdd));
         } catch (FileNotFoundException ex) {
             Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-    String Linea;
-    String ciudad = "";
-    ArrayList<String> Municipios = new ArrayList<String>(); 
-    DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCiudad.getModel();
-    try {
-            while((Linea = abc.readLine()) != null) {
-                String [] xd =Linea.split("\\s+");
-                        
+        String Linea;
+        String ciudad = "";
+        ArrayList<String> Municipios = new ArrayList<String>();
+        DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCiudad.getModel();
+        try {
+            while ((Linea = abc.readLine()) != null) {
+                String[] xd = Linea.split("\\s+");
+
                 if (xd.length > 1) {
                     for (int i = 1; i < xd.length; i++) {
-                        ciudad += xd[i]+" ";
+                        ciudad += xd[i] + " ";
                     }
                 }
-                 
-                
+
                 Municipios.add(xd[1]);
                 modelc.addElement(ciudad);
-                ciudad="";
-              //  System.out.println(line);
-            }       } catch (IOException ex) {
+                ciudad = "";
+                //  System.out.println(line);
+            }
+        } catch (IOException ex) {
             Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -1216,6 +1271,7 @@ operacionUsuario opu = new operacionUsuario();
     private javax.swing.JLabel lblNoLlamarOculto;
     private static javax.swing.JLabel lblNombreOculto;
     private javax.swing.JLabel lblSimuladorDeLlamada;
+    private javax.swing.JLabel lblSliderMinutos;
     private javax.swing.JLabel lblTelefono;
     private static javax.swing.JLabel lblTelefonoOculto;
     private javax.swing.JLabel lblVerCliente;
