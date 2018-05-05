@@ -20,6 +20,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.DefaultTableCellRenderer;
 import mx.itson.tekz.implementacion.operacionUsuario;
 
+
 /**
  *
  * @author Cristian
@@ -1065,36 +1066,36 @@ public class mainMenu extends javax.swing.JFrame {
 
     private void sdrDuracionStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sdrDuracionStateChanged
 
-        int minutos = sdrDuracion.getValue();
-        if (minutos <= 59) {
-            lblSliderMinutos.setText("Minutos : " + sdrDuracion.getValue());
+        int segundos = sdrDuracion.getValue();
+        if (segundos <= 59) {
+            lblSliderMinutos.setText("Segundos : " + sdrDuracion.getValue());
         } else {
-            if (minutos > 59 && minutos < 120) {
-                lblSliderMinutos.setText("Hora : 1:" + (sdrDuracion.getValue() - 60));
+            if (segundos > 59 && segundos < 120) {
+                lblSliderMinutos.setText("Minuto : 1:" + (sdrDuracion.getValue() - 60));
             } else {
-                if (minutos > 119 && minutos < 180) {
-                    lblSliderMinutos.setText("Horas : 2:" + (sdrDuracion.getValue() - 120));
+                if (segundos > 119 && segundos < 180) {
+                    lblSliderMinutos.setText("Minuto : 2:" + (sdrDuracion.getValue() - 120));
                 } else {
-                    if (minutos > 179 && minutos < 240) {
-                        lblSliderMinutos.setText("Horas : 3:" + (sdrDuracion.getValue() - 180));
+                    if (segundos > 179 && segundos < 240) {
+                        lblSliderMinutos.setText("Minuto : 3:" + (sdrDuracion.getValue() - 180));
                     } else {
-                        if (minutos > 239 && minutos < 300) {
-                            lblSliderMinutos.setText("Horas : 4:" + (sdrDuracion.getValue() - 240));
+                        if (segundos > 239 && segundos < 300) {
+                            lblSliderMinutos.setText("Minuto : 4:" + (sdrDuracion.getValue() - 240));
                         } else {
-                            if (minutos > 299 && minutos < 360) {
-                                lblSliderMinutos.setText("Horas : 5:" + (sdrDuracion.getValue() - 300));
+                            if (segundos > 299 && segundos < 360) {
+                                lblSliderMinutos.setText("Minuto : 5:" + (sdrDuracion.getValue() - 300));
                             } else {
-                                if (minutos > 359 && minutos < 420) {
-                                    lblSliderMinutos.setText("Horas : 6:" + (sdrDuracion.getValue() - 360));
+                                if (segundos > 359 && segundos < 420) {
+                                    lblSliderMinutos.setText("Minuto : 6:" + (sdrDuracion.getValue() - 360));
                                 } else {
-                                    if (minutos > 419 && minutos < 480) {
-                                        lblSliderMinutos.setText("Horas : 7:" + (sdrDuracion.getValue() - 420));
+                                    if (segundos > 419 && segundos < 480) {
+                                        lblSliderMinutos.setText("Minuto : 7:" + (sdrDuracion.getValue() - 420));
                                     } else {
-                                        if (minutos > 479 && minutos < 540) {
-                                            lblSliderMinutos.setText("Horas : 8:" + (sdrDuracion.getValue() - 480));
+                                        if (segundos > 479 && segundos < 540) {
+                                            lblSliderMinutos.setText("Minuto : 8:" + (sdrDuracion.getValue() - 480));
                                         } else {
-                                            if (minutos > 539 && minutos < 600) {
-                                                lblSliderMinutos.setText("Horas : 9:" + (sdrDuracion.getValue() - 540));
+                                            if (segundos > 539 && segundos < 600) {
+                                                lblSliderMinutos.setText("Minuto : 9:" + (sdrDuracion.getValue() - 540));
                                             } else {
                                             }
                                         }
@@ -1169,19 +1170,43 @@ public class mainMenu extends javax.swing.JFrame {
 
         String Linea;
         String ciudad = "";
-        ArrayList<String> Municipios = new ArrayList<String>();
+     
         DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCiudad.getModel();
+        
+        /*Aquí se lee el txt y se pasa a un array de string, se llama "Line"
+        Con el metodo ".split" divido la linea de texto en varias partes
+        ya que se lee el txt y cada linea se pasa a una posicion del array
+        Y como en la misma linea se encuentra la lada seguida del municipio, la separo
+        por el espacio y me da varios string, obviamente el string guardado en la posicion 0 es la lada
+        y los strings guardados en las demas posiciones es el muncipio, y como hay muncipios
+        que tiene varios espacios por ejemplo "Las Palmas", si dividiera el string y tomará la posicion 1
+        Solo tendria "Las" y no "Las Palmas" por el .split (\\s+), debido a esto tengo que juntar los strings
+        en una variable llamada ciudad ,con un if y un for, si el array tiene mas de 2 posiciones significa que 
+        es un nombre compuesto, los junto y le agrego un espacio, despues se agrega al combobox y vuelvo ciudad vacio.
+        
+        Lo que puedes hacer es, si Line.contains("á") en un if, lo reemplazas con Line.replace,
+        Esto en un if con operadores logicos para ahorrar codigo (Line.contains || Line.contains ||... etc)
+        Recuerda que la varianle ciudad es la que se agrega al combobox.
+        
+        Esto se ejecuta al iniciar para que cargue algo en la combobox, tambien esta en la action performed
+        de la combobox, solo que cambia dependiendo del estado seleccionado, pero el funcionamiento es el mismo.
+        Copia y pega el codigo ahi tambien.
+        
+        Hail Hydra
+
+
+         */
         try {
             while ((Linea = abc.readLine()) != null) {
-                String[] xd = Linea.split("\\s+");
+                String[] Line = Linea.split("\\s+");
 
-                if (xd.length > 1) {
+                if (Line.length > 1) {
                     for (int i = 1; i < xd.length; i++) {
-                        ciudad += xd[i] + " ";
+                        ciudad += Line[i] + " ";
                     }
                 }
 
-                Municipios.add(xd[1]);
+              
                 modelc.addElement(ciudad);
                 ciudad = "";
                 //  System.out.println(line);
@@ -1281,7 +1306,7 @@ public class mainMenu extends javax.swing.JFrame {
     private javax.swing.JPanel pnlParent;
     private javax.swing.JPanel pnlSimuladorDeLlamada;
     private javax.swing.JSlider sdrDuracion;
-    private javax.swing.JTable tblClientes;
+    public static javax.swing.JTable tblClientes;
     private javax.swing.JTextField txtApellidos;
     private javax.swing.JLabel txtBarraDireccion;
     private javax.swing.JTextField txtDireccion;

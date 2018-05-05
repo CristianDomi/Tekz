@@ -7,6 +7,7 @@ package mx.itson.tekz.interfaces;
 
 import java.util.Date;
 import java.util.List;
+import mx.itson.tekz.entidades.Llamada;
 import mx.itson.tekz.entidades.Usuario;
 
 /**
@@ -17,7 +18,7 @@ public interface CRUDllamada {
    
     public void Agregar(Usuario usuario, int telefono, int duracion, Date fecha);
     public List Obtener();
-    public void Editar();
-    public void Eliminar();
+    public void Editar(Llamada llamada);
+    public void Eliminar(Llamada llamada);
     
 }

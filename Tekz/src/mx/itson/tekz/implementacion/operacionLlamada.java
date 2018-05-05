@@ -56,13 +56,27 @@ public class operacionLlamada implements CRUDllamada{
     }
 
     @Override
-    public void Editar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void Editar(Llamada llamada) {
+        try {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        session.update(llamada);
+        session.getTransaction().commit();
+        session.close();
+        } catch (Exception e) {
+            System.out.println("Ocurrio un error al intentar actualizar we :S");
+        }    }
 
     @Override
-    public void Eliminar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void Eliminar(Llamada llamada) {
+       try {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        session.delete(llamada);
+        session.getTransaction().commit();
+        session.close();
+        } catch (Exception e) {
+            System.out.println("Ocurrio un error al intentar borrar ");
+        }    }
     
 }

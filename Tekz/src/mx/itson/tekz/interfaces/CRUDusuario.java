@@ -6,6 +6,7 @@
 package mx.itson.tekz.interfaces;
 
 import java.util.List;
+import mx.itson.tekz.entidades.Usuario;
 
 /**
  *
@@ -15,8 +16,8 @@ public interface CRUDusuario {
     
     public void Agregar(int numeroDeCuenta,String nombre,String apellido, String direccion, String estado, String ciudad, String telefono);
     public List Obtener();
-    public void Editar();
-    public void Eliminar();
+    public void Editar(Usuario usuario);
+    public void Eliminar(Usuario usuario);
     
     
 }

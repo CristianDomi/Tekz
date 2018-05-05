@@ -19,9 +19,10 @@
             root
         </property>
         <property name="hibernate.connection.password">
-            0214dlc2698
+            toor
         </property>
-  <mapping class="mx.itson.trapo.entidades.Usuario"/>
-  <mapping class = "mx.itson.trapo.entidades.Llamada"/>  
+  <mapping class = "mx.itson.tekz.entidades.Usuario"/>
+  <mapping class = "mx.itson.tekz.entidades.Llamada"/>  
+  <mapping class = "mx.itson.tekz.entidades.Registro"/>  
     </session-factory>
 </hibernate-configuration>

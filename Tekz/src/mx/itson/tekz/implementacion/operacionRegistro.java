@@ -73,13 +73,27 @@ public class operacionRegistro implements CRUDregistro{
         return registros;    }
 
     @Override
-    public void Editar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void Editar(Registro registro) {
+        try {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        session.update(registro);
+        session.getTransaction().commit();
+        session.close();
+        } catch (Exception e) {
+            System.out.println("Ocurrio un error al intentar actualizar we :S");
+        }    }
 
     @Override
-    public void Eliminar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void Eliminar(Registro registro) {
+        try {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        session.beginTransaction();
+        session.delete(registro);
+        session.getTransaction().commit();
+        session.close();
+        } catch (Exception e) {
+            System.out.println("Ocurrio un error al intentar borrar we :S");
+        }    }
     
 }
