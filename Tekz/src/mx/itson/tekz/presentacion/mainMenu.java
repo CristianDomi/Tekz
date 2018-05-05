@@ -1201,7 +1201,7 @@ public class mainMenu extends javax.swing.JFrame {
                 String[] Line = Linea.split("\\s+");
 
                 if (Line.length > 1) {
-                    for (int i = 1; i < xd.length; i++) {
+                    for (int i = 1; i < Line.length; i++) {
                         ciudad += Line[i] + " ";
                     }
                 }
