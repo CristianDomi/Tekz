@@ -23,7 +23,7 @@ import org.hibernate.Session;
 public class operacionLlamada implements CRUDllamada{
 
     @Override
-    public void Agregar(Usuario usuario, int telefono, int duracion, Date fecha) {
+    public void Agregar(Usuario usuario, String telefono, String duracion, String fecha) {
         Llamada l = new Llamada();
         try {
             l.setUsuario(usuario);

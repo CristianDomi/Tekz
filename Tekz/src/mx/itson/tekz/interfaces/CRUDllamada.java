@@ -16,7 +16,7 @@ import mx.itson.tekz.entidades.Usuario;
  */
 public interface CRUDllamada {
    
-    public void Agregar(Usuario usuario, int telefono, int duracion, Date fecha);
+    public void Agregar(Usuario usuario, String telefono, String duracion, String fecha);
     public List Obtener();
     public void Editar(Llamada llamada);
     public void Eliminar(Llamada llamada);
