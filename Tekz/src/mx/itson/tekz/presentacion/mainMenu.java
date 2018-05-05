@@ -1052,7 +1052,13 @@ public class mainMenu extends javax.swing.JFrame {
                         ciudad += xd[i] + " ";
                     }
                 }
-
+if(ciudad.contains("á") || ciudad.contains("é") || ciudad.contains("í") || ciudad.contains("ó") || ciudad.contains("ú")){
+                     ciudad.replace("á", "a");
+                     ciudad.replace("é", "e");
+                     ciudad.replace("í", "i");
+                     ciudad.replace("ó", "o");
+                     ciudad.replace("ú", "u");
+                 }
                 //Municipios.add(xd[1]);
                 modelc.addElement(ciudad);
                 ciudad = "";
@@ -1205,7 +1211,14 @@ public class mainMenu extends javax.swing.JFrame {
                         ciudad += Line[i] + " ";
                     }
                 }
-
+                 if(ciudad.contains("á") || ciudad.contains("é") || ciudad.contains("í") || ciudad.contains("ó") || ciudad.contains("ú")){
+                     ciudad.replace("á", "a");
+                     ciudad.replace("é", "e");
+                     ciudad.replace("í", "i");
+                     ciudad.replace("ó", "o");
+                     ciudad.replace("ú", "u");
+                 }
+                         
               
                 modelc.addElement(ciudad);
                 ciudad = "";
