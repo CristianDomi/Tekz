@@ -111,11 +111,9 @@ public class mainMenu extends javax.swing.JFrame {
         sdrDuracion = new javax.swing.JSlider();
         txtNumeroALlamar = new javax.swing.JTextField();
         lblMin = new javax.swing.JLabel();
-        lblMesSDL = new javax.swing.JLabel();
-        lblAñoSDL = new javax.swing.JLabel();
+        lblAno = new javax.swing.JLabel();
         cmbMesSDL = new javax.swing.JComboBox<>();
         cmbDia = new javax.swing.JComboBox<>();
-        cmbAñoSDL = new javax.swing.JComboBox<>();
         lblBarraNumeroALlamar = new javax.swing.JLabel();
         lblDia = new javax.swing.JLabel();
         cmbHora = new javax.swing.JComboBox<>();
@@ -151,6 +149,8 @@ public class mainMenu extends javax.swing.JFrame {
         cmbCliente = new javax.swing.JComboBox<>();
         lblCuenta = new javax.swing.JLabel();
         lblSliderMinutos = new javax.swing.JLabel();
+        lblMesSDL1 = new javax.swing.JLabel();
+        cmbAñoSDL = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1017, 459));
@@ -616,31 +616,21 @@ public class mainMenu extends javax.swing.JFrame {
         lblMin.setForeground(new java.awt.Color(255, 255, 255));
         lblMin.setText("Min : ");
         pnlSimuladorDeLlamada.add(lblMin);
-        lblMin.setBounds(240, 268, 40, 30);
+        lblMin.setBounds(210, 270, 40, 30);
 
-        lblMesSDL.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
-        lblMesSDL.setForeground(new java.awt.Color(255, 255, 255));
-        lblMesSDL.setText("Mes:");
-        pnlSimuladorDeLlamada.add(lblMesSDL);
-        lblMesSDL.setBounds(180, 210, 40, 30);
-
-        lblAñoSDL.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
-        lblAñoSDL.setForeground(new java.awt.Color(255, 255, 255));
-        lblAñoSDL.setText("Año:");
-        pnlSimuladorDeLlamada.add(lblAñoSDL);
-        lblAñoSDL.setBounds(300, 210, 30, 30);
+        lblAno.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblAno.setForeground(new java.awt.Color(255, 255, 255));
+        lblAno.setText("Año:");
+        pnlSimuladorDeLlamada.add(lblAno);
+        lblAno.setBounds(340, 210, 40, 30);
 
         cmbMesSDL.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
         pnlSimuladorDeLlamada.add(cmbMesSDL);
-        cmbMesSDL.setBounds(220, 210, 70, 30);
+        cmbMesSDL.setBounds(210, 210, 120, 30);
 
         cmbDia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         pnlSimuladorDeLlamada.add(cmbDia);
-        cmbDia.setBounds(110, 210, 40, 30);
-
-        cmbAñoSDL.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2018" }));
-        pnlSimuladorDeLlamada.add(cmbAñoSDL);
-        cmbAñoSDL.setBounds(340, 210, 50, 30);
+        cmbDia.setBounds(100, 210, 50, 30);
 
         lblBarraNumeroALlamar.setBackground(new java.awt.Color(153, 153, 153));
         lblBarraNumeroALlamar.setOpaque(true);
@@ -651,27 +641,27 @@ public class mainMenu extends javax.swing.JFrame {
         lblDia.setForeground(new java.awt.Color(255, 255, 255));
         lblDia.setText("Dia:");
         pnlSimuladorDeLlamada.add(lblDia);
-        lblDia.setBounds(80, 210, 30, 30);
+        lblDia.setBounds(60, 210, 30, 30);
 
         cmbHora.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23" }));
         pnlSimuladorDeLlamada.add(cmbHora);
-        cmbHora.setBounds(180, 270, 50, 30);
+        cmbHora.setBounds(130, 270, 60, 30);
 
         lblHora.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         lblHora.setForeground(new java.awt.Color(255, 255, 255));
         lblHora.setText("Hora :");
         pnlSimuladorDeLlamada.add(lblHora);
-        lblHora.setBounds(130, 270, 40, 30);
+        lblHora.setBounds(80, 270, 40, 30);
 
         cmbMin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59" }));
         pnlSimuladorDeLlamada.add(cmbMin);
-        cmbMin.setBounds(280, 270, 60, 30);
+        cmbMin.setBounds(260, 270, 120, 30);
 
         lblAceptarSDL.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAceptarSDL.setText("Aceptar");
         lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lblAceptarSDL);
-        lblAceptarSDL.setBounds(200, 320, 60, 23);
+        lblAceptarSDL.setBounds(220, 330, 60, 23);
 
         lblFondoAceptarSDL.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAceptarSDL.setAutoscrolls(true);
@@ -683,13 +673,13 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlSimuladorDeLlamada.add(lblFondoAceptarSDL);
-        lblFondoAceptarSDL.setBounds(140, 320, 180, 20);
+        lblFondoAceptarSDL.setBounds(150, 330, 180, 20);
 
         lblAutoGenerarLlamada.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAutoGenerarLlamada.setText("Auto-generar llamada");
         lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lblAutoGenerarLlamada);
-        lblAutoGenerarLlamada.setBounds(160, 380, 142, 20);
+        lblAutoGenerarLlamada.setBounds(170, 380, 142, 20);
 
         lblFondoAutoGenerarLlamada.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAutoGenerarLlamada.setAutoscrolls(true);
@@ -701,7 +691,7 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlSimuladorDeLlamada.add(lblFondoAutoGenerarLlamada);
-        lblFondoAutoGenerarLlamada.setBounds(110, 380, 240, 20);
+        lblFondoAutoGenerarLlamada.setBounds(130, 380, 240, 20);
 
         lbl1.setFont(new java.awt.Font("Wide Latin", 1, 18)); // NOI18N
         lbl1.setForeground(new java.awt.Color(255, 255, 255));
@@ -861,6 +851,16 @@ public class mainMenu extends javax.swing.JFrame {
         lblSliderMinutos.setForeground(new java.awt.Color(240, 240, 240));
         pnlSimuladorDeLlamada.add(lblSliderMinutos);
         lblSliderMinutos.setBounds(170, 130, 160, 14);
+
+        lblMesSDL1.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
+        lblMesSDL1.setForeground(new java.awt.Color(255, 255, 255));
+        lblMesSDL1.setText("Mes:");
+        pnlSimuladorDeLlamada.add(lblMesSDL1);
+        lblMesSDL1.setBounds(170, 210, 40, 30);
+
+        cmbAñoSDL.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2018" }));
+        pnlSimuladorDeLlamada.add(cmbAñoSDL);
+        cmbAñoSDL.setBounds(380, 210, 60, 30);
 
         pnlParent.add(pnlSimuladorDeLlamada, "card2");
 
@@ -1147,7 +1147,7 @@ public class mainMenu extends javax.swing.JFrame {
      
         String [] min = lblSliderMinutos.getText().split("\\s+");       
         String [] cuenta = lblCuenta.getText().split("\\s+");       
-        String fecha = cmbDia.getItemAt(0)+" "+cmbMesSDL.getItemAt(0)+" "+cmbAñoSDL.getItemAt(0)+" "+cmbMin.getItemAt(0)+":"+cmbHora.getItemAt(0);
+        String fecha = cmbDia.getItemAt(0)+" "+cmbMesSDL.getItemAt(0)+" "+cmbAñoSDL.getItemAt(0)+" "+cmbHora.getItemAt(0)+":"+cmbMin.getItemAt(0);
         System.out.println(fecha);
         System.out.println(cuenta[3]);
          List Usuarios = opu.Obtener();
@@ -1163,11 +1163,52 @@ public class mainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_lblFondoAceptarSDLMouseClicked
 
     private void lblFondoAutoGenerarLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAutoGenerarLlamadaMouseClicked
-      Random rCmbDia = new Random();
+      
+        Random rCmbDia = new Random();
         int noRCmbDia;
-        noRCmbDia = rCmbDia.nextInt(6);
+        noRCmbDia = rCmbDia.nextInt(30);
         cmbDia.setSelectedIndex(noRCmbDia);
+        
+        Random rCmbMes = new Random();
+        int noRCmbMes;
+        noRCmbMes = rCmbMes.nextInt(11);
+        cmbMesSDL.setSelectedIndex(noRCmbMes);
   
+        Random rCmbHora = new Random();
+        int noRCmbHora;
+        noRCmbHora = rCmbHora.nextInt(22);
+        cmbHora.setSelectedIndex(noRCmbHora);
+        
+        Random rCmbMin = new Random();
+        int noRCmbMin;
+        noRCmbMin = rCmbMin.nextInt(58);
+        cmbMin.setSelectedIndex(noRCmbMin);
+        
+        Random rSdrDuracion = new Random();
+        int noRSdrDuracion;
+        noRSdrDuracion = rSdrDuracion.nextInt(599);
+        sdrDuracion.setValue(noRSdrDuracion);
+        
+        String [] min = lblSliderMinutos.getText().split("\\s+");       
+        String [] cuenta = lblCuenta.getText().split("\\s+");       
+        //String fecha = cmbDia.getItemAt(noRCmbDia)+" "+cmbMesSDL.getItemAt(noRCmbMes)+" "+cmbAñoSDL.getItemAt(0)+" "+cmbMin.getItemAt(noRCmbMin)+":"+cmbHora.getItemAt(noRCmbHora);
+        String fecha = cmbDia.getItemAt(noRCmbDia)+" "+cmbMesSDL.getItemAt(noRCmbMes)+" "+cmbAñoSDL.getItemAt(0)+" "+cmbHora.getItemAt(noRCmbHora)+":"+cmbMin.getItemAt(noRCmbMin);
+        System.out.println(fecha);
+        System.out.println(cuenta[3]);
+         List Usuarios = opu.Obtener();
+        for (int i = 0; i < Usuarios.size(); i++) {
+         Usuario u = (Usuario) Usuarios.get(i);
+            if (u.getNumerodecuenta() == Integer.parseInt(cuenta[3])) {
+           opl.Agregar(u,txtNumeroALlamar.getText(), min[1], fecha); 
+            break;
+            }
+        }
+        
+       // String [] ASdrDuracion = lblSliderMinutos.getText().split("\\s+");
+        //opl.Agregar(usuario, telefono, duracion, fecha);
+        
+        //opl.Agregar(usuario, telefono, duracion, fecha);
+         //String [] cuenta = lblCuenta.getText().split("\\s+"); 
     }//GEN-LAST:event_lblFondoAutoGenerarLlamadaMouseClicked
 
     /**
@@ -1299,10 +1340,10 @@ public class mainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel lblAceptar;
     private javax.swing.JLabel lblAceptarSDL;
     private javax.swing.JLabel lblAgregarCliente;
+    private javax.swing.JLabel lblAno;
     private static javax.swing.JLabel lblApellidosOculto;
     private javax.swing.JLabel lblAutoGenerarLlamada;
     private javax.swing.JLabel lblAño;
-    private javax.swing.JLabel lblAñoSDL;
     private javax.swing.JLabel lblBarraApellidos;
     private javax.swing.JLabel lblBarraNombre;
     private javax.swing.JLabel lblBarraNumeroALlamar;
@@ -1346,7 +1387,7 @@ public class mainMenu extends javax.swing.JFrame {
     private javax.swing.JLabel lblListaDeClientes;
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblMes;
-    private javax.swing.JLabel lblMesSDL;
+    private javax.swing.JLabel lblMesSDL1;
     private javax.swing.JLabel lblMin;
     private javax.swing.JLabel lblNoCuentaOculto;
     private javax.swing.JLabel lblNoLlamarOculto;
