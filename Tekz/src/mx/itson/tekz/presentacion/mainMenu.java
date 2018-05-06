@@ -17,7 +17,10 @@ import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import mx.itson.tekz.entidades.Usuario;
@@ -1043,11 +1046,24 @@ public class mainMenu extends javax.swing.JFrame {
     private void lblFondoAceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarMouseClicked
         Random rng = new Random();
         int ran = rng.nextInt(90000000) + 10000000;
-        opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
+         Pattern l = Pattern.compile("[A-Za-z ].*");
+         Pattern n = Pattern.compile("[0-9].*");
+        Matcher nombrep = l.matcher(txtNombre.getText());
+       Matcher apellidop = l.matcher(txtApellidos.getText());
+       Matcher telefonop = n.matcher(txtTelefono.getText());
+
+        if((nombrep.matches() & apellidop.matches() & telefonop.matches() )== true && (txtNombre.getText().isEmpty() == false && 
+        txtApellidos.getText().isEmpty() == false && txtDireccion.getText().isEmpty() ==false && txtTelefono.getText().isEmpty() ==false)){
+          opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
         txtNombre.setText(null);
         txtApellidos.setText(null);
         txtDireccion.setText(null);
         txtTelefono.setText(null);
+        
+        }else{
+                JOptionPane.showMessageDialog(null, "Error al llenar los campos, revise los campos porfavor","Error" , JOptionPane.ERROR_MESSAGE);
+        }  
+        
         
         DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCliente.getModel();
 
@@ -1153,9 +1169,12 @@ public class mainMenu extends javax.swing.JFrame {
          List Usuarios = opu.Obtener();
         for (int i = 0; i < Usuarios.size(); i++) {
          Usuario u = (Usuario) Usuarios.get(i);
-            if (u.getNumerodecuenta() == Integer.parseInt(cuenta[3])) {
+            if (u.getNumerodecuenta() == Integer.parseInt(cuenta[3]) && txtNumeroALlamar.getText().length() ==10) {
            opl.Agregar(u,txtNumeroALlamar.getText(), min[1], fecha); 
             break;
+            }else{
+            JOptionPane.showMessageDialog(null, "No se pueden ingresar mas de 10 digitos en el telefono","Error" , JOptionPane.ERROR_MESSAGE);
+
             }
         }
        // opl.Agregar(usuario,Integer.parseInt(txtNumeroALlamar.getText()), min[1], fecha);
@@ -1198,9 +1217,12 @@ public class mainMenu extends javax.swing.JFrame {
          List Usuarios = opu.Obtener();
         for (int i = 0; i < Usuarios.size(); i++) {
          Usuario u = (Usuario) Usuarios.get(i);
-            if (u.getNumerodecuenta() == Integer.parseInt(cuenta[3])) {
+            if (u.getNumerodecuenta() == Integer.parseInt(cuenta[3]) && txtNumeroALlamar.getText().length() ==10) {
            opl.Agregar(u,txtNumeroALlamar.getText(), min[1], fecha); 
             break;
+            }else{
+            JOptionPane.showMessageDialog(null, "No se pueden ingresar mas de 10 digitos en el telfono","Error" , JOptionPane.ERROR_MESSAGE);
+
             }
         }
         
