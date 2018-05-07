@@ -28,6 +28,7 @@ import javax.swing.SwingWorker;
 import javax.swing.Timer;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
+import mx.itson.tekz.entidades.Llamada;
 import mx.itson.tekz.entidades.Usuario;
 import mx.itson.tekz.implementacion.operacionLlamada;
 import mx.itson.tekz.implementacion.operacionRegistro;
@@ -43,6 +44,7 @@ public class mainMenu extends javax.swing.JFrame {
     operacionUsuario opu = new operacionUsuario();
     operacionLlamada opl = new operacionLlamada();
     operacionRegistro opr = new operacionRegistro();
+    List Datos;
 
     /**
      * Creates new form mainMenu
@@ -331,7 +333,6 @@ public class mainMenu extends javax.swing.JFrame {
         txtNombre.setBackground(new java.awt.Color(51, 51, 51));
         txtNombre.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtNombre.setForeground(new java.awt.Color(255, 255, 255));
-        txtNombre.setBorder(null);
         txtNombre.setOpaque(false);
         pnlAgregarCliente.add(txtNombre);
         txtNombre.setBounds(60, 60, 250, 20);
@@ -339,7 +340,6 @@ public class mainMenu extends javax.swing.JFrame {
         txtApellidos.setBackground(new java.awt.Color(51, 51, 51));
         txtApellidos.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtApellidos.setForeground(new java.awt.Color(255, 255, 255));
-        txtApellidos.setBorder(null);
         txtApellidos.setOpaque(false);
         pnlAgregarCliente.add(txtApellidos);
         txtApellidos.setBounds(60, 140, 250, 20);
@@ -352,7 +352,6 @@ public class mainMenu extends javax.swing.JFrame {
         txtDireccion.setBackground(new java.awt.Color(51, 51, 51));
         txtDireccion.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtDireccion.setForeground(new java.awt.Color(255, 255, 255));
-        txtDireccion.setBorder(null);
         txtDireccion.setOpaque(false);
         pnlAgregarCliente.add(txtDireccion);
         txtDireccion.setBounds(60, 220, 250, 20);
@@ -389,7 +388,6 @@ public class mainMenu extends javax.swing.JFrame {
         txtTelefono.setBackground(new java.awt.Color(51, 51, 51));
         txtTelefono.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtTelefono.setForeground(new java.awt.Color(255, 255, 255));
-        txtTelefono.setBorder(null);
         txtTelefono.setOpaque(false);
         pnlAgregarCliente.add(txtTelefono);
         txtTelefono.setBounds(60, 310, 250, 20);
@@ -401,14 +399,14 @@ public class mainMenu extends javax.swing.JFrame {
 
         lblAceptar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblAceptar.setText("Aceptar");
-        lblAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblAceptar.setFocusable(false);
         lblAceptar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlAgregarCliente.add(lblAceptar);
         lblAceptar.setBounds(330, 410, 60, 30);
 
         lblFondoAceptar.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoAceptar.setOpaque(true);
         lblFondoAceptar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -474,24 +472,24 @@ public class mainMenu extends javax.swing.JFrame {
 
         lblEliminar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblEliminar.setText("Eliminar");
-        lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlListaDeClientes.add(lblEliminar);
         lblEliminar.setBounds(90, 410, 70, 30);
 
         lblEditar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblEditar.setText("Editar");
-        lblEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlListaDeClientes.add(lblEditar);
         lblEditar.setBounds(350, 410, 60, 30);
 
         lblVerCliente.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblVerCliente.setText("Ver cliente");
-        lblVerCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblVerCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlListaDeClientes.add(lblVerCliente);
         lblVerCliente.setBounds(580, 410, 90, 30);
 
         lblFondoVerCliente.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoVerCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoVerCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoVerCliente.setMaximumSize(new java.awt.Dimension(10, 10));
         lblFondoVerCliente.setMinimumSize(new java.awt.Dimension(10, 10));
         lblFondoVerCliente.setOpaque(true);
@@ -500,20 +498,30 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoVerCliente.setBounds(520, 410, 200, 32);
 
         lblFondoEliminar.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoEliminar.setMaximumSize(new java.awt.Dimension(10, 10));
         lblFondoEliminar.setMinimumSize(new java.awt.Dimension(10, 10));
         lblFondoEliminar.setOpaque(true);
         lblFondoEliminar.setPreferredSize(new java.awt.Dimension(10, 10));
+        lblFondoEliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lblFondoEliminarMousePressed(evt);
+            }
+        });
         pnlListaDeClientes.add(lblFondoEliminar);
         lblFondoEliminar.setBounds(20, 410, 200, 32);
 
         lblFondoEditar.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoEditar.setMaximumSize(new java.awt.Dimension(10, 10));
         lblFondoEditar.setMinimumSize(new java.awt.Dimension(10, 10));
         lblFondoEditar.setOpaque(true);
         lblFondoEditar.setPreferredSize(new java.awt.Dimension(10, 10));
+        lblFondoEditar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblFondoEditarMouseClicked(evt);
+            }
+        });
         pnlListaDeClientes.add(lblFondoEditar);
         lblFondoEditar.setBounds(270, 410, 200, 32);
 
@@ -569,15 +577,15 @@ public class mainMenu extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Yu Gothic Light", 0, 14)); // NOI18N
         jLabel3.setText("Ver");
-        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlConsultaDeConsumo.add(jLabel3);
-        jLabel3.setBounds(650, 30, 21, 23);
+        jLabel3.setBounds(650, 30, 21, 30);
 
         jLabel4.setBackground(new java.awt.Color(0, 188, 212));
-        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel4.setOpaque(true);
         pnlConsultaDeConsumo.add(jLabel4);
-        jLabel4.setBounds(620, 30, 80, 20);
+        jLabel4.setBounds(620, 30, 80, 30);
 
         pnlParent.add(pnlConsultaDeConsumo, "card5");
 
@@ -605,7 +613,6 @@ public class mainMenu extends javax.swing.JFrame {
         txtNumeroALlamar.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
         txtNumeroALlamar.setForeground(new java.awt.Color(255, 255, 255));
         txtNumeroALlamar.setToolTipText("");
-        txtNumeroALlamar.setBorder(null);
         pnlSimuladorDeLlamada.add(txtNumeroALlamar);
         txtNumeroALlamar.setBounds(80, 100, 320, 20);
 
@@ -650,13 +657,13 @@ public class mainMenu extends javax.swing.JFrame {
 
         lblAceptarSDL.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAceptarSDL.setText("Aceptar");
-        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lblAceptarSDL);
         lblAceptarSDL.setBounds(220, 330, 60, 23);
 
         lblFondoAceptarSDL.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAceptarSDL.setAutoscrolls(true);
-        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoAceptarSDL.setOpaque(true);
         lblFondoAceptarSDL.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -668,13 +675,13 @@ public class mainMenu extends javax.swing.JFrame {
 
         lblAutoGenerarLlamada.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAutoGenerarLlamada.setText("Auto-generar llamada");
-        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         pnlSimuladorDeLlamada.add(lblAutoGenerarLlamada);
         lblAutoGenerarLlamada.setBounds(170, 380, 142, 20);
 
         lblFondoAutoGenerarLlamada.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAutoGenerarLlamada.setAutoscrolls(true);
-        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblFondoAutoGenerarLlamada.setOpaque(true);
         lblFondoAutoGenerarLlamada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -811,6 +818,11 @@ public class mainMenu extends javax.swing.JFrame {
         pnlSimuladorDeLlamada.add(lblBarraNumeroALlamar1);
         lblBarraNumeroALlamar1.setBounds(90, 60, 250, 0);
 
+        cmbCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbClienteActionPerformed(evt);
+            }
+        });
         pnlSimuladorDeLlamada.add(cmbCliente);
         cmbCliente.setBounds(80, 30, 270, 30);
 
@@ -839,7 +851,6 @@ public class mainMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
-
 
     }//GEN-LAST:event_formMouseClicked
 
@@ -1016,11 +1027,15 @@ public class mainMenu extends javax.swing.JFrame {
         Matcher nombrep = l.matcher(txtNombre.getText());
        Matcher apellidop = l.matcher(txtApellidos.getText());
        Matcher telefonop = n.matcher(txtTelefono.getText());
+        DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCliente.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblClientes.getModel();
 
         if((nombrep.matches() & apellidop.matches() & telefonop.matches() )== true && (txtNombre.getText().isEmpty() == false && 
         txtApellidos.getText().isEmpty() == false && txtDireccion.getText().isEmpty() ==false && txtTelefono.getText().isEmpty() ==false)){
-          opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
-        txtNombre.setText(null);
+         opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
+        modelc.addElement(ran);
+         model.addRow(new Object[]{ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(),cmbEstado.getSelectedItem(),cmbCiudad.getSelectedItem(),txtTelefono.getText()});
+         txtNombre.setText(null);
         txtApellidos.setText(null);
         txtDireccion.setText(null);
         txtTelefono.setText(null);
@@ -1029,15 +1044,8 @@ public class mainMenu extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Error al llenar los campos, revise los campos porfavor","Error" , JOptionPane.ERROR_MESSAGE);
         }  
         
+              
         
-        DefaultComboBoxModel modelc = (DefaultComboBoxModel) cmbCliente.getModel();
-
-       
-        List Usuarios = opu.Obtener();
-        for (int i = 0; i < Usuarios.size(); i++) {
-         Usuario u = (Usuario) Usuarios.get(i);
-         modelc.addElement(u.getNombre()+" "+u.getApellido());
-        }
         
     }//GEN-LAST:event_lblFondoAceptarMouseClicked
 
@@ -1127,14 +1135,13 @@ public class mainMenu extends javax.swing.JFrame {
     private void lblFondoAceptarSDLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarSDLMouseClicked
      
         String [] min = lblSliderMinutos.getText().split("\\s+");       
-        String [] cuenta = lblCuenta.getText().split("\\s+");       
-        String fecha = cmbDia.getItemAt(0)+" "+cmbMesSDL.getItemAt(0)+" "+"2018"+" "+cmbHora.getItemAt(0)+":"+cmbMin.getItemAt(0);
+        String fecha = cmbDia.getSelectedItem()+" "+cmbMesSDL.getSelectedItem()+" "+"2018"+" "+cmbHora.getSelectedItem()+":"+cmbMin.getSelectedItem();
         System.out.println(fecha);
-        System.out.println(cuenta[3]);
+        System.out.println(cmbCliente.getSelectedItem());
          List Usuarios = opu.Obtener();
         for (int i = 0; i < Usuarios.size(); i++) {
          Usuario u = (Usuario) Usuarios.get(i);
-            if (u.getNumerodecuenta() == Integer.parseInt(cuenta[3]) && txtNumeroALlamar.getText().length() ==10) {
+            if (u.getNumerodecuenta() == Integer.parseInt(cmbCliente.getSelectedItem().toString()) && txtNumeroALlamar.getText().length() ==10) {
            opl.Agregar(u,txtNumeroALlamar.getText(), min[1], fecha); 
             break;
             }else{
@@ -1145,9 +1152,7 @@ public class mainMenu extends javax.swing.JFrame {
        // opl.Agregar(usuario,Integer.parseInt(txtNumeroALlamar.getText()), min[1], fecha);
         
     }//GEN-LAST:event_lblFondoAceptarSDLMouseClicked
-
-    
-    
+   
     private void lblFondoAutoGenerarLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAutoGenerarLlamadaMouseClicked
     
     final SwingWorker worker = new SwingWorker(){
@@ -1156,173 +1161,137 @@ public class mainMenu extends javax.swing.JFrame {
 	protected Object doInBackground() throws Exception {
             
             txtNumeroALlamar.setText("");
+            
                     Random rCmbDia = new Random();
                     int noRCmbDia;
-                    noRCmbDia = rCmbDia.nextInt(30);
+                    noRCmbDia = rCmbDia.nextInt(31);
+                    cmbDia.showPopup();
+                    cmbDia.setFocusable(true);
+                    Thread.sleep(200);
                     cmbDia.setSelectedIndex(noRCmbDia);
+                    Thread.sleep(200);
+                    cmbDia.hidePopup();
+                    cmbDia.setFocusable(false);
                     Thread.sleep(200);
                     
                     Random rCmbMes = new Random();
                     int noRCmbMes;
-                    noRCmbMes = rCmbMes.nextInt(11);
+                    noRCmbMes = rCmbMes.nextInt(12);
+                    cmbMesSDL.showPopup();
+                    cmbMesSDL.setFocusable(true);
+                    Thread.sleep(200);
                     cmbMesSDL.setSelectedIndex(noRCmbMes);
-                    Thread.sleep(200);    
+                    Thread.sleep(200); 
+                    cmbMesSDL.hidePopup();
+                    cmbMesSDL.setFocusable(false);
+                    Thread.sleep(200);
                     
                     Random rCmbHora = new Random();
                     int noRCmbHora;
-                    noRCmbHora = rCmbHora.nextInt(22);
+                    noRCmbHora = rCmbHora.nextInt(24);
+                    cmbHora.showPopup();
+                    cmbHora.setFocusable(true);
+                    Thread.sleep(200);
                     cmbHora.setSelectedIndex(noRCmbHora);
+                    Thread.sleep(200);
+                    cmbHora.hidePopup();
+                    cmbHora.setFocusable(false);
                     Thread.sleep(200);
                     
                     Random rCmbMin = new Random();
                     int noRCmbMin;
-                    noRCmbMin = rCmbMin.nextInt(58);
+                    noRCmbMin = rCmbMin.nextInt(60);
+                    cmbMin.showPopup();
+                    cmbMin.setFocusable(true);
+                    Thread.sleep(200);
                     cmbMin.setSelectedIndex(noRCmbMin);
                     Thread.sleep(200);    
+                    cmbMin.hidePopup();
+                    cmbMin.setFocusable(false);
+                    Thread.sleep(200);
                     
                     Random rSdrDuracion = new Random();
                     int noRSdrDuracion;
                     noRSdrDuracion = rSdrDuracion.nextInt(599);
                     sdrDuracion.setValue(noRSdrDuracion);        
-                
+                   
+                    int num = 99;
+                    
                     for (int i = 0; i < 10; i++) {
                         Random tel = new Random();
-                        int telefono = tel.nextInt(10);        
-                        Thread.sleep(200);
+                        int telefono = tel.nextInt(10);
+                        
+                           Thread.sleep(220);
+                        lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
+                        lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
+                        lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
+                        lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
+                        lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
+                        lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
+                        lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
+                        lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
+                        lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
+                        lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
+                        
+                        if (telefono == num) {                                
+                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
+                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
+                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
+                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
+                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
+                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
+                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
+                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
+                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
+                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
+                            Thread.sleep(125);         
+                        }
+                             
                         switch (telefono){
                             case 1:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one (1).png")));
+                            num = 1;
                             break;    
                             case 2:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two (1).png")));
+                            num = 2;
                             break;    
                             case 3:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three (1).png")));
+                            num = 3;                       
                             break;
                             case 4:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four (1).png")));
+                            num = 4;
                             break;    
                             case 5:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five (1).png")));
+                            num = 5;
                             break;    
                             case 6:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six (1).png")));
+                            num = 6;
                             break;    
                             case 7:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven (1).png")));
+                            num = 7;
                             break;    
                             case 8:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight (1).png")));
+                            num = 8;
                             break;    
                             case 9:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine (1).png")));
+                            num = 9;
                             break;    
                             case 0:
-                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
-                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
-                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
-                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
-                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
-                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
-                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
-                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
-                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
-                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                             lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero (1).png")));
+                            num = 0;
                             break;
-                        }
+                        }                        
                         txtNumeroALlamar.setText(txtNumeroALlamar.getText()+String.valueOf(telefono));         
                     }
+                            Thread.sleep(220);
                             lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
                             lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
                             lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
@@ -1333,10 +1302,10 @@ public class mainMenu extends javax.swing.JFrame {
                             lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
                             lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
                             lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
+                           
                 
-              String [] min = lblSliderMinutos.getText().split("\\s+");       
-        String [] cuenta = lblCuenta.getText().split("\\s+");       
-        String fecha = cmbDia.getItemAt(noRCmbDia)+" "+cmbMesSDL.getItemAt(noRCmbMes)+" "+"2018"+" "+cmbHora.getItemAt(noRCmbHora)+":"+cmbMin.getItemAt(noRCmbMin);
+         String [] min = lblSliderMinutos.getText().split("\\s+");              
+         String fecha = cmbDia.getItemAt(noRCmbDia)+" "+cmbMesSDL.getItemAt(noRCmbMes)+" "+"2018"+" "+cmbHora.getItemAt(noRCmbHora)+":"+cmbMin.getItemAt(noRCmbMin);
                 
 				return null;
 			}	
@@ -1344,19 +1313,8 @@ public class mainMenu extends javax.swing.JFrame {
                     worker.execute();
          
      
-        
-//         List Usuarios = opu.Obtener();
-//        for (int i = 0; i < Usuarios.size(); i++) {
-//         Usuario u = (Usuario) Usuarios.get(i);
-//            if (u.getNumerodecuenta() == Integer.parseInt(cuenta[3]) && txtNumeroALlamar.getText().length() ==10) {
-//           opl.Agregar(u,txtNumeroALlamar.getText(), min[1], fecha); 
-//            break;
-//            }else{
-//            JOptionPane.showMessageDialog(null, "No se pueden ingresar mas de 10 digitos en el telfono","Error" , JOptionPane.ERROR_MESSAGE);
-//
-//            }
-//        }
-        
+        this.repaint();
+        this.revalidate();
       
     }//GEN-LAST:event_lblFondoAutoGenerarLlamadaMouseClicked
 
@@ -1400,6 +1358,54 @@ public class mainMenu extends javax.swing.JFrame {
     txtNumeroALlamar.setText(txtNumeroALlamar.getText()+"0");
     }//GEN-LAST:event_lbl0MouseClicked
 
+    private void cmbClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbClienteActionPerformed
+
+        List Usuario = opu.Obtener();
+        for (int i = 0; i < Usuario.size(); i++) {
+         Usuario u = (Usuario) Usuario.get(i);
+            if (u.getNumerodecuenta() == Integer.parseInt(cmbCliente.getSelectedItem().toString())) {
+                 lblCuenta.setText("Cliente: "+u.getNombre()+" "+u.getApellido());      
+            }
+        }
+    }//GEN-LAST:event_cmbClienteActionPerformed
+
+    private void lblFondoEliminarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoEliminarMousePressed
+       int input = JOptionPane.showConfirmDialog(null, "¿Estàs seguro que deseas eliminar a este"
+                + " usuario? \n\n Se eliminaran todos sus registros", "Advertencia",
+			JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+       DefaultComboBoxModel modelc1 = (DefaultComboBoxModel) cmbCliente.getModel();
+        DefaultTableModel model = (DefaultTableModel) tblClientes.getModel();
+
+        if (input == 0) {
+        int cuenta = Integer.parseInt(model.getValueAt(tblClientes.getSelectedRow(), 0).toString());
+        List Usuario = opu.Obtener();
+        for (int i = 0; i < Usuario.size(); i++) {
+         Usuario u = (Usuario) Usuario.get(i);
+            if (u.getNumerodecuenta() == cuenta) {
+                opu.Eliminar(u);
+            }
+            for (int j = 0; j < cmbCliente.getItemCount(); j++) {
+                if (String.valueOf(u.getNumerodecuenta()).equals(cmbCliente.getItemAt(j))) {
+                    cmbCliente.removeItemAt(j);
+                    break;
+                }
+            }
+        }
+        }else{
+            
+        }
+        model.removeRow(tblClientes.getSelectedRow());
+
+       
+
+
+    }//GEN-LAST:event_lblFondoEliminarMousePressed
+
+    private void lblFondoEditarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoEditarMouseClicked
+        DefaultTableModel model = (DefaultTableModel) tblClientes.getModel();
+        System.out.println(model.getValueAt(tblClientes.getSelectedRow(), 0).toString());
+    }//GEN-LAST:event_lblFondoEditarMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1439,24 +1445,24 @@ public class mainMenu extends javax.swing.JFrame {
     public void Cargar() {
         DefaultComboBoxModel modelc1 = (DefaultComboBoxModel) cmbCliente.getModel();
         DefaultTableModel model = (DefaultTableModel) tblClientes.getModel();
-        tblClientes.getTableHeader().setFont(new Font("Microsoft Tai Le", Font.ITALIC, 14));
-        tblClientes.getTableHeader().setForeground(Color.WHITE);
-        tblClientes.getTableHeader().setBackground(Color.yellow);
-        tblClientes.getTableHeader().setOpaque(false);
-        tblClientes.setShowGrid(false);
-        tblClientes.setOpaque(false);
-        ((DefaultTableCellRenderer) tblClientes.getDefaultRenderer(Object.class)).setOpaque(false);
-        jScrollPane1.setOpaque(false);
-        jScrollPane1.getViewport().setOpaque(false);
+//        tblClientes.getTableHeader().setFont(new Font("Microsoft Tai Le", Font.ITALIC, 14));
+//        tblClientes.getTableHeader().setForeground(Color.WHITE);
+//        tblClientes.getTableHeader().setBackground(Color.yellow);
+//        tblClientes.getTableHeader().setOpaque(false);
+//        tblClientes.setShowGrid(false);
+//        tblClientes.setOpaque(false);
+//        ((DefaultTableCellRenderer) tblClientes.getDefaultRenderer(Object.class)).setOpaque(false);
+//        jScrollPane1.setOpaque(false);
+//        jScrollPane1.getViewport().setOpaque(false);
         
         //Obtiene Usuarios y los agrega al combobox y tabla
-        List Usuarios = opu.Obtener(); 
-        for (int i = 0; i < Usuarios.size(); i++) {
-         Usuario u = (Usuario) Usuarios.get(i);
-         modelc1.addElement(u.getNombre()+" "+u.getApellido());
+        Datos = opu.Obtener(); 
+        for (int i = 0; i < Datos.size(); i++) {
+         Usuario u = (Usuario) Datos.get(i);
+         modelc1.addElement(u.getNumerodecuenta());
          model.addRow(new Object[]{u.getNumerodecuenta(), u.getNombre(), u.getApellido(), u.getDireccion(),u.getEstado(),u.getCiudad(),u.getTelefono() });
             if (activate == true) {
-            lblCuenta.setText("Numero de cuenta: "+String.valueOf(u.getNumerodecuenta()));
+            lblCuenta.setText("Cliente: "+u.getNombre()+" "+u.getApellido());
             activate = false;
             }
        
