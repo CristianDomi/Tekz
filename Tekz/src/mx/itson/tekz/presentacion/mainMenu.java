@@ -1261,23 +1261,28 @@ public class mainMenu extends javax.swing.JFrame {
 
     private void lblFondoAceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarMouseClicked
         Random rng = new Random();
+        int rdm =rng.nextInt(90000000)+10000000;
+        
         int ran = rng.nextInt(90000000) + 10000000;
         Pattern l = Pattern.compile("[A-Za-z ].*");
-        Pattern n = Pattern.compile("[0-9].*");
+
         Matcher nombrep = l.matcher(txtNombre.getText());
         Matcher apellidop = l.matcher(txtApellidos.getText());
-        Matcher telefonop = n.matcher(txtTelefono.getText());
+
         DefaultComboBoxModel modelc1 = (DefaultComboBoxModel) cmbCliente.getModel();
         DefaultComboBoxModel modelcdc = (DefaultComboBoxModel) cmbCuentaCDC.getModel();
         DefaultTableModel model = (DefaultTableModel) tblClientes.getModel();
 
-        if((nombrep.matches() & apellidop.matches() & telefonop.matches() )== true && (txtNombre.getText().isEmpty() == false && 
-        txtApellidos.getText().isEmpty() == false && txtDireccion.getText().isEmpty() ==false && txtTelefono.getText().isEmpty() ==false)){
-            if (lblAgregarCliente.getText().equals("Agregar cliente")) {
-              opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), txtTelefono.getText());
+        if((nombrep.matches() & apellidop.matches()  )== true && (txtNombre.getText().isEmpty() == false && 
+        txtApellidos.getText().isEmpty() == false && txtDireccion.getText().isEmpty() ==false )){
+           String telefono= ("99"+ String.valueOf(rdm) );
+
+        System.out.println(telefono);
+        if (lblAgregarCliente.getText().equals("Agregar cliente")) {
+              opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), telefono);
         modelc1.addElement(ran);
         modelcdc.addElement(ran);
-         model.addRow(new Object[]{ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(),cmbEstado.getSelectedItem(),cmbCiudad.getSelectedItem(),txtTelefono.getText()});
+         model.addRow(new Object[]{ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(),cmbEstado.getSelectedItem(),cmbCiudad.getSelectedItem(),telefono});
         txtNombre.setText(null);
         txtApellidos.setText(null);
         txtDireccion.setText(null);
@@ -1290,7 +1295,7 @@ public class mainMenu extends javax.swing.JFrame {
                     u.setNombre(txtNombre.getText());
                     u.setApellido(txtApellidos.getText());
                     u.setDireccion(txtDireccion.getText());
-                    u.setTelefono(txtTelefono.getText());
+                    u.setTelefono(telefono);
                     u.setEstado(cmbEstado.getSelectedItem().toString());
                     u.setCiudad(cmbCiudad.getSelectedItem().toString());
                     opu.Editar(u);
