@@ -20,6 +20,27 @@ import mx.itson.tekz.interfaces.CRUDusuario;
  */
 public class operacionUsuario implements CRUDusuario {
 
+    
+    
+ /**
+ *Añade un usuario a la tabla usuario de la base de datos.
+ * 
+ * Parametros:
+ * 
+ * @param numeroDeCuenta  - Numero de cuenta asignado a este usuario
+ * 
+ * @param nombre  Nombre asignado al usuario
+ * 
+ * @param apellido  Apellidos asignado al usuario
+ * 
+ * @param direccion  Direccion asignada al usuario
+ * 
+ * @param estado  Estado asignado al usuario
+ * 
+ * @param ciudad  Ciudad asignada al usuario
+ * 
+ * @param telefono  Numero de telefono asignado al usuario
+ */
     @Override
     public void Agregar(int numeroDeCuenta,String nombre,String apellido, String direccion, String estado, String ciudad, String telefono) {
      Usuario u = new Usuario();
@@ -40,7 +61,13 @@ public class operacionUsuario implements CRUDusuario {
             System.out.println("Ocurrio un error al intentar guardar");
         }
     }
-
+    
+    
+/**
+ * Regresa una lista de todos los usuarios registrados en la tabla usuario de la base de datos.
+ * 
+ * @return 
+ */
     @Override
     public List Obtener() {
         List<Usuario> usuarios = new ArrayList<Usuario>();
@@ -56,7 +83,11 @@ public class operacionUsuario implements CRUDusuario {
         return usuarios;           
     }
     
-
+/**
+ * Actualiza un usuario a la tabla usuario de la base de datos 
+ * 
+ * @param usuario  Usuario a actualizar
+ */
     @Override
     public void Editar(Usuario usuario) {
         try {
@@ -69,6 +100,11 @@ public class operacionUsuario implements CRUDusuario {
             System.out.println("Ocurrio un error al intentar actualizar we :S");
         }    }
 
+    /**
+     * Elimina un usuario de la tabla usuario de la base de datos
+     * 
+     * @param usuario  Usuario a eliminar
+     */
     @Override
     public void Eliminar(Usuario usuario) {
        try {

@@ -11,6 +11,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
@@ -22,6 +23,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.SwingWorker;
 import javax.swing.table.DefaultTableModel;
+import mx.itson.tekz.entidades.Llamada;
 import mx.itson.tekz.entidades.Usuario;
 import mx.itson.tekz.implementacion.operacionLlamada;
 import mx.itson.tekz.implementacion.operacionUsuario;
@@ -34,18 +36,37 @@ import mx.itson.tekz.implementacion.operacionUsuario;
 public class mainMenu extends javax.swing.JFrame {
     boolean activate = true;
     boolean editar = false;
+   
     int numcuenta;
     int numCelda;
+   
     boolean color = false;
+   
     operacionUsuario opu = new operacionUsuario();
     operacionLlamada opl = new operacionLlamada();
+    
     List Datos;
+    
+    String [] Estado = new String [32];
+    
+    int value1;
+    int value2;
+    int value3;
+    int value4;
+    
+    int panel;
+    
+    int xMouse;
+    int yMouse;
+  
+
     /**
      * Creates new form mainMenu
      */
     public mainMenu() {
         initComponents();
         Cargar();
+   
 
     }
 
@@ -58,6 +79,7 @@ public class mainMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         lblAgregarCliente = new javax.swing.JLabel();
         lblConsultaDeConsumo = new javax.swing.JLabel();
         lblListaDeClientes = new javax.swing.JLabel();
@@ -71,8 +93,24 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoListaDeClientes = new javax.swing.JLabel();
         lblFondoAgregarCliente = new javax.swing.JLabel();
         lblLogo = new javax.swing.JLabel();
+        lblIconoConfiguracion = new javax.swing.JLabel();
         lblFondoIzquierdo = new javax.swing.JLabel();
         pnlParent = new javax.swing.JPanel();
+        pnlConfiguracion = new javax.swing.JPanel();
+        lblSld1 = new javax.swing.JLabel();
+        sldLlamadasLocalesGratis = new javax.swing.JSlider();
+        lblNumeroLlamadasLocalesGratis = new javax.swing.JLabel();
+        lblMinutosCelularGratis = new javax.swing.JLabel();
+        sldMinutosCelularGratis = new javax.swing.JSlider();
+        lblSld2 = new javax.swing.JLabel();
+        lblPrecioLlamadaLocal = new javax.swing.JLabel();
+        sldPrecioLlamadaLocal = new javax.swing.JSlider();
+        lblSld3 = new javax.swing.JLabel();
+        lblPrecioCelular = new javax.swing.JLabel();
+        sldPrecioCelular = new javax.swing.JSlider();
+        lblSld4 = new javax.swing.JLabel();
+        lblGuardar = new javax.swing.JLabel();
+        lblFondoGuardar = new javax.swing.JLabel();
         pnlAgregarCliente = new javax.swing.JPanel();
         lblBarraNombre = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
@@ -99,20 +137,17 @@ public class mainMenu extends javax.swing.JFrame {
         tblClientes = new javax.swing.JTable();
         lblEliminar = new javax.swing.JLabel();
         lblEditar = new javax.swing.JLabel();
-        lblVerCliente = new javax.swing.JLabel();
-        lblFondoVerCliente = new javax.swing.JLabel();
         lblFondoEliminar = new javax.swing.JLabel();
         lblFondoEditar = new javax.swing.JLabel();
         pnlConsultaDeConsumo = new javax.swing.JPanel();
         cmbMes = new javax.swing.JComboBox<>();
         lblMes = new javax.swing.JLabel();
-        lblAño = new javax.swing.JLabel();
-        cmbAño = new javax.swing.JComboBox<>();
-        lblVer = new javax.swing.JLabel();
-        lblFondoVer = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblNumeroCuenta = new javax.swing.JLabel();
         cmbCuentaCDC = new javax.swing.JComboBox<>();
         lblClienteCDC = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tblConsumo = new javax.swing.JTable();
+        lblCantidadAPagar = new javax.swing.JLabel();
         pnlSimuladorDeLlamada = new javax.swing.JPanel();
         lblDuracion = new javax.swing.JLabel();
         sdrDuracion = new javax.swing.JSlider();
@@ -146,6 +181,8 @@ public class mainMenu extends javax.swing.JFrame {
         lblCuenta = new javax.swing.JLabel();
         lblSliderMinutos = new javax.swing.JLabel();
         lblMesSDL1 = new javax.swing.JLabel();
+        rbtLocales = new javax.swing.JRadioButton();
+        rbtCelular = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1017, 459));
@@ -312,13 +349,37 @@ public class mainMenu extends javax.swing.JFrame {
 
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/logo.png"))); // NOI18N
         getContentPane().add(lblLogo);
-        lblLogo.setBounds(70, 20, 166, 80);
+        lblLogo.setBounds(50, 20, 166, 80);
+
+        lblIconoConfiguracion.setBackground(new java.awt.Color(33, 33, 33));
+        lblIconoConfiguracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/gear.png"))); // NOI18N
+        lblIconoConfiguracion.setOpaque(true);
+        lblIconoConfiguracion.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                lblIconoConfiguracionMouseMoved(evt);
+            }
+        });
+        lblIconoConfiguracion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblIconoConfiguracionMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lblIconoConfiguracion);
+        lblIconoConfiguracion.setBounds(250, 10, 32, 40);
 
         lblFondoIzquierdo.setBackground(new java.awt.Color(33, 33, 33));
         lblFondoIzquierdo.setOpaque(true);
         lblFondoIzquierdo.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                lblFondoIzquierdoMouseDragged(evt);
+            }
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblFondoIzquierdoMouseMoved(evt);
+            }
+        });
+        lblFondoIzquierdo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lblFondoIzquierdoMousePressed(evt);
             }
         });
         getContentPane().add(lblFondoIzquierdo);
@@ -330,6 +391,114 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlParent.setLayout(new java.awt.CardLayout());
+
+        pnlConfiguracion.setBackground(new java.awt.Color(51, 51, 51));
+        pnlConfiguracion.setLayout(null);
+
+        lblSld1.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
+        lblSld1.setForeground(new java.awt.Color(255, 255, 255));
+        lblSld1.setText("10 llamadas locales");
+        pnlConfiguracion.add(lblSld1);
+        lblSld1.setBounds(550, 30, 150, 40);
+
+        sldLlamadasLocalesGratis.setOpaque(false);
+        sldLlamadasLocalesGratis.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sldLlamadasLocalesGratisStateChanged(evt);
+            }
+        });
+        pnlConfiguracion.add(sldLlamadasLocalesGratis);
+        sldLlamadasLocalesGratis.setBounds(340, 40, 200, 26);
+
+        lblNumeroLlamadasLocalesGratis.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
+        lblNumeroLlamadasLocalesGratis.setForeground(new java.awt.Color(255, 255, 255));
+        lblNumeroLlamadasLocalesGratis.setText("Numero de llamadas locales gratis:");
+        pnlConfiguracion.add(lblNumeroLlamadasLocalesGratis);
+        lblNumeroLlamadasLocalesGratis.setBounds(60, 40, 250, 21);
+
+        lblMinutosCelularGratis.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
+        lblMinutosCelularGratis.setForeground(new java.awt.Color(255, 255, 255));
+        lblMinutosCelularGratis.setText("Minutos a celular gratis:");
+        pnlConfiguracion.add(lblMinutosCelularGratis);
+        lblMinutosCelularGratis.setBounds(60, 130, 250, 21);
+
+        sldMinutosCelularGratis.setOpaque(false);
+        sldMinutosCelularGratis.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sldMinutosCelularGratisStateChanged(evt);
+            }
+        });
+        pnlConfiguracion.add(sldMinutosCelularGratis);
+        sldMinutosCelularGratis.setBounds(340, 130, 200, 26);
+
+        lblSld2.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
+        lblSld2.setForeground(new java.awt.Color(255, 255, 255));
+        lblSld2.setText("10 minutos gratis");
+        pnlConfiguracion.add(lblSld2);
+        lblSld2.setBounds(550, 120, 150, 40);
+
+        lblPrecioLlamadaLocal.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
+        lblPrecioLlamadaLocal.setForeground(new java.awt.Color(255, 255, 255));
+        lblPrecioLlamadaLocal.setText("Precio llamada local (minuto):");
+        pnlConfiguracion.add(lblPrecioLlamadaLocal);
+        lblPrecioLlamadaLocal.setBounds(60, 230, 250, 21);
+
+        sldPrecioLlamadaLocal.setOpaque(false);
+        sldPrecioLlamadaLocal.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sldPrecioLlamadaLocalStateChanged(evt);
+            }
+        });
+        pnlConfiguracion.add(sldPrecioLlamadaLocal);
+        sldPrecioLlamadaLocal.setBounds(340, 230, 200, 26);
+
+        lblSld3.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
+        lblSld3.setForeground(new java.awt.Color(255, 255, 255));
+        lblSld3.setText("2  mxn el min");
+        pnlConfiguracion.add(lblSld3);
+        lblSld3.setBounds(550, 220, 130, 40);
+
+        lblPrecioCelular.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
+        lblPrecioCelular.setForeground(new java.awt.Color(255, 255, 255));
+        lblPrecioCelular.setText("Precio llamada a celular (minuto):");
+        pnlConfiguracion.add(lblPrecioCelular);
+        lblPrecioCelular.setBounds(60, 330, 250, 21);
+
+        sldPrecioCelular.setOpaque(false);
+        sldPrecioCelular.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sldPrecioCelularStateChanged(evt);
+            }
+        });
+        pnlConfiguracion.add(sldPrecioCelular);
+        sldPrecioCelular.setBounds(340, 330, 200, 26);
+
+        lblSld4.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
+        lblSld4.setForeground(new java.awt.Color(255, 255, 255));
+        lblSld4.setText("3 mxn el min");
+        pnlConfiguracion.add(lblSld4);
+        lblSld4.setBounds(550, 320, 140, 40);
+
+        lblGuardar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
+        lblGuardar.setText("Guardar");
+        lblGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblGuardar.setFocusable(false);
+        lblGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        pnlConfiguracion.add(lblGuardar);
+        lblGuardar.setBounds(330, 410, 70, 30);
+
+        lblFondoGuardar.setBackground(new java.awt.Color(0, 204, 0));
+        lblFondoGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        lblFondoGuardar.setOpaque(true);
+        lblFondoGuardar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblFondoGuardarMouseClicked(evt);
+            }
+        });
+        pnlConfiguracion.add(lblFondoGuardar);
+        lblFondoGuardar.setBounds(30, 410, 690, 30);
+
+        pnlParent.add(pnlConfiguracion, "card6");
 
         pnlAgregarCliente.setBackground(new java.awt.Color(51, 51, 51));
         pnlAgregarCliente.setLayout(null);
@@ -363,12 +532,12 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlAgregarCliente.add(txtApellidos);
-        txtApellidos.setBounds(60, 140, 250, 20);
+        txtApellidos.setBounds(60, 180, 250, 20);
 
         lblBarraApellidos.setBackground(new java.awt.Color(153, 153, 153));
         lblBarraApellidos.setOpaque(true);
         pnlAgregarCliente.add(lblBarraApellidos);
-        lblBarraApellidos.setBounds(60, 160, 249, 1);
+        lblBarraApellidos.setBounds(60, 200, 249, 1);
 
         txtDireccion.setBackground(new java.awt.Color(51, 51, 51));
         txtDireccion.setFont(new java.awt.Font("Microsoft Tai Le", 2, 14)); // NOI18N
@@ -381,12 +550,12 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlAgregarCliente.add(txtDireccion);
-        txtDireccion.setBounds(60, 220, 250, 20);
+        txtDireccion.setBounds(60, 300, 250, 20);
 
         txtBarraDireccion.setBackground(new java.awt.Color(153, 153, 153));
         txtBarraDireccion.setOpaque(true);
         pnlAgregarCliente.add(txtBarraDireccion);
-        txtBarraDireccion.setBounds(60, 240, 249, 1);
+        txtBarraDireccion.setBounds(60, 320, 249, 1);
 
         lblCiudad.setFont(new java.awt.Font("Microsoft YaHei", 2, 14)); // NOI18N
         lblCiudad.setForeground(new java.awt.Color(255, 255, 255));
@@ -428,23 +597,23 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlAgregarCliente.add(txtTelefono);
-        txtTelefono.setBounds(60, 310, 250, 20);
+        txtTelefono.setBounds(420, 300, 250, 20);
 
         lblTelefono.setBackground(new java.awt.Color(153, 153, 153));
         lblTelefono.setOpaque(true);
         pnlAgregarCliente.add(lblTelefono);
-        lblTelefono.setBounds(60, 330, 249, 1);
+        lblTelefono.setBounds(420, 320, 249, 1);
 
         lblAceptar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblAceptar.setText("Aceptar");
-        lblAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblAceptar.setFocusable(false);
         lblAceptar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlAgregarCliente.add(lblAceptar);
         lblAceptar.setBounds(330, 410, 60, 30);
 
         lblFondoAceptar.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoAceptar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoAceptar.setOpaque(true);
         lblFondoAceptar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -458,7 +627,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblTelefonoOculto.setForeground(new java.awt.Color(255, 255, 255));
         lblTelefonoOculto.setText("Teléfono :");
         pnlAgregarCliente.add(lblTelefonoOculto);
-        lblTelefonoOculto.setBounds(60, 290, 80, 18);
+        lblTelefonoOculto.setBounds(420, 280, 80, 18);
 
         lblNombreOculto.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
         lblNombreOculto.setForeground(new java.awt.Color(255, 255, 255));
@@ -470,24 +639,24 @@ public class mainMenu extends javax.swing.JFrame {
         lblApellidosOculto.setForeground(new java.awt.Color(255, 255, 255));
         lblApellidosOculto.setText("Apellidos :");
         pnlAgregarCliente.add(lblApellidosOculto);
-        lblApellidosOculto.setBounds(60, 120, 80, 18);
+        lblApellidosOculto.setBounds(60, 160, 80, 18);
 
         lblDireccionOculto.setFont(new java.awt.Font("Microsoft Tai Le", 2, 16)); // NOI18N
         lblDireccionOculto.setForeground(new java.awt.Color(255, 255, 255));
         lblDireccionOculto.setText("Dirección :");
         pnlAgregarCliente.add(lblDireccionOculto);
-        lblDireccionOculto.setBounds(60, 200, 80, 18);
+        lblDireccionOculto.setBounds(60, 280, 80, 18);
 
         lblCancelar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblCancelar.setText("Cancelar");
-        lblCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblCancelar.setFocusable(false);
         lblCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlAgregarCliente.add(lblCancelar);
         lblCancelar.setBounds(330, 370, 70, 30);
 
         lblFondoCancelar.setBackground(new java.awt.Color(255, 0, 0));
-        lblFondoCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoCancelar.setOpaque(true);
         lblFondoCancelar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -529,33 +698,18 @@ public class mainMenu extends javax.swing.JFrame {
 
         lblEliminar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblEliminar.setText("Eliminar");
-        lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlListaDeClientes.add(lblEliminar);
-        lblEliminar.setBounds(90, 410, 70, 30);
+        lblEliminar.setBounds(240, 410, 70, 30);
 
         lblEditar.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
         lblEditar.setText("Editar");
-        lblEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlListaDeClientes.add(lblEditar);
-        lblEditar.setBounds(350, 410, 60, 30);
-
-        lblVerCliente.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
-        lblVerCliente.setText("Ver cliente");
-        lblVerCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlListaDeClientes.add(lblVerCliente);
-        lblVerCliente.setBounds(580, 410, 90, 30);
-
-        lblFondoVerCliente.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoVerCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        lblFondoVerCliente.setMaximumSize(new java.awt.Dimension(10, 10));
-        lblFondoVerCliente.setMinimumSize(new java.awt.Dimension(10, 10));
-        lblFondoVerCliente.setOpaque(true);
-        lblFondoVerCliente.setPreferredSize(new java.awt.Dimension(10, 10));
-        pnlListaDeClientes.add(lblFondoVerCliente);
-        lblFondoVerCliente.setBounds(520, 410, 200, 32);
+        lblEditar.setBounds(530, 410, 60, 30);
 
         lblFondoEliminar.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoEliminar.setMaximumSize(new java.awt.Dimension(10, 10));
         lblFondoEliminar.setMinimumSize(new java.awt.Dimension(10, 10));
         lblFondoEliminar.setOpaque(true);
@@ -566,10 +720,10 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlListaDeClientes.add(lblFondoEliminar);
-        lblFondoEliminar.setBounds(20, 410, 200, 32);
+        lblFondoEliminar.setBounds(170, 410, 200, 32);
 
         lblFondoEditar.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoEditar.setMaximumSize(new java.awt.Dimension(10, 10));
         lblFondoEditar.setMinimumSize(new java.awt.Dimension(10, 10));
         lblFondoEditar.setOpaque(true);
@@ -580,58 +734,33 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlListaDeClientes.add(lblFondoEditar);
-        lblFondoEditar.setBounds(270, 410, 200, 32);
+        lblFondoEditar.setBounds(450, 410, 200, 32);
 
         pnlParent.add(pnlListaDeClientes, "card4");
 
         pnlConsultaDeConsumo.setBackground(new java.awt.Color(51, 51, 51));
         pnlConsultaDeConsumo.setLayout(null);
 
+        cmbMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
         cmbMes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbMesActionPerformed(evt);
             }
         });
         pnlConsultaDeConsumo.add(cmbMes);
-        cmbMes.setBounds(350, 30, 100, 30);
+        cmbMes.setBounds(540, 40, 100, 30);
 
         lblMes.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
         lblMes.setForeground(new java.awt.Color(255, 255, 255));
         lblMes.setText("Mes :");
         pnlConsultaDeConsumo.add(lblMes);
-        lblMes.setBounds(310, 27, 30, 30);
+        lblMes.setBounds(500, 40, 30, 30);
 
-        lblAño.setFont(new java.awt.Font("Microsoft Tai Le", 2, 12)); // NOI18N
-        lblAño.setForeground(new java.awt.Color(255, 255, 255));
-        lblAño.setText("Año :");
-        pnlConsultaDeConsumo.add(lblAño);
-        lblAño.setBounds(470, 27, 40, 30);
-
-        cmbAño.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbAñoActionPerformed(evt);
-            }
-        });
-        pnlConsultaDeConsumo.add(cmbAño);
-        cmbAño.setBounds(510, 30, 70, 30);
-
-        lblVer.setFont(new java.awt.Font("Yu Gothic Light", 0, 14)); // NOI18N
-        lblVer.setText("Ver");
-        lblVer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlConsultaDeConsumo.add(lblVer);
-        lblVer.setBounds(650, 30, 21, 30);
-
-        lblFondoVer.setBackground(new java.awt.Color(0, 188, 212));
-        lblFondoVer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        lblFondoVer.setOpaque(true);
-        pnlConsultaDeConsumo.add(lblFondoVer);
-        lblFondoVer.setBounds(620, 30, 80, 30);
-
-        jLabel1.setFont(new java.awt.Font("Microsoft YaHei Light", 2, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Numero de cuenta :");
-        pnlConsultaDeConsumo.add(jLabel1);
-        jLabel1.setBounds(30, 20, 150, 20);
+        lblNumeroCuenta.setFont(new java.awt.Font("Microsoft YaHei Light", 2, 14)); // NOI18N
+        lblNumeroCuenta.setForeground(new java.awt.Color(255, 255, 255));
+        lblNumeroCuenta.setText("Numero de cuenta :");
+        pnlConsultaDeConsumo.add(lblNumeroCuenta);
+        lblNumeroCuenta.setBounds(30, 20, 150, 20);
 
         cmbCuentaCDC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -639,12 +768,39 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlConsultaDeConsumo.add(cmbCuentaCDC);
-        cmbCuentaCDC.setBounds(30, 40, 240, 30);
+        cmbCuentaCDC.setBounds(30, 40, 330, 30);
 
         lblClienteCDC.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblClienteCDC.setForeground(new java.awt.Color(255, 255, 255));
         pnlConsultaDeConsumo.add(lblClienteCDC);
-        lblClienteCDC.setBounds(30, 80, 280, 40);
+        lblClienteCDC.setBounds(70, 80, 280, 40);
+
+        tblConsumo.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Telefono", "Tipo", "Veces", "Duracion", "Fecha", "Consumo"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, true, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(tblConsumo);
+
+        pnlConsultaDeConsumo.add(jScrollPane2);
+        jScrollPane2.setBounds(70, 140, 580, 270);
+
+        lblCantidadAPagar.setFont(new java.awt.Font("Microsoft Tai Le", 0, 18)); // NOI18N
+        lblCantidadAPagar.setForeground(new java.awt.Color(255, 255, 255));
+        lblCantidadAPagar.setText("Cantidad a pagar:");
+        pnlConsultaDeConsumo.add(lblCantidadAPagar);
+        lblCantidadAPagar.setBounds(410, 420, 250, 24);
 
         pnlParent.add(pnlConsultaDeConsumo, "card5");
 
@@ -659,6 +815,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         sdrDuracion.setBackground(new java.awt.Color(51, 51, 51));
         sdrDuracion.setMaximum(600);
+        sdrDuracion.setMinimum(1);
         sdrDuracion.setValue(500);
         sdrDuracion.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -688,6 +845,11 @@ public class mainMenu extends javax.swing.JFrame {
         lblMin.setBounds(250, 270, 40, 30);
 
         cmbMesSDL.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
+        cmbMesSDL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbMesSDLActionPerformed(evt);
+            }
+        });
         pnlSimuladorDeLlamada.add(cmbMesSDL);
         cmbMesSDL.setBounds(260, 210, 110, 30);
 
@@ -722,13 +884,13 @@ public class mainMenu extends javax.swing.JFrame {
 
         lblAceptarSDL.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAceptarSDL.setText("Aceptar");
-        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lblAceptarSDL);
         lblAceptarSDL.setBounds(220, 330, 60, 23);
 
         lblFondoAceptarSDL.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAceptarSDL.setAutoscrolls(true);
-        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoAceptarSDL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoAceptarSDL.setOpaque(true);
         lblFondoAceptarSDL.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -736,17 +898,17 @@ public class mainMenu extends javax.swing.JFrame {
             }
         });
         pnlSimuladorDeLlamada.add(lblFondoAceptarSDL);
-        lblFondoAceptarSDL.setBounds(150, 330, 180, 20);
+        lblFondoAceptarSDL.setBounds(160, 330, 180, 20);
 
         lblAutoGenerarLlamada.setFont(new java.awt.Font("Yu Gothic", 2, 14)); // NOI18N
         lblAutoGenerarLlamada.setText("Auto-generar llamada");
-        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         pnlSimuladorDeLlamada.add(lblAutoGenerarLlamada);
         lblAutoGenerarLlamada.setBounds(170, 380, 142, 20);
 
         lblFondoAutoGenerarLlamada.setBackground(new java.awt.Color(0, 188, 212));
         lblFondoAutoGenerarLlamada.setAutoscrolls(true);
-        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblFondoAutoGenerarLlamada.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lblFondoAutoGenerarLlamada.setOpaque(true);
         lblFondoAutoGenerarLlamada.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -758,7 +920,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl2.setBackground(new java.awt.Color(0, 121, 107));
         lbl2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/two.png"))); // NOI18N
-        lbl2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl2MouseClicked(evt);
@@ -769,7 +931,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl3.setBackground(new java.awt.Color(0, 121, 107));
         lbl3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/three.png"))); // NOI18N
-        lbl3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl3MouseClicked(evt);
@@ -780,7 +942,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl4.setBackground(new java.awt.Color(0, 121, 107));
         lbl4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/four.png"))); // NOI18N
-        lbl4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl4MouseClicked(evt);
@@ -791,7 +953,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl5.setBackground(new java.awt.Color(0, 121, 107));
         lbl5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/five.png"))); // NOI18N
-        lbl5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl5MouseClicked(evt);
@@ -802,7 +964,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl6.setBackground(new java.awt.Color(0, 121, 107));
         lbl6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/six.png"))); // NOI18N
-        lbl6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl6MouseClicked(evt);
@@ -813,7 +975,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl7.setBackground(new java.awt.Color(0, 121, 107));
         lbl7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/seven.png"))); // NOI18N
-        lbl7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl7MouseClicked(evt);
@@ -824,7 +986,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl8.setBackground(new java.awt.Color(0, 121, 107));
         lbl8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/eight.png"))); // NOI18N
-        lbl8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl8MouseClicked(evt);
@@ -835,7 +997,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl9.setBackground(new java.awt.Color(0, 121, 107));
         lbl9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/nine.png"))); // NOI18N
-        lbl9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl9MouseClicked(evt);
@@ -846,7 +1008,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl0.setBackground(new java.awt.Color(0, 121, 107));
         lbl0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/zero.png"))); // NOI18N
-        lbl0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl0.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl0MouseClicked(evt);
@@ -857,7 +1019,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         lbl1.setBackground(new java.awt.Color(0, 121, 107));
         lbl1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mx/itson/tekz/presentacion/one.png"))); // NOI18N
-        lbl1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbl1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         lbl1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbl1MouseClicked(evt);
@@ -907,6 +1069,24 @@ public class mainMenu extends javax.swing.JFrame {
         pnlSimuladorDeLlamada.add(lblMesSDL1);
         lblMesSDL1.setBounds(220, 210, 40, 30);
 
+        rbtLocales.setBackground(new java.awt.Color(33, 33, 33));
+        buttonGroup1.add(rbtLocales);
+        rbtLocales.setFont(new java.awt.Font("Microsoft YaHei Light", 2, 14)); // NOI18N
+        rbtLocales.setForeground(new java.awt.Color(255, 255, 255));
+        rbtLocales.setText("Local");
+        rbtLocales.setOpaque(false);
+        pnlSimuladorDeLlamada.add(rbtLocales);
+        rbtLocales.setBounds(550, 340, 60, 30);
+
+        rbtCelular.setBackground(new java.awt.Color(33, 33, 33));
+        buttonGroup1.add(rbtCelular);
+        rbtCelular.setFont(new java.awt.Font("Microsoft YaHei Light", 2, 14)); // NOI18N
+        rbtCelular.setForeground(new java.awt.Color(255, 255, 255));
+        rbtCelular.setText("Celular");
+        rbtCelular.setOpaque(false);
+        pnlSimuladorDeLlamada.add(rbtCelular);
+        rbtCelular.setBounds(550, 370, 80, 30);
+
         pnlParent.add(pnlSimuladorDeLlamada, "card2");
 
         getContentPane().add(pnlParent);
@@ -928,6 +1108,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
         lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
         lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
+        lblIconoConfiguracion.setBackground(new Color (33,33,33));
         this.repaint();
         this.revalidate(); 
         }
@@ -945,6 +1126,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
         lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
         lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
+        lblIconoConfiguracion.setBackground(new Color (33,33,33));
         this.repaint();
         this.revalidate();
         }
@@ -957,6 +1139,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
         lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
         lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
+        lblIconoConfiguracion.setBackground(new Color (33,33,33));
         lblFondoAgregarCliente.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         lblIconoAgregarCliente.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         lblAgregarCliente.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
@@ -969,6 +1152,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoConsultaDeConsumo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         lblIconoConsultaDeConsumo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         lblConsultaDeConsumo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        lblIconoConfiguracion.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         this.repaint();
         this.revalidate();
         }  
@@ -983,6 +1167,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
         lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
         lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
+        lblIconoConfiguracion.setBackground(new Color (33,33,33));
         this.repaint();
         this.revalidate();  
         }
@@ -999,6 +1184,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
         lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
         lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
+        lblIconoConfiguracion.setBackground(new Color (33,33,33));
         this.repaint();
         this.revalidate(); 
         }
@@ -1012,6 +1198,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
         lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
         lblFondoListaDeClientes.setBackground(new Color(33, 33, 33));
+        lblIconoConfiguracion.setBackground(new Color (33,33,33));
         lblFondoAgregarCliente.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         lblIconoAgregarCliente.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         lblAgregarCliente.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
@@ -1024,6 +1211,7 @@ public class mainMenu extends javax.swing.JFrame {
         lblFondoConsultaDeConsumo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         lblIconoConsultaDeConsumo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         lblConsultaDeConsumo.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        lblIconoConfiguracion.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         this.repaint();
         this.revalidate();
            
@@ -1042,10 +1230,17 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist (1).png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(255,218,68));
-         lblAgregarCliente.setForeground(new Color (240,240,240));
+        lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        panel = 2;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1060,10 +1255,17 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblAgregarCliente.setForeground(new Color (255,218,68));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        panel = 1;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1079,10 +1281,18 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document (1).png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+       lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(240,240,240));
         lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (255,218,68));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        cmbMes.setSelectedIndex(0);                    
+        panel = 3;
         pnlParent.repaint();
         pnlParent.revalidate();  
         }
@@ -1097,10 +1307,17 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone (1).png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(240,240,240));
         lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (255,218,68));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        panel = 4;
         pnlParent.repaint();
         pnlParent.revalidate(); 
         }
@@ -1115,10 +1332,17 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblAgregarCliente.setForeground(new Color (255,218,68));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        panel = 1;
         pnlParent.repaint();
         pnlParent.revalidate();  
         }
@@ -1133,10 +1357,17 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+       lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblAgregarCliente.setForeground(new Color (255,218,68));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        panel = 1;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1151,10 +1382,17 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist (1).png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(255,218,68));
          lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        panel = 2;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1169,10 +1407,17 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist (1).png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(255,218,68));
         lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        panel = 2;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1187,10 +1432,18 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document (1).png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+       lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(240,240,240));
         lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (255,218,68));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        cmbMes.setSelectedIndex(0);
+        panel = 3;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1205,10 +1458,18 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document (1).png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(240,240,240));
         lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (255,218,68));
         lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        cmbMes.setSelectedIndex(0);
+        panel = 3;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1223,10 +1484,13 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone (1).png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(240,240,240));
         lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (255,218,68));
+        panel = 4;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1241,10 +1505,17 @@ public class mainMenu extends javax.swing.JFrame {
         lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
         lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
         lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone (1).png")));
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        lblIconoConfiguracion.setForeground(new Color (240,240,240));
         lblListaDeClientes.setForeground(new Color(240,240,240));
         lblAgregarCliente.setForeground(new Color (240,240,240));
         lblConsultaDeConsumo.setForeground(new Color (240,240,240));
         lblSimuladorDeLlamada.setForeground(new Color (255,218,68));
+        sldLlamadasLocalesGratis.setValue(value1);
+        sldMinutosCelularGratis.setValue(value2);
+        sldPrecioLlamadaLocal.setValue(value3);
+        sldPrecioCelular.setValue(value4);
+        panel = 4;
         pnlParent.repaint();
         pnlParent.revalidate();
         }
@@ -1252,16 +1523,132 @@ public class mainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_lblIconoSimuladorDeLlamadaMouseClicked
 
     private void cmbMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbMesActionPerformed
+       
+           String tipo;
+           int veces = 1;
+           int num = 99;
+           int celular = 0;
+           int local = 0;
+           boolean repetido = false;
+           DefaultComboBoxModel modelmes = (DefaultComboBoxModel) cmbMes.getModel();
+           DefaultTableModel modelConsumo = (DefaultTableModel) tblConsumo.getModel();
+           modelConsumo.setRowCount(0);
+           lblCantidadAPagar.setText("Cantidad a pagar: ");
+           int cuenta = Integer.parseInt(cmbCuentaCDC.getSelectedItem().toString());
+           List Usuario = opu.Obtener();
+           List Llamada = opl.Obtener();
+             for (int i = 0; i < Usuario.size(); i++) {
+                  Usuario u = (Usuario) Usuario.get(i);
+                  if (u.getNumerodecuenta() == cuenta) {
+                      for (int j = 0; j < Llamada.size(); j++) {
+                          Llamada l = (Llamada) Llamada.get(j);
+                          if (l.getUsuario().getNumerodecuenta()==cuenta) {
+                              String [] fecha = l.getFecha().split("\\s+");
+                              if (modelmes.getSelectedItem().toString().equals(fecha[1])) {
+                                  if (l.getTelefono().startsWith("99") && l.getTelefono().length() == 9 ) {
+                                             tipo = "Local";
+                                                 }else{
+                                                       tipo="Celular";
+                                        }
+                                  if (num == 100) {
+                                      for (int k = 0; k < modelConsumo.getRowCount(); k++) {
+                                          if (modelConsumo.getValueAt(k,0).equals(l.getTelefono())) {
+                                              if (l.getDuracion().length() > 2) {
+                                                    String [] cl = l.getDuracion().split(":");
+                                                    celular += Integer.parseInt(cl[1]); 
+                                                    celular += Integer.parseInt(cl[0])*60;
+                                                    }else if (!l.getDuracion().contains(":")){
+                                                      celular += Integer.parseInt(l.getDuracion()); 
+                                                     }
+                                              modelConsumo.setValueAt(Integer.parseInt(modelConsumo.getValueAt(k,2).toString())+1, k, 2);    
+                                              modelConsumo.setValueAt(celular+Integer.parseInt(modelConsumo.getValueAt(k,5).toString()), i, 5);
+                                              modelConsumo.setValueAt("", k, 3);    
+                                              modelConsumo.setValueAt("", k, 4);    
+                                              repetido = true;
+                                             
+                                          }
+                                      }
+                                  }
+                                  
+                                  if (l.getDuracion().length() > 2) {
+                                      String [] cl = l.getDuracion().split(":");
+                                      celular += Integer.parseInt(cl[1]); 
+                                      celular += Integer.parseInt(cl[0])*60;
+                                    }else if (!l.getDuracion().contains(":")){
+                                      celular += Integer.parseInt(l.getDuracion()); 
+                                    }
+                                  
+                                  if (repetido == false) {
+                                      if (tipo.equals("Local")) {
+                                       modelConsumo.addRow(new Object[]{l.getTelefono(),tipo,veces,l.getDuracion(), l.getFecha(),celular});   
+                                      }else{
+                                       modelConsumo.addRow(new Object[]{l.getTelefono(),tipo,veces,l.getDuracion(), l.getFecha(),celular});
+                                      }
+                                     
+                                   num=100;  
+                                  }
+                                   
+                                  
+                              }
+                              
+                          }
+                          repetido = false;
+                          veces=1;
+                          celular =0;
+                      }
+                      
+                      
+                      
+                  }
+        }
+             double nvalor;
+             double total = 0; 
+             if (modelConsumo.getRowCount() >0) {
+                 for (int i = 0; i < modelConsumo.getRowCount(); i++) {
+                     if (modelConsumo.getValueAt(i,1).equals("Local")) {
+                         int rep = Integer.parseInt(modelConsumo.getValueAt(i, 2).toString());
+                         local += rep;                         
+                     if (local > value1) {
+                       nvalor = Integer.parseInt(modelConsumo.getValueAt(i, 5).toString());
+                       double nvalorl = nvalor / 60; 
+                              nvalorl = nvalorl * value3;
+                              total += nvalorl;
+                              DecimalFormat df = new DecimalFormat("#.##");
+                              String result = df.format(nvalorl);
+                       modelConsumo.setValueAt(result+" mxn", i, 5);  
+                     }else{
+                       modelConsumo.setValueAt("Gratis", i, 5);     
+                     }     
+                  }else if (modelConsumo.getValueAt(i,1).equals("Celular")){
+                       nvalor = Integer.parseInt(modelConsumo.getValueAt(i, 5).toString());
+                        double nvalorc = nvalor / 60; 
+                         if (nvalorc > value2) {
+                             nvalorc = nvalorc * value4; 
+                             total += nvalorc;
+                           DecimalFormat df = new DecimalFormat("#.##");
+                           String result = df.format(nvalorc);
+                         modelConsumo.setValueAt(result+" mxn", i, 5);                        
+                         }else{
+                         modelConsumo.setValueAt("Gratis", i, 5);                                     
+                         }
+                     }
+                       
+                     
 
-    private void cmbAñoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAñoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbAñoActionPerformed
+                 }
+              DecimalFormat df = new DecimalFormat("#.##");
+              String result = df.format(total);         
+              lblCantidadAPagar.setText("Cantidad a pagar: "+result+" mxn");
+            
+        }
+        
+      
+
+    }//GEN-LAST:event_cmbMesActionPerformed
 
     private void lblFondoAceptarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarMouseClicked
         Random rng = new Random();
-        int rdm =rng.nextInt(90000000)+10000000;
+        int rdm =rng.nextInt(9000000)+1000000;
         
         int ran = rng.nextInt(90000000) + 10000000;
         Pattern l = Pattern.compile("[A-Za-z ].*");
@@ -1277,17 +1664,18 @@ public class mainMenu extends javax.swing.JFrame {
         txtApellidos.getText().isEmpty() == false && txtDireccion.getText().isEmpty() ==false )){
            String telefono= ("99"+ String.valueOf(rdm) );
 
-        System.out.println(telefono);
         if (lblAgregarCliente.getText().equals("Agregar cliente")) {
               opu.Agregar(ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(), cmbEstado.getSelectedItem().toString(), cmbCiudad.getSelectedItem().toString(), telefono);
         modelc1.addElement(ran);
         modelcdc.addElement(ran);
+        JOptionPane.showMessageDialog(null,"Cliente añadido");
          model.addRow(new Object[]{ran, txtNombre.getText(), txtApellidos.getText(), txtDireccion.getText(),cmbEstado.getSelectedItem(),cmbCiudad.getSelectedItem(),telefono});
         txtNombre.setText(null);
+ 
         txtApellidos.setText(null);
         txtDireccion.setText(null);
         txtTelefono.setText(null);  
-            }else{
+            }else if (txtTelefono.getText().length() == 7 && lblAgregarCliente.getText().equals("Editar cliente")){
            List Usuarios = opu.Obtener();
         for (int i = 0; i < Usuarios.size(); i++) {
          Usuario u = (Usuario) Usuarios.get(i);
@@ -1295,7 +1683,7 @@ public class mainMenu extends javax.swing.JFrame {
                     u.setNombre(txtNombre.getText());
                     u.setApellido(txtApellidos.getText());
                     u.setDireccion(txtDireccion.getText());
-                    u.setTelefono(telefono);
+                    u.setTelefono("99"+txtTelefono.getText());
                     u.setEstado(cmbEstado.getSelectedItem().toString());
                     u.setCiudad(cmbCiudad.getSelectedItem().toString());
                     opu.Editar(u);
@@ -1315,6 +1703,18 @@ public class mainMenu extends javax.swing.JFrame {
                     lblTelefonoOculto.setForeground(new Color (240,240,240));
                     lblCiudad.setForeground(new Color (240,240,240));
                     lblEstado.setForeground(new Color (240,240,240));
+                    lblApellidosOculto.setLocation(60, 160);
+                    lblBarraApellidos.setLocation(60, 200);
+                    txtApellidos.setLocation(60, 180);
+                    lblDireccionOculto.setLocation(60, 280);
+                    txtBarraDireccion.setLocation(60, 320);
+                    txtDireccion.setLocation(60, 300);
+                    lblTelefonoOculto.setLocation(420, 280);
+                    lblTelefono.setLocation(420, 320);
+                    txtTelefono.setLocation(420, 300);
+                    lblTelefonoOculto.setVisible(false);
+                    txtTelefono.setVisible(false);
+                    lblTelefono.setVisible(false);
                     lblFondoCancelar.setVisible(false);
                     lblCancelar.setVisible(false);
                     color = false;
@@ -1332,9 +1732,10 @@ public class mainMenu extends javax.swing.JFrame {
             txtApellidos.setText(null);
             txtDireccion.setText(null);
             txtTelefono.setText(null);
+            }else{
+               JOptionPane.showMessageDialog(null, "Campos invalidos, revise los campos porfavor","Error" , JOptionPane.ERROR_MESSAGE);
             }
         }else{
-                JOptionPane.showMessageDialog(null, "Campos invalidos, revise los campos porfavor","Error" , JOptionPane.ERROR_MESSAGE);
         }                      
     }//GEN-LAST:event_lblFondoAceptarMouseClicked
 
@@ -1362,10 +1763,10 @@ public class mainMenu extends javax.swing.JFrame {
                     }
                 }
 
-                //Municipios.add(xd[1]);
+            
                 modelc.addElement(ciudad);
                 ciudad = "";
-                //  System.out.println(line);
+        
             }
         } catch (IOException ex) {
             Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
@@ -1377,37 +1778,47 @@ public class mainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbEstadoActionPerformed
 
     private void sdrDuracionStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sdrDuracionStateChanged
-
+       // String formatted = String.format("%02d", sdrDuracion.getValue() - 120);
+       String formatted;
         int segundos = sdrDuracion.getValue();
         if (segundos <= 59) {
             lblSliderMinutos.setText("Segundos: " + sdrDuracion.getValue());
         } else {
             if (segundos > 59 && segundos < 120) {
-                lblSliderMinutos.setText("Minuto: 1:" + (sdrDuracion.getValue() - 60));
+               formatted = String.format("%02d", sdrDuracion.getValue() - 60);
+                lblSliderMinutos.setText("Minuto: 1:" + formatted);
             } else {
                 if (segundos > 119 && segundos < 180) {
-                    lblSliderMinutos.setText("Minuto: 2:" + (sdrDuracion.getValue() - 120));
+                   formatted = String.format("%02d", sdrDuracion.getValue() - 120);
+                    lblSliderMinutos.setText("Minuto: 2:" + formatted);
                 } else {
                     if (segundos > 179 && segundos < 240) {
-                        lblSliderMinutos.setText("Minuto: 3:" + (sdrDuracion.getValue() - 180));
+                        formatted = String.format("%02d", sdrDuracion.getValue() - 180);
+                        lblSliderMinutos.setText("Minuto: 3:" +formatted);
                     } else {
                         if (segundos > 239 && segundos < 300) {
-                            lblSliderMinutos.setText("Minuto: 4:" + (sdrDuracion.getValue() - 240));
+                            formatted = String.format("%02d", sdrDuracion.getValue() - 240);
+                            lblSliderMinutos.setText("Minuto: 4:" + formatted);
                         } else {
                             if (segundos > 299 && segundos < 360) {
-                                lblSliderMinutos.setText("Minuto: 5:" + (sdrDuracion.getValue() - 300));
+                                formatted = String.format("%02d", sdrDuracion.getValue() - 300);
+                                lblSliderMinutos.setText("Minuto: 5:" + formatted);
                             } else {
                                 if (segundos > 359 && segundos < 420) {
-                                    lblSliderMinutos.setText("Minuto: 6:" + (sdrDuracion.getValue() - 360));
+                                    formatted = String.format("%02d", sdrDuracion.getValue() - 360);
+                                    lblSliderMinutos.setText("Minuto: 6:" + formatted);
                                 } else {
                                     if (segundos > 419 && segundos < 480) {
-                                        lblSliderMinutos.setText("Minuto: 7:" + (sdrDuracion.getValue() - 420));
+                                        formatted = String.format("%02d", sdrDuracion.getValue() - 420);
+                                        lblSliderMinutos.setText("Minuto: 7:" + formatted);
                                     } else {
                                         if (segundos > 479 && segundos < 540) {
-                                            lblSliderMinutos.setText("Minuto: 8:" + (sdrDuracion.getValue() - 480));
+                                            formatted = String.format("%02d", sdrDuracion.getValue() - 480);
+                                            lblSliderMinutos.setText("Minuto: 8:" + formatted);
                                         } else {
                                             if (segundos > 539 && segundos < 600) {
-                                                lblSliderMinutos.setText("Minuto: 9:" + (sdrDuracion.getValue() - 540));
+                                                formatted = String.format("%02d", sdrDuracion.getValue() - 540);
+                                                lblSliderMinutos.setText("Minuto: 9:" + formatted);
                                             } else {
                                             }
                                         }
@@ -1426,47 +1837,91 @@ public class mainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_sdrDuracionStateChanged
 
     private void lblFondoAceptarSDLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAceptarSDLMouseClicked
-     
+        boolean encontrado = false;
+        int cuenta = Integer.parseInt(cmbCliente.getSelectedItem().toString());
         String [] min = lblSliderMinutos.getText().split("\\s+");       
         String fecha = cmbDia.getSelectedItem()+" "+cmbMesSDL.getSelectedItem()+" "+"2018"+" "+cmbHora.getSelectedItem()+":"+cmbMin.getSelectedItem();
-        System.out.println(fecha);
-        System.out.println(cmbCliente.getSelectedItem());
-         List Usuarios = opu.Obtener();
-        for (int i = 0; i < Usuarios.size(); i++) {
-         Usuario u = (Usuario) Usuarios.get(i);
-            if (u.getNumerodecuenta() == Integer.parseInt(cmbCliente.getSelectedItem().toString()) && txtNumeroALlamar.getText().length() ==10) {
-           opl.Agregar(u,txtNumeroALlamar.getText(), min[1], fecha); 
-           txtNumeroALlamar.setText("");
-            break;
-            }else{
-            JOptionPane.showMessageDialog(null, "No se pueden ingresar mas de 10 digitos en el telefono","Error" , JOptionPane.ERROR_MESSAGE);
+
+        
+        BufferedReader abc = null;
+        
+        String Linea;
+        String ciudad = "";
+        String lada = "";
+        
+        for (int i = 0; i < Estado.length; i++) {
+            try {
+            abc = new BufferedReader(new FileReader("src/mx/itson/tekz/persistencia/" + Estado[i]+".txt"));
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            while ((Linea = abc.readLine()) != null) {
+                String[] Line = Linea.split("\\s+");
+               
+                if (Line.length > 1) {
+                    for (int x = 1; x < Line.length; x++) {
+                        ciudad += Line[x] + " ";
+                    }
+                }
+                lada = Line[0];
+
+                
+                if (txtNumeroALlamar.getText().startsWith(lada) || (txtNumeroALlamar.getText().startsWith("99") )) {
+                    encontrado = true;
+                    break;
+                }
+                
+             
+                ciudad = "";
 
             }
+            if (encontrado == true) {
+                    break;
+                }
+            
+            
+        } catch (IOException ex) {
+            Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
         }
+        }
+        
+      
+       
+      
+        
+        
+       if (((txtNumeroALlamar.getText().length()== 9 || txtNumeroALlamar.getText().length() == 10)) && encontrado == true){
+         List Usuarios = opu.Obtener();
+         for (int i = 0; i < Usuarios.size(); i++) {
+         Usuario u = (Usuario) Usuarios.get(i);
+             if (u.getNumerodecuenta() == cuenta ) {
+                opl.Agregar(u,txtNumeroALlamar.getText(), min[1], fecha); 
+                JOptionPane.showMessageDialog(null,"Llamada añadida");
+           txtNumeroALlamar.setText("");
+            break;  
+             }
+          
+            }
+        }else{
+           JOptionPane.showMessageDialog(null,"Numero incorrecto");
+       }
+        
+        
        // opl.Agregar(usuario,Integer.parseInt(txtNumeroALlamar.getText()), min[1], fecha);
         
     }//GEN-LAST:event_lblFondoAceptarSDLMouseClicked
    
     private void lblFondoAutoGenerarLlamadaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoAutoGenerarLlamadaMouseClicked
-    
+     
     final SwingWorker worker = new SwingWorker(){
  
 	@Override
 	protected Object doInBackground() throws Exception {
             
             txtNumeroALlamar.setText("");
-            
-                    Random rCmbDia = new Random();
-                    int noRCmbDia;
-                    noRCmbDia = rCmbDia.nextInt(31);
-                    cmbDia.showPopup();
-                    cmbDia.setFocusable(true);
-                    Thread.sleep(200);
-                    cmbDia.setSelectedIndex(noRCmbDia);
-                    Thread.sleep(200);
-                    cmbDia.hidePopup();
-                    cmbDia.setFocusable(false);
-                    Thread.sleep(200);
+            boolean random = true;
+            int xd = 98;
                     
                     Random rCmbMes = new Random();
                     int noRCmbMes;
@@ -1478,6 +1933,18 @@ public class mainMenu extends javax.swing.JFrame {
                     Thread.sleep(200); 
                     cmbMesSDL.hidePopup();
                     cmbMesSDL.setFocusable(false);
+                    Thread.sleep(200);
+                    
+                     Random rCmbDia = new Random();
+                    int noRCmbDia;
+                    noRCmbDia = rCmbDia.nextInt(cmbDia.getItemCount()+1);
+                    cmbDia.showPopup();
+                    cmbDia.setFocusable(true);
+                    Thread.sleep(200);
+                    cmbDia.setSelectedIndex(noRCmbDia);
+                    Thread.sleep(200);
+                    cmbDia.hidePopup();
+                    cmbDia.setFocusable(false);
                     Thread.sleep(200);
                     
                     Random rCmbHora = new Random();
@@ -1510,12 +1977,144 @@ public class mainMenu extends javax.swing.JFrame {
                     sdrDuracion.setValue(noRSdrDuracion);        
                    
                     int num = 99;
+                    if (rbtCelular.isSelected() || rbtLocales.isSelected() ) {
+  
+                    }else{
+                   Random sel = new Random();
+                   int seleccion = sel.nextInt(2);
+                        if (seleccion == 0) {
+                            rbtLocales.setSelected(true);
+                        }else {
+                            rbtCelular.setSelected(true);
+                        }
+                    }
                     
-                    for (int i = 0; i < 10; i++) {
+                    if (rbtLocales.isSelected() ) {
+                   
+                    for (int i = 0; i < 7; i++) {
                         Random tel = new Random();
-                        int telefono = tel.nextInt(10);
+                        int telefono = tel.nextInt(7);
+                        if (xd == 98) {
+                        Thread.sleep(220);
+                        lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine (1).png")));
+                        txtNumeroALlamar.setText(txtNumeroALlamar.getText()+"9");         
+                        Thread.sleep(220);
+                        lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));                        
+                        Thread.sleep(220);
+                        lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine (1).png")));
+                        txtNumeroALlamar.setText(txtNumeroALlamar.getText()+"9");
+                        Thread.sleep(220);
+                        lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
+                        xd++;
+                        }
+                                           
+                        Thread.sleep(220);
+                        lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
+                        lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
+                        lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
+                        lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
+                        lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
+                        lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
+                        lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
+                        lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
+                        lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
+                        lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                         
-                           Thread.sleep(220);
+                        if (telefono == num) {                                
+                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
+                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
+                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
+                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
+                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
+                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
+                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
+                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
+                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
+                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
+                            Thread.sleep(125);         
+                        }
+                             
+                        switch (telefono){
+                            case 1:
+                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one (1).png")));
+                            num = 1;
+                            break;    
+                            case 2:
+                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two (1).png")));
+                            num = 2;
+                            break;    
+                            case 3:
+                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three (1).png")));
+                            num = 3;                       
+                            break;
+                            case 4:
+                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four (1).png")));
+                            num = 4;
+                            break;    
+                            case 5:
+                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five (1).png")));
+                            num = 5;
+                            break;    
+                            case 6:
+                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six (1).png")));
+                            num = 6;
+                            break;    
+                            case 7:
+                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven (1).png")));
+                            num = 7;
+                            break;    
+                            case 8:
+                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight (1).png")));
+                            num = 8;
+                            break;    
+                            case 9:
+                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine (1).png")));
+                            num = 9;
+                            break;    
+                            case 0:
+                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero (1).png")));
+                            num = 0;
+                            break;
+                        }                        
+                        txtNumeroALlamar.setText(txtNumeroALlamar.getText()+String.valueOf(telefono));         
+                    }
+                            Thread.sleep(220);
+                            lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
+                            lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
+                            lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
+                            lbl4.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/four.png")));
+                            lbl5.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/five.png")));
+                            lbl6.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/six.png")));
+                            lbl7.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/seven.png")));
+                            lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));
+                            lbl9.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/nine.png")));
+                            lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));    
+                        
+                        
+                        
+                        
+                        
+            }
+                    if (rbtCelular.isSelected()) {
+                    
+                    for (int i = 0; i < 7; i++) {
+                        Random tel = new Random();
+                        int telefono = tel.nextInt(7);
+                        if (xd == 98) {
+                        Thread.sleep(220);
+                        lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight (1).png")));
+                        txtNumeroALlamar.setText(txtNumeroALlamar.getText()+"8");         
+                        Thread.sleep(220);
+                        lbl8.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/eight.png")));                        
+                        Thread.sleep(220);
+                        lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one (1).png")));
+                        txtNumeroALlamar.setText(txtNumeroALlamar.getText()+"1");
+                        Thread.sleep(220);
+                        lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
+                        xd++;
+                        } 
+                       
+                        Thread.sleep(220);
                         lbl1.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/one.png")));
                         lbl2.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/two.png")));
                         lbl3.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/three.png")));
@@ -1598,15 +2197,14 @@ public class mainMenu extends javax.swing.JFrame {
                             lbl0.setIcon( new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/zero.png")));
                            
                 
-         String [] min = lblSliderMinutos.getText().split("\\s+");              
-         String fecha = cmbDia.getItemAt(noRCmbDia)+" "+cmbMesSDL.getItemAt(noRCmbMes)+" "+"2018"+" "+cmbHora.getItemAt(noRCmbHora)+":"+cmbMin.getItemAt(noRCmbMin);
-                
+          
+            }
+                    String fecha = cmbDia.getItemAt(noRCmbDia)+" "+cmbMesSDL.getItemAt(noRCmbMes)+" "+"2018"+" "+cmbHora.getItemAt(noRCmbHora)+":"+cmbMin.getItemAt(noRCmbMin);
+              
 				return null;
 			}	
 		};
-                    worker.execute();
-         
-     
+                    worker.execute();          
         this.repaint();
         this.revalidate();
       
@@ -1816,6 +2414,8 @@ final SwingWorker worker = new SwingWorker(){
             }
             
             }
+            DefaultTableModel modelConsumo = (DefaultTableModel) tblConsumo.getModel();
+           modelConsumo.setRowCount(0);
          model.removeRow(tblClientes.getSelectedRow());
 
         }else{
@@ -1831,10 +2431,22 @@ final SwingWorker worker = new SwingWorker(){
 
     private void lblFondoEditarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoEditarMouseClicked
         if (tblClientes.getSelectionModel().isSelectionEmpty()) {
-            System.out.println("XDD");
+            
         }else{
        lblAgregarCliente.setText("Editar cliente");
-       lblFondoAgregarCliente.setBackground(new Color(66, 66, 66));  
+       lblFondoAgregarCliente.setBackground(new Color(66, 66, 66));
+       lblApellidosOculto.setLocation(60, 120);
+       lblBarraApellidos.setLocation(60, 160);
+       txtApellidos.setLocation(60, 140);
+       lblDireccionOculto.setLocation(60, 200);
+       txtBarraDireccion.setLocation(60, 240);
+       txtDireccion.setLocation(60, 220);
+       lblTelefonoOculto.setLocation(60, 290);
+       lblTelefono.setLocation(60, 330);
+       txtTelefono.setLocation(60, 310);
+       lblTelefonoOculto.setVisible(true);
+        txtTelefono.setVisible(true);
+        lblTelefono.setVisible(true);
        lblCancelar.setVisible(true);
        lblFondoCancelar.setVisible(true);
        lblIconoAgregarCliente.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/cv (1).png")));
@@ -1855,7 +2467,7 @@ final SwingWorker worker = new SwingWorker(){
                 txtNombre.setText(u.getNombre());
                 txtApellidos.setText(u.getApellido());
                 txtDireccion.setText(u.getDireccion());
-                txtTelefono.setText(u.getTelefono());
+                txtTelefono.setText(u.getTelefono().substring(2));
                 txtNombre.setText(u.getNombre());
                 for (int j = 0; j < modelestado.getSize(); j++) {
                     if (u.getEstado().equals(modelestado.getElementAt(j))) {
@@ -1910,6 +2522,18 @@ final SwingWorker worker = new SwingWorker(){
        lblAgregarCliente.setText("Agregar cliente");
        lblFondoCancelar.setVisible(false);
        lblFondoAgregarCliente.setBackground(new Color(33,33,33));
+       lblApellidosOculto.setLocation(60, 160);
+       lblBarraApellidos.setLocation(60, 200);
+       txtApellidos.setLocation(60, 180);
+       lblDireccionOculto.setLocation(60, 280);
+       txtBarraDireccion.setLocation(60, 320);
+       txtDireccion.setLocation(60,300);
+       lblTelefonoOculto.setLocation(420, 280);
+       lblTelefono.setLocation(420, 320);
+       txtTelefono.setLocation(420, 300);
+       lblTelefonoOculto.setVisible(false);
+       txtTelefono.setVisible(false);
+       lblTelefono.setVisible(false);
        lblCancelar.setVisible(false);
        lblIconoAgregarCliente.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/add-friend.png")));
        lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist (1).png")));
@@ -1938,12 +2562,13 @@ final SwingWorker worker = new SwingWorker(){
 
     private void cmbCuentaCDCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCuentaCDCActionPerformed
     try {
+        cmbMes.setSelectedIndex(0);
         List Usuario = opu.Obtener();
         for (int i = 0; i < Usuario.size(); i++) {
          Usuario u = (Usuario) Usuario.get(i);
             if (u.getNumerodecuenta() == Integer.parseInt(cmbCuentaCDC.getSelectedItem().toString())) {
-                 lblClienteCDC.setText("Cliente: "+u.getNombre()+" "+u.getApellido());      
-            }
+                 lblClienteCDC.setText("Cliente: "+u.getNombre()+" "+u.getApellido());                
+            }           
         }
         } catch (NullPointerException ex){
                 lblClienteCDC.setText("");
@@ -2062,6 +2687,206 @@ final SwingWorker worker = new SwingWorker(){
 
     }//GEN-LAST:event_txtNumeroALlamarKeyPressed
 
+    private void cmbMesSDLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbMesSDLActionPerformed
+
+        int[] enero = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+        int[] febrero = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28};
+        int[] marzo = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+        int[] abril = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
+        int[] mayo = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+        int[] junio = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
+        int[] julio = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+        int[] agosto = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+        int[] septiembre = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
+        int[] octubre = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+        int[] noviembre = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30};
+        int[] diciembre = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
+
+        int cmbMesSC = cmbMesSDL.getSelectedIndex();
+         DefaultComboBoxModel modelDia = (DefaultComboBoxModel) cmbDia.getModel();
+
+        
+        switch (cmbMesSC) {
+            case 0:
+                cmbDia.removeAllItems();
+                for (int i = 0; i < enero.length; i++) {
+                    modelDia.addElement(enero[i]);
+                }
+                break;
+            case 1:
+                cmbDia.removeAllItems();
+                for (int i = 0; i < febrero.length; i++) {
+                    modelDia.addElement(febrero[i]);
+                }
+                break;
+            case 2:
+                cmbDia.removeAllItems();
+                for (int i = 0; i < marzo.length; i++) {
+                    modelDia.addElement(marzo[i]);
+                }
+                break;
+            case 3:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <abril.length; i++) {
+                    modelDia.addElement(abril[i]);
+                }
+                break;
+            case 4:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <mayo.length; i++) {
+                    modelDia.addElement(mayo[i]);
+                }
+                break;
+            case 5:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <junio.length; i++) {
+                    modelDia.addElement(junio[i]);
+                }
+                break;
+            case 6:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <julio.length; i++) {
+                    modelDia.addElement(julio[i]);
+                }
+                break;
+            case 7:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <agosto.length; i++) {
+                    modelDia.addElement(agosto[i]);
+                }
+                break;
+            case 8:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <septiembre.length; i++) {
+                    modelDia.addElement(septiembre[i]);
+                }
+                break;
+            case 9:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <octubre.length; i++) {
+                    modelDia.addElement(octubre[i]);
+                }
+                break;
+            case 10:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <noviembre.length; i++) {
+                    modelDia.addElement(noviembre[i]);
+                }
+                break;
+            case 11:
+                cmbDia.removeAllItems();
+                for (int i = 0; i <diciembre.length; i++) {
+                    modelDia.addElement(diciembre[i]);
+                }
+                break;
+        }
+        
+    }//GEN-LAST:event_cmbMesSDLActionPerformed
+
+    private void lblIconoConfiguracionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoConfiguracionMouseClicked
+  
+            if (editar == false) {
+                  pnlParent.removeAll();
+                  pnlParent.add(pnlConfiguracion);
+                  lblIconoAgregarCliente.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/add-friend.png")));
+                  lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document.png")));
+                  lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist.png")));
+                  lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone.png")));
+                  lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear (1).png")));
+                  lblIconoConfiguracion.setForeground(new Color (255,218,68));
+                  lblAgregarCliente.setForeground(new Color (240,240,240));
+                  lblConsultaDeConsumo.setForeground(new Color (240,240,240));
+                  lblSimuladorDeLlamada.setForeground(new Color (240,240,240));
+                  lblListaDeClientes.setForeground(new Color (240,240,240));
+                  pnlParent.repaint();
+                  pnlParent.revalidate();    
+                 }
+
+    }//GEN-LAST:event_lblIconoConfiguracionMouseClicked
+
+    private void lblIconoConfiguracionMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblIconoConfiguracionMouseMoved
+
+            if (editar == false) {
+            lblIconoConfiguracion.setCursor(new Cursor(Cursor.HAND_CURSOR));            
+            lblIconoConfiguracion.setBackground(new Color(66, 66, 66));
+            lblFondoSimuladorDeLlamada.setBackground(new Color(33, 33, 33));
+            lblFondoConsultaDeConsumo.setBackground(new Color(33, 33, 33));
+            lblFondoAgregarCliente.setBackground(new Color(33, 33, 33));
+            this.repaint();
+            this.revalidate(); 
+            }
+
+    }//GEN-LAST:event_lblIconoConfiguracionMouseMoved
+
+    private void lblFondoGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoGuardarMouseClicked
+        value1 = sldLlamadasLocalesGratis.getValue();
+        value2 = sldMinutosCelularGratis.getValue();
+        value3 = sldPrecioLlamadaLocal.getValue();
+        value4 = sldPrecioCelular.getValue();
+        
+        lblIconoConfiguracion.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/gear.png")));
+        
+        pnlParent.removeAll();
+        
+        switch(panel){
+            case 1:
+                pnlParent.add(pnlAgregarCliente);
+                lblIconoAgregarCliente.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/add-friend (1).png")));
+                lblAgregarCliente.setForeground(new Color (255,218,68));
+                break;
+            case 2:
+                pnlParent.add(pnlListaDeClientes);
+                lblIconoListaDeClientes.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/checklist (1).png")));
+                lblListaDeClientes.setForeground(new Color (255,218,68));
+                break;
+            case 3:
+                pnlParent.add(pnlConsultaDeConsumo);
+                lblIconoConsultaDeConsumo.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/document (1).png")));
+                lblConsultaDeConsumo.setForeground(new Color (255,218,68));
+                break;
+            case 4:
+                pnlParent.add(pnlSimuladorDeLlamada);
+                lblIconoSimuladorDeLlamada.setIcon(new ImageIcon (getClass().getResource ("/mx/itson/tekz/presentacion/smartphone (1).png")));
+                lblSimuladorDeLlamada.setForeground(new Color (255,218,68));
+                break;       
+        }
+        
+        cmbMes.setSelectedIndex(0);
+        
+        pnlParent.repaint();
+        pnlParent.revalidate();  
+
+    }//GEN-LAST:event_lblFondoGuardarMouseClicked
+
+    private void sldLlamadasLocalesGratisStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldLlamadasLocalesGratisStateChanged
+        lblSld1.setText(sldLlamadasLocalesGratis.getValue()+" llamadas locales");
+    }//GEN-LAST:event_sldLlamadasLocalesGratisStateChanged
+
+    private void sldMinutosCelularGratisStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldMinutosCelularGratisStateChanged
+        lblSld2.setText(sldMinutosCelularGratis.getValue()+" minutos gratis");
+    }//GEN-LAST:event_sldMinutosCelularGratisStateChanged
+
+    private void sldPrecioLlamadaLocalStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldPrecioLlamadaLocalStateChanged
+       lblSld3.setText(sldPrecioLlamadaLocal.getValue()+" mxn el minuto");
+    }//GEN-LAST:event_sldPrecioLlamadaLocalStateChanged
+
+    private void sldPrecioCelularStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldPrecioCelularStateChanged
+        lblSld4.setText(sldPrecioCelular.getValue()+" mxn el minuto");
+    }//GEN-LAST:event_sldPrecioCelularStateChanged
+
+    private void lblFondoIzquierdoMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoIzquierdoMouseDragged
+     int x = evt.getXOnScreen();
+    int y = evt.getYOnScreen();
+    
+    this.setLocation(x - xMouse, y - yMouse);
+
+    }//GEN-LAST:event_lblFondoIzquierdoMouseDragged
+
+    private void lblFondoIzquierdoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblFondoIzquierdoMousePressed
+        xMouse = evt.getX();
+        yMouse = evt.getY();
+    }//GEN-LAST:event_lblFondoIzquierdoMousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -2102,16 +2927,7 @@ final SwingWorker worker = new SwingWorker(){
         DefaultComboBoxModel modelc1 = (DefaultComboBoxModel) cmbCliente.getModel();
         DefaultComboBoxModel modelcdc = (DefaultComboBoxModel) cmbCuentaCDC.getModel();
         DefaultTableModel model = (DefaultTableModel) tblClientes.getModel();
-//        tblClientes.getTableHeader().setFont(new Font("Microsoft Tai Le", Font.ITALIC, 14));
-//        tblClientes.getTableHeader().setForeground(Color.WHITE);
-//        tblClientes.getTableHeader().setBackground(Color.yellow);
-//        tblClientes.getTableHeader().setOpaque(false);
-//        tblClientes.setShowGrid(false);
-//        tblClientes.setOpaque(false);
-//        ((DefaultTableCellRenderer) tblClientes.getDefaultRenderer(Object.class)).setOpaque(false);
-//        jScrollPane1.setOpaque(false);
-//        jScrollPane1.getViewport().setOpaque(false);
-        
+      
         //Obtiene Usuarios y los agrega al combobox y tabla
         Datos = opu.Obtener(); 
         for (int i = 0; i < Datos.size(); i++) {
@@ -2160,19 +2976,68 @@ final SwingWorker worker = new SwingWorker(){
               
                 modelc.addElement(ciudad);
                 ciudad = "";
-                //  System.out.println(line);
+                
             }
         } catch (IOException ex) {
             Logger.getLogger(mainMenu.class.getName()).log(Level.SEVERE, null, ex);
         }
         lblFondoCancelar.setVisible(false);
         lblCancelar.setVisible(false);
+        lblTelefonoOculto.setVisible(false);
+        txtTelefono.setVisible(false);
+        lblTelefono.setVisible(false);
+        sdrDuracion.setValue(1);
+        sldLlamadasLocalesGratis.setValue(10);
+        sldMinutosCelularGratis.setValue(10);
+        sldPrecioCelular.setValue(3);
+        sldPrecioLlamadaLocal.setValue(2);
+        
+         Estado [0] ="Aguascalientes";
+         Estado [1] ="Baja California";
+         Estado [2] ="Baja California Sur";
+         Estado [3] ="Campeche";
+         Estado [4] ="Chiapas";
+         Estado [5] ="Chihuahua";
+         Estado [6] ="Ciudad de Mexico";
+         Estado [7] ="Coahuila";
+         Estado [8] ="Colima";
+         Estado [9] ="Durango";
+         Estado [10] ="Guanajuato";
+         Estado [11] ="Guerrero";
+         Estado [12] ="Hidalgo";
+         Estado [13] ="Jalisco";
+         Estado [14] ="Mexico";
+         Estado [15] ="Michoacan";
+         Estado [16] ="Morelos";
+         Estado [17] ="Nayarit";
+         Estado [18] ="Nuevo Leon";
+         Estado [19] ="Oaxaca";
+         Estado [20] ="Puebla";
+         Estado [21] ="Queretaro";
+         Estado [22] ="Quintana Roo";
+         Estado [23] ="San Luis Potosi";
+         Estado [24] ="Sinaloa";
+         Estado [25] ="Sonora";
+         Estado [26] ="Tabasco";
+         Estado [27] ="Tamaulipas";
+         Estado [28] ="Tlaxcala";
+         Estado [29] ="Veracruz";
+         Estado [30] ="Yucatan";
+         Estado [31] ="Zacatecas";
+                  
+        value1 = 10;
+        value2 = 10;
+        value3 = 2;
+        value4 = 3;
+        
+        panel = 1;
     }
     
    
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> cmbAño;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox<String> cmbCiudad;
     private javax.swing.JComboBox<String> cmbCliente;
     private javax.swing.JComboBox<String> cmbCuentaCDC;
@@ -2182,8 +3047,8 @@ final SwingWorker worker = new SwingWorker(){
     private javax.swing.JComboBox<String> cmbMes;
     private javax.swing.JComboBox<String> cmbMesSDL;
     private javax.swing.JComboBox<String> cmbMin;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lbl0;
     private javax.swing.JLabel lbl1;
     private javax.swing.JLabel lbl2;
@@ -2199,12 +3064,12 @@ final SwingWorker worker = new SwingWorker(){
     private javax.swing.JLabel lblAgregarCliente;
     private static javax.swing.JLabel lblApellidosOculto;
     private javax.swing.JLabel lblAutoGenerarLlamada;
-    private javax.swing.JLabel lblAño;
     private javax.swing.JLabel lblBarraApellidos;
     private javax.swing.JLabel lblBarraNombre;
     private javax.swing.JLabel lblBarraNumeroALlamar;
     private javax.swing.JLabel lblBarraNumeroALlamar1;
     private javax.swing.JLabel lblCancelar;
+    private javax.swing.JLabel lblCantidadAPagar;
     private javax.swing.JLabel lblCiudad;
     private javax.swing.JLabel lblClienteCDC;
     private javax.swing.JLabel lblConsultaDeConsumo;
@@ -2223,13 +3088,14 @@ final SwingWorker worker = new SwingWorker(){
     private javax.swing.JLabel lblFondoConsultaDeConsumo;
     private javax.swing.JLabel lblFondoEditar;
     private javax.swing.JLabel lblFondoEliminar;
+    private javax.swing.JLabel lblFondoGuardar;
     private javax.swing.JLabel lblFondoIzquierdo;
     private javax.swing.JLabel lblFondoListaDeClientes;
     private javax.swing.JLabel lblFondoSimuladorDeLlamada;
-    private javax.swing.JLabel lblFondoVer;
-    private javax.swing.JLabel lblFondoVerCliente;
+    private javax.swing.JLabel lblGuardar;
     private javax.swing.JLabel lblHora;
     private javax.swing.JLabel lblIconoAgregarCliente;
+    private javax.swing.JLabel lblIconoConfiguracion;
     private javax.swing.JLabel lblIconoConsultaDeConsumo;
     private javax.swing.JLabel lblIconoListaDeClientes;
     private javax.swing.JLabel lblIconoSimuladorDeLlamada;
@@ -2238,22 +3104,37 @@ final SwingWorker worker = new SwingWorker(){
     private javax.swing.JLabel lblMes;
     private javax.swing.JLabel lblMesSDL1;
     private javax.swing.JLabel lblMin;
+    private static javax.swing.JLabel lblMinutosCelularGratis;
     private javax.swing.JLabel lblNoCuentaOculto;
     private javax.swing.JLabel lblNoLlamarOculto;
     private static javax.swing.JLabel lblNombreOculto;
+    private javax.swing.JLabel lblNumeroCuenta;
+    private static javax.swing.JLabel lblNumeroLlamadasLocalesGratis;
+    private static javax.swing.JLabel lblPrecioCelular;
+    private static javax.swing.JLabel lblPrecioLlamadaLocal;
     private javax.swing.JLabel lblSimuladorDeLlamada;
+    private static javax.swing.JLabel lblSld1;
+    private static javax.swing.JLabel lblSld2;
+    private static javax.swing.JLabel lblSld3;
+    private static javax.swing.JLabel lblSld4;
     private javax.swing.JLabel lblSliderMinutos;
     private javax.swing.JLabel lblTelefono;
     private static javax.swing.JLabel lblTelefonoOculto;
-    private javax.swing.JLabel lblVer;
-    private javax.swing.JLabel lblVerCliente;
     private javax.swing.JPanel pnlAgregarCliente;
+    private javax.swing.JPanel pnlConfiguracion;
     private javax.swing.JPanel pnlConsultaDeConsumo;
     private javax.swing.JPanel pnlListaDeClientes;
     private javax.swing.JPanel pnlParent;
     private javax.swing.JPanel pnlSimuladorDeLlamada;
+    private javax.swing.JRadioButton rbtCelular;
+    private javax.swing.JRadioButton rbtLocales;
     private javax.swing.JSlider sdrDuracion;
+    private javax.swing.JSlider sldLlamadasLocalesGratis;
+    private javax.swing.JSlider sldMinutosCelularGratis;
+    private javax.swing.JSlider sldPrecioCelular;
+    private javax.swing.JSlider sldPrecioLlamadaLocal;
     public static javax.swing.JTable tblClientes;
+    private javax.swing.JTable tblConsumo;
     private javax.swing.JTextField txtApellidos;
     private javax.swing.JLabel txtBarraDireccion;
     private javax.swing.JTextField txtDireccion;

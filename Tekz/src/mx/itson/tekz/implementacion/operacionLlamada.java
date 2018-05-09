@@ -6,7 +6,6 @@
 package mx.itson.tekz.implementacion;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -21,7 +20,13 @@ import org.hibernate.Session;
  * @author Cristian
  */
 public class operacionLlamada implements CRUDllamada{
-
+/**Agrega una llamada a la tabla llamada de la base de datos
+ * 
+ * @param usuario - Usuario al que se le asignara la llamada
+ * @param telefono - Telefono que recibe la llamada
+ * @param duracion - Duracion de la llamada
+ * @param fecha  - Fecha de la llamada
+ */
     @Override
     public void Agregar(Usuario usuario, String telefono, String duracion, String fecha) {
         Llamada l = new Llamada();
@@ -40,6 +45,11 @@ public class operacionLlamada implements CRUDllamada{
         }
     }
 
+    /**
+     * Regrea una lista de llamadas
+     * 
+     * @return 
+     */
     @Override
     public List Obtener() {
         List<Llamada> llamadas = new ArrayList<Llamada>();
@@ -54,7 +64,11 @@ public class operacionLlamada implements CRUDllamada{
         }
         return llamadas;
     }
-
+/**
+ * Edita una llamada de la tabla llamada de la base de datos
+ * 
+ * @param llamada - Llamada a editar
+ */
     @Override
     public void Editar(Llamada llamada) {
         try {
@@ -67,6 +81,11 @@ public class operacionLlamada implements CRUDllamada{
             System.out.println("Ocurrio un error al intentar actualizar we :S");
         }    }
 
+    /**
+     * Elimina una llamada de la base de datos
+     * 
+     * @param llamada - Llamada a eliminar
+     */
     @Override
     public void Eliminar(Llamada llamada) {
        try {
